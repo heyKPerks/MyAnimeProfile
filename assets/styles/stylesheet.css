@@ -51,11 +51,12 @@ body {
 }
 .bio {
 	margin-top: .5rem;
-	line-height: 1.3em;
+	line-height: 1.3rem;
 }
 .bioextra {
 	display: inline-block;
 	margin-right: .5rem;
+	margin-top: 1rem;
 	color: rgba(136,153,165,0.9);
 }
 i {
