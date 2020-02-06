@@ -33,27 +33,38 @@ body {
 		"main"
 		"footer";
 }
-.bio {
-	/*font-size: 1em;*/
+.main-grid-layout {
+/*	display: grid;*/
 }
-.bio > p {
-	margin-top: 1em;
-	line-height: 1.5em;
+.section-header {
+	padding: 0px 1rem;
+	margin-top: 1rem;
 	font-size: 1em;
-	font-weight: 100;
+	font-weight: 100;	
+}
+.section-main {
+	margin-top: 2rem;
+	padding: 0px 1rem;
+}
+.section-scrolling {
+	margin-top: 2rem;
+}
+.bio {
+	margin-top: .5rem;
+	line-height: 1.3em;
 }
 .bioextra {
 	display: inline-block;
-	margin-right: 1rem;
+	margin-right: .5rem;
 	color: rgba(136,153,165,0.9);
 }
 i {
-	letter-spacing: 5px;
+	letter-spacing: .2em;
 }
 .waifu {
 	width: 25px;
 	height: 25px;
-	vertical-align: top;
+	vertical-align: middle;
 	margin-left: 5px;
 }
 .social-icon {
@@ -74,27 +85,13 @@ i {
 .social-button > i {
 	font-size: 16px;
 }
-.main-grid-layout {
-/*	display: grid;*/
-}
-.section-main {
-	margin-top: 2rem;
-	padding: 0px 1rem;
-}
-.section-scrolling {
-	margin-top: 2rem;
-}
-.section-header {
-	padding: 0px 1rem;
-	margin-top: 1rem;
-}
 .social {
 	margin-top: 2rem;
 }
 .tiled-list {
 	width: 100%;
 	display: grid;
-	grid-template-columns: minmax(90px, 1fr) minmax(90px, 1fr) minmax(90px, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;/*minmax(90px, 1fr) minmax(90px, 1fr) minmax(90px, 1fr);*/
 	grid-template-rows: auto;
 	grid-gap: 10px;
 	font-size: 0px;
@@ -139,18 +136,16 @@ i {
 	width: 100%;
 	border-radius: 5px;
 }
-/*ends scrolling container with some padding*/
 h1 {
-	margin-top: 3rem;
-	margin-bottom: 0;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 	padding: 0px 1rem;
 	/*text-align: center;*/
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 100;
-	line-height: 1.5em;
 }
 h2 { 
-	margin-bottom: 10px;
+	margin-bottom: .5rem;
 	width: 100%;
 	font-size: 1.5em;
 }
@@ -160,3 +155,4 @@ h4 {
 	font-size: 1em;
 	font-weight: lighter;
 }
+#name{font-weight: 900;}
