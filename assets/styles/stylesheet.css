@@ -23,6 +23,10 @@ body {
 }
 #sidebar {
 	grid-area: sidebar;
+	display: grid;
+	grid-template-columns: minmax(320px, 480px);
+	grid-template-rows: auto;
+	/*background-color: blue;*/
 }
 #footer {
 	grid-area: footer;
@@ -147,12 +151,20 @@ i {
 }
 .stack-list-container {
 	display: grid;
-	grid-template-columns: 35px 1fr;
+	grid-template-columns: 30px 1fr;
 	grid-template-rows: auto;
-	grid-gap: .5rem;
+	grid-row-gap: 1rem;
+	grid-column-gap: .5rem;
 }
-.stack-list-item > a {
-	/*display: block;*/
+
+.stack-item {
+	align-self: center;	
+}
+
+.stack-link > a {
+	text-decoration: none;
+	color: white;
+	font-weight: lighter;
 }
 .stack-icon {
 	width: 100%;
@@ -173,12 +185,12 @@ h1 {
 	font-weight: 100;
 }
 h2 { 
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 	width: 100%;
 	font-size: 1.5em;
 }
 h3 {
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 	font-size: 1em;
 	font-weight: bold;
 }
