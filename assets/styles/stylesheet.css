@@ -15,6 +15,13 @@ body {
 	background-color: #21202A;
 	color: #FFFFFF;
 }
+/*a:hover, a:active, a:focus {*/
+a:focus {
+	outline: 0;
+	border-width: 2px;
+	border-style: solid;
+	border-color: orange;
+}
 #header {
 	grid-area: header;
 }
@@ -33,13 +40,13 @@ body {
 }
 .page-grid {
 	display: grid;
-	grid-template-columns: minmax(320px, 480px);
+	grid-template-columns: 1fr minmax(320px, 480px) 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
-		"header"
-		"main"
-		"sidebar"
-		"footer";
+		". header ."
+		". main ."
+		". sidebar ."
+		". footer .";
 }
 .main-grid-layout {
 /*	display: grid;*/
@@ -144,10 +151,16 @@ i {
 }
 .tile {
 	width: 100%;
+	/*border-radius: 5px;*/
+	/*overflow: hidden;*/
+}
+.tile > a {
+	display: block;
+	text-decoration: none;
 }
 .thumbnail {
 	width: 100%;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 .stack-list-container {
 	display: grid;
@@ -168,7 +181,11 @@ i {
 }
 .stack-icon {
 	width: 100%;
-	/*background: blue;*/
+}
+.stack-icon > a {
+	display: block;
+	text-decoration: none;
+	
 }
 .stack-icon-image {
 	width: 100%;
