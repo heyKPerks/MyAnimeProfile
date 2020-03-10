@@ -48,12 +48,20 @@ a:focus {
 		". sidebar ."
 		". footer .";
 }
+.header-item {
+	padding-left: 10px;
+	padding-right: 10px;
+}
 .grid-main {
 	width: 100%;
 	display: grid;
 	grid-template-columns: minmax(320px, 460px);/*not sure yet*/
 	grid-template-rows: auto;
 	grid-gap: 2rem;
+}
+.main-item {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .tiled-list {
 	width: 100%;
@@ -63,18 +71,19 @@ a:focus {
 	grid-gap: 10px;
 	font-size: 0px;
 }
-.main-item {
-	padding-left: 10px;
+.side-item {
+	background-color: rgba(0, 146, 148, .1);
+	border-radius: 10px;
+	margin-bottom: 1rem;
 	padding-right: 10px;
-}
-.header-item {
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 @media (min-width: 700px) {
 	.page-grid {
 		display: grid;
-		grid-template-columns: 1fr minmax(320px, 480px) 1fr;
+		grid-template-columns: 1fr minmax(320px, 540px) 1fr;
 		grid-template-rows: auto;
 		grid-row-gap: 3rem;
 		grid-template-areas: 
@@ -86,7 +95,7 @@ a:focus {
 	.grid-main {
 		width: 100%;
 		display: grid;
-		grid-template-columns: minmax(320px, 460px);/*not sure yet*/
+		grid-template-columns: minmax(320px, 540px);/*not sure yet*/
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
@@ -102,7 +111,7 @@ a:focus {
 @media (min-width: 900px) {
 	.page-grid {
 		display: grid;
-		grid-template-columns: 1fr minmax(260px, 280px) minmax(320px, 480px) 1fr;
+		grid-template-columns: 1fr minmax(260px, 280px) minmax(320px, 540px) 1fr;
 		grid-template-rows: auto;
 		grid-row-gap: 3rem;
 		grid-template-areas: 
@@ -113,7 +122,7 @@ a:focus {
 	.grid-main {
 		width: 100%;
 		display: grid;
-		grid-template-columns: minmax(320px, 460px);/*not sure yet*/
+		grid-template-columns: minmax(320px, 540px);/*not sure yet*/
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
@@ -126,11 +135,10 @@ a:focus {
 		font-size: 0px;
 	}		
 }
-
 @media (min-width: 1100px) {
 	.page-grid {
 		display: grid;
-		grid-template-columns: 1fr minmax(250px, 300px) minmax(320px, 540px) 300px 1fr;
+		grid-template-columns: 1fr minmax(250px, 300px) minmax(480px, 540px) minmax(min-content, 300px) 1fr;
 		grid-template-rows: auto;
 		grid-row-gap: 3rem;
 		grid-template-areas: 
@@ -141,7 +149,7 @@ a:focus {
 	.grid-main {
 		width: 100%;
 		display: grid;
-		grid-template-columns: minmax(320px, 540px);/*not sure yet*/
+		grid-template-columns: minmax(480, 540px);/*not sure yet*/
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
@@ -240,15 +248,6 @@ i {
 .thumbnail {
 	width: 100%;
 	border-radius: 5px;
-}
-.side-item {
-	/*background-color: blue;*/
-	border-radius: 10px;
-	margin-bottom: 1rem;
-	padding-right: 10px;
-	padding-left: 10px;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 .stack-list-container {
 	display: grid;
