@@ -14,6 +14,8 @@ body {
 	font-family: 'open sans';
 	background-color: #21202A;
 	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: 100;
 }
 /*a:hover, a:active, a:focus {*/
 a:focus {
@@ -61,6 +63,9 @@ a:focus {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
+}
+.page-header {
+	padding-top: 1rem;	
 }
 .bio-item {
 	padding-left: 10px;
@@ -143,6 +148,9 @@ a:focus {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
+	.page-header {
+		padding-top: 0;	
+	}	
 	.tiled-list {
 		width: 100%;
 		display: grid;
@@ -170,6 +178,9 @@ a:focus {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
+	.page-header {
+		padding-top: 0;	
+	}		
 	.tiled-list {
 		width: 100%;
 		display: grid;
@@ -197,13 +208,14 @@ a:focus {
 }
 
 .bio-text {
-	margin-top: .5rem;
+	margin-top: 1em;
 	line-height: 1.5rem;
 }
 .bioextra {
 	display: inline-block;
-	margin-right: .5rem;
-	margin-top: 1rem;
+	margin-top: 1em;
+	line-height: 1.5rem;	
+	margin-right: .5em;
 	color: rgba(136,153,165,0.9);
 }
 i {
@@ -332,12 +344,17 @@ h4 {
 	font-weight: lighter;
 }
 
-#name{font-weight: 900;}
 .page-header {
 	align-self: center;
 	margin: 0;
 	width: 100%;
 	padding-left: 10px;
 	padding-right: 10px;
+	/*background-color: blue;*/
+}
+#name{
+	margin: 0;
+	padding: 0;	
+	font-weight: 900;
 	/*background-color: blue;*/
 }
