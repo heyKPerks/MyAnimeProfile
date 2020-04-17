@@ -167,7 +167,7 @@ a:focus {
 		grid-template-rows: auto;
 		grid-row-gap: 1rem;
 		grid-template-areas: 
-			". header  main-header sidebar ."
+			". header  main-header . ."
 			". bio main sidebar ."
 			". footer footer footer .";
 	}
