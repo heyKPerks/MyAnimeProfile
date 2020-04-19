@@ -294,22 +294,60 @@ i {
 	width: 100%;
 	border-radius: 5px;
 }
+.box-list-tiem {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+	/*border-top: 1px;*/
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: rgba(0, 146, 148);
+}
+.box-list-tiem:first-of-type {
+	border-top: 1px;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: rgba(0, 146, 148);	
+}
+.song-anime {
+	display: block;
+	color: rgba(0, 146, 148);
+}
+.box-list-header {
+	display: block;
+	width: 100%;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 1em;
+	font-weight: 100;
+	line-height: 1.5em;
+	/*background-color: blue;*/	
+}
 .stack-list-container {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
-	grid-row-gap: 1rem;
+	/*grid-row-gap: 1rem;*/
+	padding: 0;
 }
 .stack-item {
 	width: 100%;
-	/*padding-top: 1rem;*/
-	/*padding-bottom: 1rem;*/
-	/*border-top: 1px;*/
-	/*border-bottom: 1px;*/
-	/*border-style: solid;*/
-	/*border-color: rgb(0, 146, 148);*/
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-top: 1px;
+	border-style: solid;
+	border-color: #21202A;
 }
 .stack-heading {
+	padding-top: .5rem;
+	padding-bottom: .5rem;	
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 1em;
 	font-weight: bold;
 }
@@ -317,7 +355,7 @@ i {
 	display: block;
 	text-decoration: none;
 	color: white;
-	/*font-size: 1em;*/	
+	font-size: 1em;
 	font-weight: lighter;
 }
 .stack-image {
@@ -326,7 +364,6 @@ i {
 	vertical-align: middle;
 	border-radius: 50%;
 }
-
 h1 {
 	font-size: 1.5em;
 	font-weight: lighter;
@@ -343,7 +380,6 @@ h4 {
 	font-size: 1em;
 	font-weight: lighter;
 }
-
 .page-header {
 	align-self: center;
 	margin: 0;
