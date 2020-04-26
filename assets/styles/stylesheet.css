@@ -27,11 +27,13 @@ a:focus {
 .header-container {
 	grid-area: header;
 }
-.bio-container {
-	grid-area: bio;
+.left-side-container {
+	grid-area: left-side;
+	display: grid;
+	grid-row-gap: 1rem;
 }
-.main-header {
-	grid-area: main-header;
+.tab-container {
+	grid-area: tabs;
 }
 .main-container {
 	grid-area: main;
@@ -52,8 +54,8 @@ a:focus {
 	grid-column-gap: 40px;
 	grid-template-areas: 
 		"header"
-		"bio "
-		"main-header"
+		"left-side"
+		"tabs"
 		"main"
 		"sidebar"
 		"footer";
@@ -67,7 +69,7 @@ a:focus {
 .page-header {
 	padding-top: 1rem;	
 }
-.bio-item {
+.left-side-item {
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -107,8 +109,8 @@ a:focus {
 		grid-row-gap: 1rem;
 		grid-template-areas: 
 			". header ."
-			". bio ."
-			". main-header ."
+			". left-side ."
+			". tabs ."
 			". main ."
 			". sidebar ."
 			". footer .";
@@ -136,9 +138,10 @@ a:focus {
 		grid-template-rows: auto;
 		grid-row-gap: 1rem;
 		grid-template-areas: 
-			". header main-header ."
-			". bio  main ."
-			". bio sidebar ."
+			". header tabs ."
+			". left-side main ."
+			". . main ."
+			". . sidebar ."
 			". footer footer .";
 	}
 	.grid-main {
@@ -167,8 +170,9 @@ a:focus {
 		grid-template-rows: auto;
 		grid-row-gap: 1rem;
 		grid-template-areas: 
-			". header  main-header . ."
-			". bio main sidebar ."
+			". header  tabs . ."
+			". left-side main sidebar ."
+			". . main sidebar ."
 			". footer footer footer .";
 	}
 	.grid-main {
@@ -206,17 +210,16 @@ a:focus {
 	display: inline-block;
 	flex: 0 0 auto;	
 }
-
 .bio-text {
-	margin-top: 1em;
 	line-height: 1.5rem;
 }
 .bioextra {
-	display: inline-block;
-	margin-top: 1em;
+	width: 100%;
+	display: grid;
+	grid-gap: 1rem;
+}
+.bioextra-item {
 	line-height: 1.5rem;
-	/*letter-spacing: 1px;*/
-	margin-right: .5em;
 	color: rgba(136,153,165,0.9);
 }
 i {
