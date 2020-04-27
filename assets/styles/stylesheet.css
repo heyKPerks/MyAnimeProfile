@@ -18,12 +18,6 @@ body {
 	font-weight: 100;
 }
 /*a:hover, a:active, a:focus {*/
-a:focus {
-	outline: 0;
-	border-width: 2px;
-	border-style: solid;
-	border-color: #FC8F58;
-}
 .header-container {
 	grid-area: title;
 }
