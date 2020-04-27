@@ -12,7 +12,7 @@ html {
 }
 body {
 	font-family: 'open sans';
-	background-color: #21202A;
+	background-color: rgb(21,32,43) /*#21202A*/;
 	color: #FFFFFF;
 	font-size: 1em;
 	font-weight: 100;
@@ -22,7 +22,7 @@ a:focus {
 	outline: 0;
 	border-width: 2px;
 	border-style: solid;
-	border-color: orange;
+	border-color: #FC8F58;
 }
 .header-container {
 	grid-area: title;
