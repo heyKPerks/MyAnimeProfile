@@ -315,8 +315,10 @@ i {
 }
 .song-anime {
 	display: block;
-	color: rgba(0, 146, 148); /*#FC8F58;*/
-
+	/*color: #FC8F58; /*rgba(0, 146, 148)*/*/
+}
+.song-title {
+	color: rgba(136,153,165,0.9);
 }
 .box-list-header {
 	display: block;
