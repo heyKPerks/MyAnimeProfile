@@ -146,9 +146,6 @@ body {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
-	.page-header {
-		/*padding-top: 0;	*/
-	}	
 	.tiled-list {
 		width: 100%;
 		display: grid;
@@ -178,9 +175,6 @@ body {
 		grid-template-rows: auto;
 		grid-gap: 2rem;
 	}
-	.page-header {
-		/*padding-top: 0;	*/
-	}		
 	.tiled-list {
 		width: 100%;
 		display: grid;
