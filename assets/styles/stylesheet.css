@@ -147,7 +147,7 @@ body {
 		grid-gap: 2rem;
 	}
 	.page-header {
-		padding-top: 0;	
+		/*padding-top: 0;	*/
 	}	
 	.tiled-list {
 		width: 100%;
@@ -179,7 +179,7 @@ body {
 		grid-gap: 2rem;
 	}
 	.page-header {
-		padding-top: 0;	
+		/*padding-top: 0;	*/
 	}		
 	.tiled-list {
 		width: 100%;
