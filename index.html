@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- MyAnimeProfile -->
+	<!-- MyAnimeProfile Rebase-->
 	<head>
 		<title>MyAnimeProfile</title>
 		<meta charset="utf-8" />
@@ -12,69 +12,144 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<!--media reporter-->
 		<!--<link rel="stylesheet" type="text/css" href="assets/styles/MediaQuery-Reporter Styles.css">-->
+		<!--Scripts-->
+		<script type="text/javascript" src="assets/scripts/linksdropbtn.js"></script>
 		
 	</head>
 	<body>
-		<div id="pagewrapper" class="page-grid">
-		
-			<div class="page-item header-container grid-header">
-				<h1 class="page-header">My Anime Profile</h1>
-			</div>
-			<div class="page-item left-side-container">			
-				<div class="left-side-item">
-					<h2 id="name">Kyle</h2>
-				</div>						
-				<div class="left-side-item">
-					<p class="bio-text">I crave visually pleasing art and enjoyable characters, but overall an immersive story. I'm a sucker for romance, get pumped for action packed fight scenes, and savor unexpected laughs; with the occasional trash.</p>
-				</div>
-				<div class="left-side-item">
-					<p class="bio-text">Studio Bones | Crimson Redheads | Tsunderes | Dub Club</P>
-				</div>
-				
-				<div class="left-side-item bioextra">
-					<p class="bioextra-item"><i class="far fa-calendar" aria-hidden="true"></i> Watching Since 2002</p>
-					<p class="bioextra-item"><i class="far fa-heart"></i> Waifu: <img class="waifu" src="assets/images/icons/waifu.png"></img> Shirayuki</p>		
-				</div>
-			</div><!--left-side-container-->
+		<div id="page_wrapper">
+			<div id="page_title_wrapper">
+				<h1 id="page_title">MyAnimeProfile</h1>
+			</div><!-- Page Title -->
+			
+			<div id="bio">
+				<h2 id="name">Kyle</h2>
+				<p id="biotext">I crave visually pleasing art and enjoyable characters, but overall an immersive story. I'm a sucker for romance, get pumped for action packed fight scenes, and savor unexpected laughs; with the occasional trash.</p>
+			</div><!-- bio -->
 
-			<!--
-			<div class="page-item tab-container">
-				<div class="tab-item">Spotlight</div>
-				<div class="tab-item">Favorites</div>
-				<div class="tab-item">Links and Follows</div>
-			</div><!--tab-container-->
-
-			<div class="page-item main-container grid-main">
-				<div class="main-item tab-favorite"><!--anime Series-->
-					<h2>Anime Series</h2>
-					<div class="tiled-list">
-						<div class="tile"><a href="https://kitsu.io/anime/soul-eater"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/3128/large.jpg?1417748138" alt="Soul Eater"></img></a></div>					
-						<div class="tile"><a href="https://kitsu.io/anime/fullmetal-alchemist-brotherhood"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/3936/large.jpg?1419000387" alt="Fullmetal Alchemist: Brotherhood"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/spice-and-wolf"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/2684/large.jpg?1416428719" alt="Spice and Wolf"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/code-geass-lelouch-of-the-rebellion"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/1415/large.jpg?1408443967" alt="Code Geass: Lelouch of the Rebellion"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/ghost-in-the-shell-stand-alone-complex"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/429/large.jpg?1417748226" alt="Ghost in the Shell: Stand Alone Complex"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/tengen-toppa-gurren-lagann"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/1801/large.jpg?1416277034" alt="Gurren Lagann"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/shigatsu-wa-kimi-no-uso"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/8403/large.jpg?1425430943" alt="Your Lie in April"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/samurai-champloo"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/181/large.jpg?1416272646" alt="Samurai Champloo"></img></a></div>
-						
-						<div class="tile"><a href="https://kitsu.io/anime/new-game"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11467/large.jpg?1459364811" alt="New Game!"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/akagami-no-shirayuki-hime"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10621/large.jpg?1432401413" alt="Snow White with the Red Hair"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/magi-the-labyrinth-of-magic"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7129/large.jpg?1417447182" alt="Magi: The Labyrinth of Magic"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/kono-subarashii-sekai-ni-shukufuku-wo"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10941/large.jpg?1448505014" alt="KonoSuba"></img></a></div>
-												
-						<!--<div class="tile"><a href=""><img class="thumbnail" src="" alt=""></img></a></div>-->
-					</div>
-				</div><!--anime Series-->
+			<div id="nav">
+				<button onclick="navbtn()" id="nav_about" class="nav-item nav-item-selected first-nav-item">About</button>
+				<button onclick="navbtn()" id="nav_spotlight" class="nav-item">Spotlight</button>
+				<button onclick="navbtn()" id="nav_favorites" class="nav-item">Favorites</button>
+				<button onclick="navbtn()" id="nav_linksandfollows" class="nav-item">Links and Follows</button>
+			</div><!-- Nav -->
+			
+			<div id="tab_about" class="tab">
+				<div id="about_fields">
+					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him</div>
+					<div class="about-field"><i class="fas fa-birthday-cake field-icon"></i> April</div>
+					<div class="about-field"><i class="fas fa-map-marker-alt field-icon"></i> Cincinnati, OH</div>
+					<div class="about-field"><i class="far fa-calendar field-icon"></i> Watching Since 2002</div>
+					<div class="about-field"><i class="far fa-heart field-icon"></i> Waifu: <img class="waifu" src="assets/images/icons/waifu.png"></img> Shirayuki</div>
+				</div><!-- about fields -->
 				
-				<div class="main-item tab-favorite section-scrolling"><!--more genre-->
-					<div class="scrolling-container">
+				<div class="about-tags">
+					<div class="about-tag">Dub Club</div>
+					<div class="about-tag">Studio Bones</div>
+					<div class="about-tag">Tsunderes</div>
+					<div class="about-tag">Crimson Redheads</div>
+					<div class="about-tag">ZettaiRyouiki</div>
+					<div class="about-tag">Twintails</div>
+				</div><!-- about tags -->
+				<div class="about-tags">
+					<div class="about-tag">Action</div>
+					<div class="about-tag">Comedy</div>
+					<div class="about-tag">Fantasy</div>
+					<div class="about-tag">Adventure</div>
+					<div class="about-tag">Romance</div>
+					<div class="about-tag">Slice of Life</div>
+				</div><!-- about tags -->			
+				<!--
+				<div class="about-tags">
+					<div class="about-tag">Ahegao</div>
+					<div class="about-tag">Thighdeology</div>
+					<div class="about-tag">Anal</div>
+					<div class="about-tag">Tentacles</div>
+					<div class="about-tag">Futanari</div>
+					<div class="about-tag">Inflation</div>
+					<div class="about-tag">HMV</div>
+				</div><!-- about tags -->				
+
+			</div><!-- about -->
+
+			<div id="main">
+				<div id="tab_spotlight" class="main-item">
+					<div class="spotlight-item"><!--Currently Watching-->
+						<h2>Currently Watching</h2>
+						<div class="tiled-list">
+							<!-- <div class="tile"><a href=""><img class="thumbnail" src="" alt=""></img></a></div> -->
+							<div class="tile"><a href="https://kitsu.io/anime/re-zero-kara-hajimeru-isekai-seikatsu-2"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42198/large.jpg?1597696997" alt="Re:ZERO Season 2"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/enen-no-shouboutai-ni-no-shou"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42909/large.jpg?1597690744" alt="Fire Force Season 2"></img></a></div>					
+							<div class="tile"><a href="https://kitsu.io/anime/itai-no-wa-lya-nano-de-bougyoryoku-ni-kyokufuri-shitai-to-omoimasu"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42043/large.jpg?1597692075" alt="BOFURI: I Don’t Want to Get Hurt, so I’ll Max Out My Defense."></img></a></div>					
+							<div class="tile"><a href="https://kitsu.io/anime/kakushigoto-tv"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42722/large.jpg?1597697302" alt="Kakushigoto "></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/the-god-of-highschool-series"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/43018/large.jpg?1597699121" alt="The God of High School"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/deca-dence"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42433/large.jpg?1597691581" alt="Deca-Dence"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kanojo-okarishimasu"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/43028/large.jpg?1597697493" alt="Rent-a-Girlfriend"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/manaria-friends"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11354/large.jpg?1597692011" alt="Mysteria Friends"></img></a></div>					
+						</div><!-- tiled-list -->
+					</div><!-- Currently Watching-->			
+					<div class="spotlight-item"><!--Currently Watching-->
+						<h2>Backlog Binge</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://kitsu.io/anime/houseki-no-kuni-tv"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13521/large.jpg?1597696859" alt="Land of the Lustrous "></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/runway-de-waratte"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42552/large.jpg?1597691891" alt="Smile Down the Runway"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/koi-wa-ameagari-no-you-ni"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13277/large.jpg?1597697509" alt="After the Rain"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/somali-to-mori-no-kamisama"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42201/large.jpg?1597697078" alt="Somali and the Forest Spirit"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/vinland-saga"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41084/large.jpg?1597696763" alt="VINLAND SAGA"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/a-place-further-than-the-universe"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13615/large.jpg?1597696818" alt="A Place Further Than the Universe"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/anohana-the-flower-we-saw-that-day"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/5981/large.jpg?1597696751" alt="Anohana: The Flower We Saw That Day"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kono-subarashii-sekai-ni-shukufuku-wo-movie"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41440/large.jpg?1553411074" alt="KonoSuba: Legend of Crimson"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/sword-art-online-alicization-war-of-underworld"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42213/large.jpg?1597697016" alt="Sword Art Online: Alicization: War of Underworld"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41373/large.jpg?1597698536" alt="Kaguya-sama: Love is War"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/yahari-ore-no-seishun-love-comedy-wa-machigatteiru-kan"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42194/large.jpg?1597696997" alt="My Teen Romantic Comedy SNAFU Climax"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/3-gatsu-no-lion"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11380/large.jpg?1597696842" alt="March comes in like a lion"></img></a></div>
+						</div><!-- tiled-list -->
+					</div><!--On Deck -->
+					<div class="spotlight-item"><!--Currently Watching-->
+						<h2>Most Anticipated</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://kitsu.io/anime/5-toubun-no-hanayome-2"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42324/large.jpg?1597697087" alt="The Quintessential Quintuplets 2"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darouka-iii"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42583/large.jpg?1594138670" alt="Danmachi Season 3"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/shingeki-no-kyojin-the-final-season"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42422/large.jpg?1593607834" alt="Attack on Titan The Final Season"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/violet-evergarden-movie"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41450/large.jpg?1597696766" alt="Violet Evergarden the Movie"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/burn-the-witch"><img class="thumbnail" src="https://cdn.myanimelist.net/images/anime/1993/108967.jpg" alt="Burn the Witch"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/tate-no-yuusha-no-nariagari-2"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42530/large.jpg?1599926560" alt="The Rising of the Shield Hero 2"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/log-horizon-3rd-season"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42957/large.jpg?1597692116" alt="Log Horizon: Season 3"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/tensei-shitara-slime-datta-ken-2"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42196/large.jpg?1597691848" alt="Reincarnated as a Slime 2"></img></a></div>
+							<div class="tile"><a href=""><img class="thumbnail" src="" alt=""></img></a></div>
+						</div><!-- tiled-list -->
+					</div><!-- Most Anticipated -->
+				
+				</div><!-- spotlight -->
+				
+				<div id="tab_favorites" class="main-item">
+					<div class="favorite-item"><!--anime Series-->
+						<h2>Anime Series</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://kitsu.io/anime/soul-eater"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/3128/large.jpg?1417748138" alt="Soul Eater"></img></a></div>					
+							<div class="tile"><a href="https://kitsu.io/anime/fullmetal-alchemist-brotherhood"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/3936/large.jpg?1419000387" alt="Fullmetal Alchemist: Brotherhood"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/spice-and-wolf"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/2684/large.jpg?1416428719" alt="Spice and Wolf"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/code-geass-lelouch-of-the-rebellion"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/1415/large.jpg?1408443967" alt="Code Geass: Lelouch of the Rebellion"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/ghost-in-the-shell-stand-alone-complex"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/429/large.jpg?1417748226" alt="Ghost in the Shell: Stand Alone Complex"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/tengen-toppa-gurren-lagann"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/1801/large.jpg?1416277034" alt="Gurren Lagann"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/shigatsu-wa-kimi-no-uso"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/8403/large.jpg?1425430943" alt="Your Lie in April"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/samurai-champloo"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/181/large.jpg?1416272646" alt="Samurai Champloo"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/new-game"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11467/large.jpg?1459364811" alt="New Game!"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/akagami-no-shirayuki-hime"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10621/large.jpg?1432401413" alt="Snow White with the Red Hair"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/magi-the-labyrinth-of-magic"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7129/large.jpg?1417447182" alt="Magi: The Labyrinth of Magic"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kono-subarashii-sekai-ni-shukufuku-wo"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10941/large.jpg?1448505014" alt="KonoSuba"></img></a></div>
+							<!--<div class="tile"><a href=""><img class="thumbnail" src="" alt=""></img></a></div>-->
+						</div><!-- tiled-list -->
+					</div><!--anime Series-->
+
+					<div id="scrolling_genre_cards" class="favorite-item">
 						<div class="tiled-list-card first-card">
 							<h4>Action</h4>
 							<div class="card-tiled-list">
-								<div class="tile"><a href="https://kitsu.io/anime/boku-no-hero-academia"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11469/large.jpg?1456690771" alt="My Hero Academia"></img></a></div>
+								<div class="tile"><a href="https://kitsu.io/anime/fate-zero"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/6028/large.jpg?1492613350" alt="Fate Zero"></img></a></div>						
 								<div class="tile"><a href="https://kitsu.io/anime/one-punch-man"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10740/large.jpg?1441243505" alt="One-Punch Man"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/attack-on-titan"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7442/large.jpg?1418580054" alt="Attack on Titan"></img></a></div>
-								<div class="tile"><a href="https://kitsu.io/anime/fate-zero"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/6028/large.jpg?1492613350" alt="Fate Zero"></img></a></div>						
+								<div class="tile"><a href="https://kitsu.io/anime/boku-no-hero-academia"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11469/large.jpg?1456690771" alt="My Hero Academia"></img></a></div>								
 							</div>
 						</div><!--Action-->
 						<div class="tiled-list-card">
@@ -84,7 +159,6 @@
 								<div class="tile"><a href="https://kitsu.io/anime/space-dandy"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7910/large.jpg?1408462883" alt="Space Dandy"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/the-devil-is-a-part-timer"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7314/large.jpg?1420871133" alt="The Devil is a Part-Timer!"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/hinamatsuri"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/14018/large.jpg?1523809871" alt="HINAMATSURI"></img></a></div>
-								
 								<!--<div class="tile"><a href="https://kitsu.io/anime/kono-subarashii-sekai-ni-shukufuku-wo"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10941/large.jpg?1448505014" alt="KonoSuba"></img></a></div>-->
 							</div>	
 						</div><!--Comedy-->			
@@ -95,7 +169,6 @@
 								<div class="tile"><a href="https://kitsu.io/anime/demi-chan-wa-kataritai"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/12529/large.jpg?1489936267" alt="Interviews With Monster Girls"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/yuru-camp"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13480/large.jpg?1514516868" alt="Laid-Back Camp"></img></a></div>					
 								<div class="tile"><a href="https://kitsu.io/anime/flying-witch"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11317/large.jpg?1457377835" alt="Flying Witch"></img></a></div>
-								
 								<!--<div class="tile"><a href="https://kitsu.io/anime/new-game"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11467/large.jpg?1459364811" alt="New Game!"></img></a></div>-->
 							</div>
 						</div><!--Daily Life-->
@@ -124,7 +197,6 @@
 								<div class="tile"><a href="https://kitsu.io/anime/gekkan-shoujo-nozaki-kun"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/8402/large.jpg?1416321073" alt="Monthly Girls' Nozaki-kun"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/yahari-ore-no-seishun-love-comedy-wa-machigatteiru"><img class="thumbnail" src="https://cdn.myanimelist.net/images/anime/11/49459.jpg" alt="My Teen Romantic Comedy SNAFU"></img></a></div>
 								<div class="tile"><a href="https://kitsu.io/anime/5-toubun-no-hanayome"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41966/large.jpg?1553271462" alt="The Quintessential Quintuplets"></img></a></div>					
-								
 								<!--<div class="tile"><a href="https://kitsu.io/anime/akagami-no-shirayuki-hime"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10621/large.jpg?1432401413" alt="Snow White with the Red Hair"></img></a></div>-->
 							</div>
 						</div><!--Romance-->
@@ -147,470 +219,574 @@
 							</div>
 						</div><!--Old School Clasics-->	
 						<div class="tiled-list-card last-card"></div>
-					</div><!--scrolling conntainer, more by genre -->
-				</div><!--more genre-->
-				
-				<div class="main-item tab-favorite"><!--anime film-->
-					<h2>Anime Film</h2>
-					<div class="tiled-list">
-						<div class="tile"><a href="https://kitsu.io/anime/koe-no-katachi"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10028/large.jpg?1467559694" alt="A Silent Voice"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/kimi-no-na-wa"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11614/large.jpg?1496075336" alt="Your Name"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/wolf-children"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/6711/large.jpg?1416278214" alt="Wolf Children"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/summer-wars"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/4241/large.jpg?1408451983" alt="Summer Wars"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/spirited-away"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/176/large.jpg?1440954517" alt="Spirited Away"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/princess-mononoke"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/142/large.jpg?1431655766" alt="Princess Mononoke"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/sayonara-no-asa-ni-yakusoku-no-hana-wo-kazarou"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13612/large.jpg?1514518724" alt="Maquia"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/kimi-no-suizou-wo-tabetai"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13723/large.jpg?1553514369" alt="I Want to Eat Your Pancreas"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/promare"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13602/large.jpg?1590229475" alt="Promare"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/kono-sekai-no-katasumi-ni"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7234/large.jpg?1474588582" alt="In This Corner of the World"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/penguin-highway"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41007/large.jpg?1531794448" alt="Penguin Highway"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/the-garden-of-words"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7515/large.jpg?1408461581" alt="The Garden of Words"></img></a></div>
-					</div>
-				</div><!--anime film-->
-				
-				<div class="main-item tab-favorite"><!--Other Animated Series-->
-					<h2>Other Animated Series</h2>
-					<div class="tiled-list">
-						<div class="tile"><a href="https://kitsu.io/anime/avatar-the-last-airbender-book-1-water"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7936/large.jpg?1458164050" alt="Avatar: The Last Airbender"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/the-legend-of-korra-book-1-air"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11565/large.jpg?1448849149" alt="The Legend of Korra"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/rwby"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7929/large.jpg?1475799620" alt="RWBY"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/wakfu-the-animated-series"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/8299/large.jpg?1418849115" alt="Wakfu"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/samurai-jack"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7939/large.jpg?1416275562" alt="Samurai Jack"></img></a></div>
-						<div class="tile"><a href="https://www.imdb.com/title/tt2861424/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/rick-and-morty.png" alt="Rick and Morty"></img></a></div>
-												<div class="tile"><a href="https://www.imdb.com/title/tt7658402/?ref_=nv_sr_srsg_3"><img class="thumbnail" src="assets/images/thumbnails/harley-quinn.png" alt="Harley Quinn "></img></a></div>
-						<div class="tile"><a href="https://www.imdb.com/title/tt0149460/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/futurama.png" alt="Futurama"></img></a></div>
-						<div class="tile"><a href="https://www.imdb.com/title/tt1486217/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/archer.png" alt="Archer"></img></a></div>						
-						<div class="tile"><a href="https://kitsu.io/anime/teen-titans"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7928/large.jpg?1416275545" alt="Teen Titans"></img></a></div>						
-						<div class="tile"><a href="https://www.imdb.com/title/tt0366005/"><img class="thumbnail" src="assets/images/thumbnails/dannyphantom.png" alt="Danny Phantom"></img></a></div>
-						<div class="tile"><a href="https://kitsu.io/anime/code-lyoko"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7930/large.jpg?1408462959" alt="Code Lyoko"></img></a></div>
-
-						<!--<div class="tile"><a href="https://kitsu.io/anime/xiaolin-showdown"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7931/large.jpg?1408462962" alt="Xiaolin Showdown"></img></a></div>-->						
-					</div>
-				</div><!--Other Animated Series-->
-
-				<div class="main-item tab-favorite"><!--Female Characters-->
-					<h2>Female Characters</h2>
-					<div class="tiled-list">
-						<div class="tile"><a href="https://myanimelist.net/character/18323/Shirayuki"><img class="thumbnail" src="https://media.kitsu.io/characters/images/63782/original.jpg?1485073513" alt="Shirayuki"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/7373/Holo"><img class="thumbnail" src="https://media.kitsu.io/characters/images/22846/original.jpg?1483096805" alt="Holo"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/147481/Yoshino_Koharu"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/327894.jpg" alt="Yoshino Koharu"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/69411/Kaori_Miyazono"><img class="thumbnail" src="https://media.kitsu.io/characters/images/53369/original.jpg?1483096805" alt="Kaori Miyazono"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/87271/Chiyo_Sakura"><img class="thumbnail" src="https://media.kitsu.io/characters/images/40593/original.jpg?1483096805" alt="Chiyo Sakura"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/129073/Yun_Iijima"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/8/311599.jpg" alt="Yun Iijima"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/117223/Aqua"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/11/320203.jpg" alt="Aqua "></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/144273/Hikari_Takanashi"><img class="thumbnail" src="https://media.kitsu.io/characters/images/85191/original.jpg?1485084383" alt="Hikari Takanashi"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/152119/Rin_Shima"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/14/353089.jpg" alt="Rin Shima"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/34470/Kurisu_Makise"><img class="thumbnail" src="https://media.kitsu.io/characters/images/32510/original.jpg?1483096805" alt="Kurisu Makise"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/498/Rin_Toosaka"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/270529.jpg" alt="Rin Toosaka"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/36828/Asuna_Yuuki"><img class="thumbnail" src="https://media.kitsu.io/characters/images/35731/original.jpg?1483096805" alt="Asuna Yuuki"></img></a></div>
-					</div>
-				<!--
-					Erza
-					Yoko
-					Hestia 
-					Balso
-					Major
-					Akane					
+					</div><!-- scrolling_genre_cards -->
 					
-					#teams 
-					Chitoge
-					Aqua
-					Ram
-					Miku
-					Uraraka
-					Vagita				
-				-->					
-				</div><!--Female Characters-->
-				
-				<div class="main-item tab-favorite"><!--Male Characters-->
-					<h2>Male Characters</h2>
-					<div class="tiled-list">
-						<div class="tile"><a href="https://myanimelist.net/character/8455/Death_the_Kid/pictures"><img class="thumbnail" src="https://media.kitsu.io/characters/images/24412/original.jpg?1483096805" alt="Death the Kid"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/11/Edward_Elric?q=edward%20e"><img class="thumbnail" src="https://media.kitsu.io/characters/images/2536/original.jpg?1483096805" alt="Edward Elric"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/417/Lelouch_Lamperouge"><img class="thumbnail" src="https://media.kitsu.io/characters/images/16460/original.jpg?1483096805" alt="Lelouch "></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/2075/Kamina?q=kamina"><img class="thumbnail" src="https://media.kitsu.io/characters/images/19268/original.jpg?1483096805" alt="Kamina"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/390/Mugen?q=mugen"><img class="thumbnail" src="https://media.kitsu.io/characters/images/3877/original.jpg?1483096805" alt="Mugen"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/2423/Jiraiya?q=jirai"><img class="thumbnail" src="https://media.kitsu.io/characters/images/226/original.jpg?1483096805" alt="Jiraiya"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/16021/Rider"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/5/166349.jpg" alt="Rider Iskandar, King of Conquerors"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/117921/All_Might?q=all%20might"><img class="thumbnail" src="https://media.kitsu.io/characters/images/61660/original.jpg?1483096805" alt="All Might"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/109931/Arataka_Reigen"><img class="thumbnail" src="https://media.kitsu.io/characters/images/69858/original.jpg?1485078673" alt="Reigen"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/73935/Saitama?q=saitama"><img class="thumbnail" src="https://media.kitsu.io/characters/images/57048/original.jpg?1483096805" alt="Saitama"></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/42528/Sinbad"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/16/182925.jpg" alt="Sinbad "></img></a></div>
-						<div class="tile"><a href="https://myanimelist.net/character/81367/Shiroe"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/9/274161.jpg" alt="Shiroe "></img></a></div>
-					</div>
-				</div><!--Male Characters-->
-				
-				<!-- staff -->
+					<div class="favorite-item"><!--anime film-->
+						<h2>Anime Film</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://kitsu.io/anime/koe-no-katachi"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/10028/large.jpg?1467559694" alt="A Silent Voice"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kimi-no-na-wa"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11614/large.jpg?1496075336" alt="Your Name"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/wolf-children"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/6711/large.jpg?1416278214" alt="Wolf Children"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/summer-wars"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/4241/large.jpg?1408451983" alt="Summer Wars"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/spirited-away"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/176/large.jpg?1440954517" alt="Spirited Away"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/princess-mononoke"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/142/large.jpg?1431655766" alt="Princess Mononoke"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/sayonara-no-asa-ni-yakusoku-no-hana-wo-kazarou"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13612/large.jpg?1514518724" alt="Maquia"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kimi-no-suizou-wo-tabetai"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13723/large.jpg?1553514369" alt="I Want to Eat Your Pancreas"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/promare"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13602/large.jpg?1590229475" alt="Promare"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/kono-sekai-no-katasumi-ni"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7234/large.jpg?1474588582" alt="In This Corner of the World"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/penguin-highway"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41007/large.jpg?1531794448" alt="Penguin Highway"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/the-garden-of-words"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7515/large.jpg?1408461581" alt="The Garden of Words"></img></a></div>
+						</div>
+					</div><!--anime film-->
+					
+					<div class="favorite-item"><!--Other Animated Series-->
+						<h2>Other Animated Series</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://kitsu.io/anime/avatar-the-last-airbender-book-1-water"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7936/large.jpg?1458164050" alt="Avatar: The Last Airbender"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/the-legend-of-korra-book-1-air"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/11565/large.jpg?1448849149" alt="The Legend of Korra"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/rwby"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7929/large.jpg?1475799620" alt="RWBY"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/wakfu-the-animated-series"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/8299/large.jpg?1418849115" alt="Wakfu"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/samurai-jack"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7939/large.jpg?1416275562" alt="Samurai Jack"></img></a></div>
+							<div class="tile"><a href="https://www.imdb.com/title/tt2861424/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/rick-and-morty.png" alt="Rick and Morty"></img></a></div>
+							<div class="tile"><a href="https://www.imdb.com/title/tt7658402/?ref_=nv_sr_srsg_3"><img class="thumbnail" src="assets/images/thumbnails/harley-quinn.png" alt="Harley Quinn "></img></a></div>
+							<div class="tile"><a href="https://www.imdb.com/title/tt0149460/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/futurama.png" alt="Futurama"></img></a></div>
+							<div class="tile"><a href="https://www.imdb.com/title/tt1486217/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/archer.png" alt="Archer"></img></a></div>						
+							<div class="tile"><a href="https://kitsu.io/anime/teen-titans"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7928/large.jpg?1416275545" alt="Teen Titans"></img></a></div>						
+							<div class="tile"><a href="https://www.imdb.com/title/tt0366005/"><img class="thumbnail" src="assets/images/thumbnails/dannyphantom.png" alt="Danny Phantom"></img></a></div>
+							<div class="tile"><a href="https://kitsu.io/anime/code-lyoko"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7930/large.jpg?1408462959" alt="Code Lyoko"></img></a></div>
 
-				<div class="main-item tab-favorite"><!--OPs-->
-					<h2>Anime OPs</h2>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/zzJ8U8OtEsE"><span class="song-anime">Soul Eater,</span><span class="song-title">"Resonance" by T.M. Revolution</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/lkdi6eK05OA"><span class="song-anime">Your Lie in April,</span><span class="song-title">"Hikaru Nara" by GooseHouse.</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/4J8jcI0WtzM"><span class="song-anime">Blood Blockade Battlefront,</span><span class="song-title">"Hello,world!" by Bump of Chicken</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/Eq6EYcpWB_c"><span class="song-anime">Samurai Champloo,</span><span class="song-title">"Battlecry" by Nujabes feat. Shing02</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/6CBp4qylX6I"><span class="song-anime">No Game No Life,</span><span class="song-title">"This Game" by Konomi Suzuki</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/UjjTMNDZi-A"><span class="song-anime">Death Parade,</span><span class="song-title">"Flyers" BRADIO</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/atxYe-nOa9w"><span class="song-anime">One Punch Man,</span><span class="song-title">"The Hero!! Set Fire to the Furious Fist" by JAM Project</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/Ef_ZfhqN-ls"><span class="song-anime">New Game!,</span><span class="song-title">"Sakura Skip" by Fourfolium</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/SaKdpMnwZf0"><span class="song-anime">Domestic Girlfriend,</span><span class="song-title">"Kawaki wo Ameku" by Minami</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/aZenmeRytEM"><span class="song-anime">Noragami Aragoto,</span><span class="song-title">"Kyouran Hey Kids!" by The Oral Cigarettes</span></a></div>
+							<!--<div class="tile"><a href="https://kitsu.io/anime/xiaolin-showdown"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7931/large.jpg?1408462962" alt="Xiaolin Showdown"></img></a></div>-->						
+						</div>
+					</div><!--Other Animated Series-->
 
-					<!--
-						<div><a href="https://youtu.be/7-EwChG1WTA">Laid-Back Camp, "SHINY DAYS" by Asaka</a></div>
-						<div><a href="https://youtu.be/Ln6NpxYb73k">Recovery of an MMO Junkie, "Saturday Night Question" by Megumi Nakajima</a></div>
-						<div><a href=""></a></div>
-					-->
-				</div><!--OPs-->
-				
-				<div class="main-item tab-favorite"><!--EDs-->
-					<h2>Anime EDs</h2>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/j3SlUmr_T4g"><span class="song-anime">Blood Blockade Battlefront,</span><span class="song-title">"Sugar Song to Bitter Step" by Unison Square Garden</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/-eYK3YP524A"><span class="song-anime">Soul Eater,</span><span class="song-title">"Papermoon" by Tommy heavenly6</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/wwQGn-5A2HE"><span class="song-anime">Fire Force,</span><span class="song-title">"Veil" by Keina Suda</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/i8Yjk7KedVg"><span class="song-anime">Mob Psycho 100,</span><span class="song-title">"Refrain Boy" by von ALL OFF</span></a></div>
-					<div class="box-list-tiem"><a class="box-list-header" href="https://youtu.be/2bm2WmWiohw"><span class="song-anime">Kobayashi's Dragon Maid,</span><span class="song-title">"Hukan Communication" by Yuki Kuwahara</span></a></div>					
-				
-					<!--
-						log horizon 2
-						Konosuba S2 ed 1
-						psychopass
-						new game
-					-->
-				</div><!--EDs-->
-				
-				<!-- fun facts -->				
-			</div><!--main-->
-			
-			<div class="page-item right-side-container tab-linksandfollows">
-				<!--<h2>Links and Follows</h2>-->
-				<!--<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading"></h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="">
-							<img class="stack-image" src=""></img>
-							<span class="stack-text"></span>
-						</a>
-					</div>
-				</div>-->	
+					<div class="favorite-item"><!--Female Characters-->
+						<h2>Female Characters</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://myanimelist.net/character/18323/Shirayuki"><img class="thumbnail" src="https://media.kitsu.io/characters/images/63782/original.jpg?1485073513" alt="Shirayuki"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/7373/Holo"><img class="thumbnail" src="https://media.kitsu.io/characters/images/22846/original.jpg?1483096805" alt="Holo"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/147481/Yoshino_Koharu"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/327894.jpg" alt="Yoshino Koharu"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/69411/Kaori_Miyazono"><img class="thumbnail" src="https://media.kitsu.io/characters/images/53369/original.jpg?1483096805" alt="Kaori Miyazono"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/87271/Chiyo_Sakura"><img class="thumbnail" src="https://media.kitsu.io/characters/images/40593/original.jpg?1483096805" alt="Chiyo Sakura"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/129073/Yun_Iijima"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/8/311599.jpg" alt="Yun Iijima"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/117223/Aqua"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/11/320203.jpg" alt="Aqua "></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/144273/Hikari_Takanashi"><img class="thumbnail" src="https://media.kitsu.io/characters/images/85191/original.jpg?1485084383" alt="Hikari Takanashi"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/152119/Rin_Shima"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/14/353089.jpg" alt="Rin Shima"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/34470/Kurisu_Makise"><img class="thumbnail" src="https://media.kitsu.io/characters/images/32510/original.jpg?1483096805" alt="Kurisu Makise"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/498/Rin_Toosaka"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/270529.jpg" alt="Rin Toosaka"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/36828/Asuna_Yuuki"><img class="thumbnail" src="https://media.kitsu.io/characters/images/35731/original.jpg?1483096805" alt="Asuna Yuuki"></img></a></div>
+						</div>
+						<!--
+							Erza
+							Yoko
+							Hestia 
+							Balso
+							Major
+							Akane					
+							
+							#teams 
+							Chitoge
+							Aqua
+							Ram
+							Miku
+							Uraraka
+							Vagita				
+						-->					
+					</div><!--Female Characters-->
+					
+					<div class="favorite-item"><!--Male Characters-->
+						<h2>Male Characters</h2>
+						<div class="tiled-list">
+							<div class="tile"><a href="https://myanimelist.net/character/8455/Death_the_Kid/pictures"><img class="thumbnail" src="https://media.kitsu.io/characters/images/24412/original.jpg?1483096805" alt="Death the Kid"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/11/Edward_Elric?q=edward%20e"><img class="thumbnail" src="https://media.kitsu.io/characters/images/2536/original.jpg?1483096805" alt="Edward Elric"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/417/Lelouch_Lamperouge"><img class="thumbnail" src="https://media.kitsu.io/characters/images/16460/original.jpg?1483096805" alt="Lelouch "></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/2075/Kamina?q=kamina"><img class="thumbnail" src="https://media.kitsu.io/characters/images/19268/original.jpg?1483096805" alt="Kamina"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/390/Mugen?q=mugen"><img class="thumbnail" src="https://media.kitsu.io/characters/images/3877/original.jpg?1483096805" alt="Mugen"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/2423/Jiraiya?q=jirai"><img class="thumbnail" src="https://media.kitsu.io/characters/images/226/original.jpg?1483096805" alt="Jiraiya"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/16021/Rider"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/5/166349.jpg" alt="Rider Iskandar, King of Conquerors"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/117921/All_Might?q=all%20might"><img class="thumbnail" src="https://media.kitsu.io/characters/images/61660/original.jpg?1483096805" alt="All Might"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/109931/Arataka_Reigen"><img class="thumbnail" src="https://media.kitsu.io/characters/images/69858/original.jpg?1485078673" alt="Reigen"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/73935/Saitama?q=saitama"><img class="thumbnail" src="https://media.kitsu.io/characters/images/57048/original.jpg?1483096805" alt="Saitama"></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/42528/Sinbad"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/16/182925.jpg" alt="Sinbad "></img></a></div>
+							<div class="tile"><a href="https://myanimelist.net/character/81367/Shiroe"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/9/274161.jpg" alt="Shiroe "></img></a></div>
+						</div>
+					</div><!--Male Characters-->
+					
+					<!--<div class="favorite-item"><!-- staff -->
 
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">Anime General</h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.livechart.me/">
-							<img class="stack-image" src="https://www.livechart.me/favicon.ico"></img>
-							<span class="stack-text">livechart.me</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://because.moe/">
-							<img class="stack-image" src="https://because.moe/favicon.ico"></img>
-							<span class="stack-text">because.moe</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/anime/">
-							<img class="stack-image" src="https://b.thumbs.redditmedia.com/3Nje2BVH25RqYFX3Aod8R26GkHFzBYTep3TddA3960Q.png"></img>
-							<span class="stack-text">r/anime</span>
-						</a>
-					</div>		
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/AnimeNewsNet">
-							<img class="stack-image" src="https://pbs.twimg.com/profile_images/199100222/ANN_Logo_dots_400x400.png"></img>
-							<span class="stack-text">@AnimeNewsNet</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/AIR_News01">
-							<img class="stack-image" src="https://pbs.twimg.com/profile_images/1187230161625763840/kX7SOmHa_400x400.jpg"></img>
-							<span class="stack-text">@AIR_News01</span>
-						</a>
-					</div>					
-				</div>				
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">The Dubs</h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.english-dubbed.com/">
-							<img class="stack-image" src="assets/images/icons/eng-dub-icon.png"></img>
-							<span class="stack-text">english-dubbed.com</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://myanimelist.net/forum/?topicid=1692966">
-							<img class="stack-image" src="assets/images/icons/mal-icon.png"></img>
-							<span class="stack-text">Dubbed Schedule</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/Animedubs/">
-							<img class="stack-image" src="https://styles.redditmedia.com/t5_2ur9o/styles/communityIcon_ctplq0oyuxp01.png"></img>
-							<span class="stack-text">r/Animedubs</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/CliffordChapin">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-CliffordChapin.jpg"></img>
-							<span class="stack-text">@CliffordChapin</span>
-						</a>
-					</div>		
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/MarissaLenti">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-MarissaLenti.jpg"></img>
-							<span class="stack-text">@MarissaLenti</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/KylePhillipsFUN">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-KylePhillipsFUN.jpg"></img>
-							<span class="stack-text">@KylePhillipsFUN</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/ccarrollbeard">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-ccarrollbeard.jpg"></img>
-							<span class="stack-text">@ccarrollbeard</span>
-						</a>
-					</div>												
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/FayeMata">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-FayeMata.jpg"></img>
-							<span class="stack-text">@FayeMata</span>
-						</a>
-					</div>												
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/BKarbowski">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-BKarbowski.jpg"></img>
-							<span class="stack-text">@BKarbowski</span>
-						</a>
-					</div>												
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/KrisComics">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-KrisComics.jpg"></img>
-							<span class="stack-text">@KrisComics</span>
-						</a>
-					</div>												
-				</div>	
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">For Collections</h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.english-dubbed.com/knowledge-bazaar/upcoming-english-dubbed-release-dates/">
-							<img class="stack-image" src="assets/images/icons/eng-dub-icon.png"></img>
-							<span class="stack-text">BD/DVD Releases</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/AnimeDeals/new/">
-							<img class="stack-image" src="assets/images/icons/animedeals-icon.png"></img>
-							<span class="stack-text">r/AnimeDeals</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/AnimeCollectors/">
-							<img class="stack-image" src="assets/images/icons/reddit-icon.jpg"></img>
-							<span class="stack-text">r/AnimeCollectors</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/animeicons/">
-							<img class="stack-image" src="https://styles.redditmedia.com/t5_321ew/styles/communityIcon_qvnilxwvgjg41.png"></img>
-							<span class="stack-text">r/animeicons</span>
-						</a>
-					</div>					
-				</div>			
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">Anitube</h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UC7dF9qfBMXrSlaaFFDvV_Yg">
-							<img class="stack-image" src="https://yt3.ggpht.com/-WWN7Qq-KYUQ/AAAAAAAAAAI/AAAAAAAAAAA/80V0dvtNG_8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
-							<span class="stack-text">Gigguk</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCBBU7zUOhR_qShfMV26UUCA">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AGF-l7-DKbRuNa5u3v_dtEHGehdKk8PL3AeHBHPeUA=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">Nux Taku</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCLPbE15DGzP0bFNz5F03Wmg">
-							<img class="stack-image" src="https://yt3.ggpht.com/-T1-vcHtNky4/AAAAAAAAAAI/AAAAAAAAAAA/udoP0cwMzKw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
-							<span class="stack-text">The Cartoon Cipher</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCtGoikgbxP4F3rgI9PldI9g">
-							<img class="stack-image" src="https://yt3.ggpht.com/-eVtYkGhBp30/AAAAAAAAAAI/AAAAAAAAAAA/jEUhwzvvyd0/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
-							<span class="stack-text">Super Eyepatch Wolf</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCI91jQdeMzuQRgg4VOSZZmw">
-							<img class="stack-image" src="https://yt3.ggpht.com/-5-b4M5s6G1g/AAAAAAAAAAI/AAAAAAAAAAA/Zcxn0pEyP8E/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
-							<span class="stack-text">Under The Scope</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UC1ZjO5p5aDezRxzNVYQfg4Q">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AATXAJyExDAi2hvzKG0KjaLSfCgQWSgTSSwZo7a0ysNn4g=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">Aaox</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCcmxOGYGF51T1XsqQLewGtQ">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AATXAJw3KmdgUVbLM03xZ5lC1TOimg08c2U4KDf9dp3C=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">Trash Taste</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCWSs25yYe8gZW8NnVvsBpsw">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AATXAJxKqw9pvbtPVihMYoBMthxkz-znw_ehZou8KLjY=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">Kamimashita</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UC29UF398Umfu62RUMqb9TUg">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AATXAJzPCoLbC7ur3hNGLhmRIgDsrCOzTU6s3XO0lUpz=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">GLENLOVESANIME</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.youtube.com/channel/UCnQjSjicyHuuwZRKIAHI8ow">
-							<img class="stack-image" src="https://yt3.ggpht.com/a/AATXAJz0BYqP2Ym6YfPBlmgZDxiolhR9PZiW4MBanD7Z0A=s176-c-k-c0xffffffff-no-rj-mo"></img>
-							<span class="stack-text">Isla McTear</span>
-						</a>
-					</div>					
-				</div>	
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">Anipics on Reddit</h3>				
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/Animewallpaper/">
-							<img class="stack-image" src="https://styles.redditmedia.com/t5_2ss60/styles/communityIcon_bx5asf07hi711.png"></img>
-							<span class="stack-text">r/Animewallpaper</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/Pixiv/">
-							<img class="stack-image" src="https://a.thumbs.redditmedia.com/odd9NxN0KHzNFc8jDhXnxIMb3MvhMaopilBqGq7NnW0.png"></img>
-							<span class="stack-text">r/Pixiv</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/anime/?f=flair_name%3A%22OC%20Fanart%22">
-							<img class="stack-image" src="https://b.thumbs.redditmedia.com/3Nje2BVH25RqYFX3Aod8R26GkHFzBYTep3TddA3960Q.png"></img>
-							<span class="stack-text">r/Anime OC Fanart</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/ImaginarySliceOfLife/">
-							<img class="stack-image" src="https://b.thumbs.redditmedia.com/MLO5GnkT-lxqK_d-7zZjA77WCLjDq8qPjU-BpOfzWOs.png"></img>
-							<span class="stack-text">r/ImaginarySliceOfLife</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/awwnime/">
-							<img class="stack-image" src="https://b.thumbs.redditmedia.com/ijZapWdhc7PDif8CfSDhvp9G2wYAtc877Sy74vQ8yfI.png"></img>
-							<span class="stack-text">r/awwnime</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/streetmoe/">
-							<img class="stack-image" src="assets/images/icons/streetmoe-icon.png"></img>
-							<span class="stack-text">r/streetmoe</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/AquaSama/">
-							<img class="stack-image" src="https://styles.redditmedia.com/t5_3fzrx/styles/communityIcon_5yyq866pjiq41.jpg?width=256&format=pjpg&s=623e88facc79dd08b0eddde05760799aa92200d3"></img>
-							<span class="stack-text">r/AquaSama</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/awwcoholics/">
-							<img class="stack-image" src="assets/images/icons/reddit-icon.jpg"></img>
-							<span class="stack-text">r/awwcoholics</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/twintails/">
-							<img class="stack-image" src="assets/images/icons/reddit-icon.jpg"></img>
-							<span class="stack-text">r/twintails</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://www.reddit.com/r/ZettaiRyouiki/">
-							<img class="stack-image" src="assets/images/icons/reddit-icon.jpg"></img>
-							<span class="stack-text">r/ZettaiRyouiki</span>
-						</a>
-					</div>
-				</div>				
-				<div class="right-side-item stack-list-container">
-					<h3 class="stack-heading">Anipics on Twitter</h3>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/jeonghee1414">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-jeonghee1414.jpg"></img>
-							<span class="stack-text">モ誰 @jeonghee1414</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/Cheon1986">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-Cheon1986.png"></img>
-							<span class="stack-text">HxxG / ホン @Cheon1986</span>
-						</a>
-					</div>																	
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/hitsukuya/media">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-hitsukuya.jpg"></img>
-							<span class="stack-text">Hitsu @hitsukuya</span>
-						</a>
-					</div>												
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/mychristian2">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-mychristian2.jpg"></img>
-							<span class="stack-text">사야*SAYA*さや @mychristian2</span>
-						</a>
-					</div>							
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/dnwls3010/media">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-dnwls3010.jpg"></img>
-							<span class="stack-text">후와리ふわり @dnwls3010</span>
-						</a>
-					</div>												
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/Ixy">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-Ixy.jpg"></img>
-							<span class="stack-text">Ixy @Ixy</span>
-						</a>
-					</div>					
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/Merryweatherey">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-Merryweatherey.jpg"></img>
-							<span class="stack-text">「Merry」 @Merryweatherey</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/sasurainopink">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-sasurainopink.jpg"></img>
-							<span class="stack-text">牧茶 @sasurainopink</span>
-						</a>
-					</div>
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/mojojoj27827860">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-mojojoj27827860.jpeg"></img>
-							<span class="stack-text">いえすぱ @mojojoj27827860</span>
-						</a>
-					</div>							
-					<div class="stack-item">
-						<a class="stack-link" href="https://twitter.com/mu_acrt/media">
-							<img class="stack-image" src="assets/images/icons/twitterpropic-mu_acrt.jpg"></img>
-							<span class="stack-text">はねんぼ @mu_acrt</span>
-						</a>
-					</div>					
+					<div class="favorite-item"><!--OPs-->
+						<h2>Anime OPs</h2>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/zzJ8U8OtEsE"><span class="song-anime">Soul Eater,</span><span class="song-title">"Resonance" by T.M. Revolution</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/lkdi6eK05OA"><span class="song-anime">Your Lie in April,</span><span class="song-title">"Hikaru Nara" by GooseHouse.</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/4J8jcI0WtzM"><span class="song-anime">Blood Blockade Battlefront,</span><span class="song-title">"Hello,world!" by Bump of Chicken</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/Eq6EYcpWB_c"><span class="song-anime">Samurai Champloo,</span><span class="song-title">"Battlecry" by Nujabes feat. Shing02</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/6CBp4qylX6I"><span class="song-anime">No Game No Life,</span><span class="song-title">"This Game" by Konomi Suzuki</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/UjjTMNDZi-A"><span class="song-anime">Death Parade,</span><span class="song-title">"Flyers" BRADIO</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/atxYe-nOa9w"><span class="song-anime">One Punch Man,</span><span class="song-title">"The Hero!! Set Fire to the Furious Fist" by JAM Project</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/Ef_ZfhqN-ls"><span class="song-anime">New Game!,</span><span class="song-title">"Sakura Skip" by Fourfolium</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/SaKdpMnwZf0"><span class="song-anime">Domestic Girlfriend,</span><span class="song-title">"Kawaki wo Ameku" by Minami</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/aZenmeRytEM"><span class="song-anime">Noragami Aragoto,</span><span class="song-title">"Kyouran Hey Kids!" by The Oral Cigarettes</span></a></div>
+
+						<!--
+							<div><a href="https://youtu.be/7-EwChG1WTA">Laid-Back Camp, "SHINY DAYS" by Asaka</a></div>
+							<div><a href="https://youtu.be/Ln6NpxYb73k">Recovery of an MMO Junkie, "Saturday Night Question" by Megumi Nakajima</a></div>
+							<div><a href=""></a></div>
+						-->
+					</div><!--OPs-->
+					
+					<div class="favorite-item"><!--EDs-->
+						<h2>Anime EDs</h2>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/j3SlUmr_T4g"><span class="song-anime">Blood Blockade Battlefront,</span><span class="song-title">"Sugar Song to Bitter Step" by Unison Square Garden</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/-eYK3YP524A"><span class="song-anime">Soul Eater,</span><span class="song-title">"Papermoon" by Tommy heavenly6</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/wwQGn-5A2HE"><span class="song-anime">Fire Force,</span><span class="song-title">"Veil" by Keina Suda</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/i8Yjk7KedVg"><span class="song-anime">Mob Psycho 100,</span><span class="song-title">"Refrain Boy" by von ALL OFF</span></a></div>
+						<div class="video-dropdown-item"><a class="video-header-link" href="https://youtu.be/2bm2WmWiohw"><span class="song-anime">Kobayashi's Dragon Maid,</span><span class="song-title">"Hukan Communication" by Yuki Kuwahara</span></a></div>					
+					
+						<!--
+							log horizon 2
+							Konosuba S2 ed 1
+							psychopass
+							new game
+						-->
+					</div><!--EDs-->
+				</div><!-- favorites -->				
+			</div><!-- main -->
+
+			<div id="tab_linksandfollows" class="tab sidebar-content">
+				<div class="lf-list">
+					<h3 class="lf-heading">Anime General</h3>				
+					<a class="lf-link" href="https://www.livechart.me/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://www.livechart.me/favicon.ico"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Live Chart</span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> livechart.me</span>
+							</div>
+							<!--
+								<div class="linksdrop-container">
+									<button onclick="livechartdropbtn()" class="linksdropbtn"><i class="fas fa-ellipsis-h"></i></button>
+									<div id="livechart-links" class="linksdropbtn-content">
+										<a href="#" class="linksdropbtn-item">Link 1</a>
+										<a href="#" class="linksdropbtn-item">Link 2</a>
+										<a href="#" class="linksdropbtn-item">Link 3</a>
+									</div>
+								</div>	
+							-->
+						</div>
+					</a>
+					<a class="lf-link" href="https://because.moe/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://pbs.twimg.com/profile_images/648981664081711104/uUEjQfrM_400x400.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Streaming Search Engine </span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> because.moe</span>
+							</div>
+						</div>
+					</a>					
+					<a class="lf-link" href="https://www.reddit.com/r/anime/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://b.thumbs.redditmedia.com/3Nje2BVH25RqYFX3Aod8R26GkHFzBYTep3TddA3960Q.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/Anime</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/anime</span>
+							</div>
+						</div>
+					</a>						
+					<a class="lf-link" href="https://twitter.com/AnimeNewsNet">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://pbs.twimg.com/profile_images/199100222/ANN_Logo_dots_400x400.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Anime News Network</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @AnimeNewsNet</span>
+							</div>
+						</div>
+					</a>						
+					<a class="lf-link" href="https://twitter.com/AIR_News01">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://pbs.twimg.com/profile_images/1187230161625763840/kX7SOmHa_400x400.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Anime Intelligence & Research</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @AIR_News01</span>
+							</div>
+						</div>
+					</a>					
 				</div>
-			</div>
+				<div class="lf-list">
+					<h3 class="lf-heading">The Dubs</h3>				
+					<a class="lf-link" href="https://www.english-dubbed.com/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/eng-dub-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">English Dubbed</span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> english-dubbed.com</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/Animedubs/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://styles.redditmedia.com/t5_2ur9o/styles/communityIcon_ctplq0oyuxp01.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/Animedubs</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/Animedubs</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://www.reddit.com/r/Animedubs/wiki/index">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/eng-dub-d-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/AnimeDubs Links</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/Animedubs/wiki/index</span>
+							</div>
+						</div>
+					</a>	
+					<a class="lf-link" href="https://myanimelist.net/forum/?topicid=1692966">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/mal-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Dubbed Schedule</span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> @Kenny_Stryker</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://myanimelist.net/profile/Universalx">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/mal-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">The Dub King List</span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> @Universalx</span>
+							</div>
+						</div>
+					</a>						
+				</div>				
+				<div class="lf-list">
+					<h3 class="lf-heading">For Collections</h3>				
+					<a class="lf-link" href="https://www.english-dubbed.com/knowledge-bazaar/upcoming-english-dubbed-release-dates/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/eng-dub-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">BD/DVD Releases</span>
+								<span class="lf-handle"><i class="fas fa-link lf-handle-icon"></i> english-dubbed.com</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/AnimeDeals/new/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/animedeals-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/AnimeDeals</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/AnimeDeals</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/AnimeCollectors/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/reddit-icon.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/AnimeCollectors</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/AnimeCollectors</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://www.reddit.com/r/animeicons/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://styles.redditmedia.com/t5_321ew/styles/communityIcon_qvnilxwvgjg41.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/animeicons</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /rr/animeicons</span>
+							</div>
+						</div>
+					</a>					
+				</div>
+				<div class="lf-list">
+					<h3 class="lf-heading">Anitube</h3>				
+					<a class="lf-link" href="https://www.youtube.com/channel/UC7dF9qfBMXrSlaaFFDvV_Yg">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/-WWN7Qq-KYUQ/AAAAAAAAAAI/AAAAAAAAAAA/80V0dvtNG_8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Gigguk</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/animezone</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.youtube.com/channel/UCBBU7zUOhR_qShfMV26UUCA">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AGF-l7-DKbRuNa5u3v_dtEHGehdKk8PL3AeHBHPeUA=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Nux Taku</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/NuxTaku</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCLPbE15DGzP0bFNz5F03Wmg">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/-T1-vcHtNky4/AAAAAAAAAAI/AAAAAAAAAAA/udoP0cwMzKw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">The Cartoon Cipher</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/TheCartoonCipher</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCtGoikgbxP4F3rgI9PldI9g">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/-eVtYkGhBp30/AAAAAAAAAAI/AAAAAAAAAAA/jEUhwzvvyd0/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Super Eyepatch Wolf</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> Super Eyepatch Wolf</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCI91jQdeMzuQRgg4VOSZZmw">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/-5-b4M5s6G1g/AAAAAAAAAAI/AAAAAAAAAAA/Zcxn0pEyP8E/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Under The Scope</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/UnderTheScopeReviews</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UC1ZjO5p5aDezRxzNVYQfg4Q">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AATXAJyExDAi2hvzKG0KjaLSfCgQWSgTSSwZo7a0ysNn4g=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Aaox</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/Aaox</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCcmxOGYGF51T1XsqQLewGtQ">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AATXAJw3KmdgUVbLM03xZ5lC1TOimg08c2U4KDf9dp3C=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Trash Taste</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/TrashTaste</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCWSs25yYe8gZW8NnVvsBpsw">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AATXAJxKqw9pvbtPVihMYoBMthxkz-znw_ehZou8KLjY=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Kamimashita</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/Kamimashita</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UC29UF398Umfu62RUMqb9TUg">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AATXAJzPCoLbC7ur3hNGLhmRIgDsrCOzTU6s3XO0lUpz=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">GLENLOVESANIME</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> GLENLOVESANIME</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.youtube.com/channel/UCnQjSjicyHuuwZRKIAHI8ow">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://yt3.ggpht.com/a/AATXAJz0BYqP2Ym6YfPBlmgZDxiolhR9PZiW4MBanD7Z0A=s176-c-k-c0xffffffff-no-rj-mo"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Isla McTear</span>
+								<span class="lf-handle"><i class="fab fa-youtube lf-handle-icon"></i> /c/IslaMcTear</span>
+							</div>
+						</div>
+					</a>		
+				</div>
+				<div class="lf-list">
+					<h3 class="lf-heading">Anipics on Reddit</h3>				
+					<a class="lf-link" href="https://www.reddit.com/r/Animewallpaper/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://styles.redditmedia.com/t5_2ss60/styles/communityIcon_bx5asf07hi711.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/Animewallpaper</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/Animewallpaper</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.reddit.com/r/Pixiv/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://a.thumbs.redditmedia.com/odd9NxN0KHzNFc8jDhXnxIMb3MvhMaopilBqGq7NnW0.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/Pixiv</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/Pixiv</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/anime/?f=flair_name%3A%22OC%20Fanart%22">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://b.thumbs.redditmedia.com/3Nje2BVH25RqYFX3Aod8R26GkHFzBYTep3TddA3960Q.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">OC Fanart</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> r/Anime OC Fanart</span>
+							</div>
+						</div>
+					</a>				
+					<a class="lf-link" href="https://www.reddit.com/r/ImaginarySliceOfLife/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://b.thumbs.redditmedia.com/MLO5GnkT-lxqK_d-7zZjA77WCLjDq8qPjU-BpOfzWOs.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/ImaginarySliceOfLife</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/ImaginarySliceOfLife</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.reddit.com/r/awwnime/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://b.thumbs.redditmedia.com/ijZapWdhc7PDif8CfSDhvp9G2wYAtc877Sy74vQ8yfI.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/awwnime</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/awwnime</span>
+							</div>
+						</div>
+					</a>				
+					<a class="lf-link" href="https://www.reddit.com/r/streetmoe/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/streetmoe-icon.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/streetmoe</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/streetmoe</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/AquaSama/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="https://styles.redditmedia.com/t5_3fzrx/styles/communityIcon_5yyq866pjiq41.jpg?width=256&format=pjpg&s=623e88facc79dd08b0eddde05760799aa92200d3"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/AquaSama</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/AquaSama</span>
+							</div>
+						</div>
+					</a>			
+					<a class="lf-link" href="https://www.reddit.com/r/awwcoholics/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/reddit-icon.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/awwcoholics</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/awwcoholics</span>
+							</div>
+						</div>
+					</a>		
+					<a class="lf-link" href="https://www.reddit.com/r/twintails/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/reddit-icon.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/twintails</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/twintails</span>
+							</div>
+						</div>
+					</a>				
+					<a class="lf-link" href="https://www.reddit.com/r/ZettaiRyouiki/">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/reddit-icon.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">r/ZettaiRyouiki</span>
+								<span class="lf-handle"><i class="fab fa-reddit-alien lf-handle-icon"></i> /r/ZettaiRyouiki</span>
+							</div>
+						</div>
+					</a>			
+				</div>
+				<div class="lf-list">
+					<h3 class="lf-heading">Anipics on Twitter</h3>							
+					<a class="lf-link" href="https://twitter.com/jeonghee1414">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-jeonghee1414.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">モ誰</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @jeonghee1414</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/Cheon1986">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-Cheon1986.png"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">HxxG / ホン</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @Cheon1986</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/hitsukuya/media">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-hitsukuya.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Hitsu</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @hitsukuya</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/mychristian2">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-mychristian2.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">사야*SAYA*さや</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @mychristian2</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/dnwls3010/media">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-dnwls3010.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">후와리ふわり</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @dnwls3010</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/Ixy">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-Ixy.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">Ixy</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @Ixy</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/Merryweatherey">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-Merryweatherey.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">「Merry」</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @Merryweatherey</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/sasurainopink">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-sasurainopink.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">牧茶</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @sasurainopink</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/mojojoj27827860">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-mojojoj27827860.jpeg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname"いえすぱ></span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @mojojoj27827860</span>
+							</div>
+						</div>
+					</a>
+					<a class="lf-link" href="https://twitter.com/mu_acrt/media">
+						<div class="lf-item-container">								
+							<img class="lf-image" src="assets/images/icons/twitterpropic-mu_acrt.jpg"></img>
+							<div class="lf-text">
+								<span class="lf-displayname">はねんぼ</span>
+								<span class="lf-handle"><i class="fab fa-twitter lf-handle-icon"></i> @mu_acrt</span>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div><!-- links and follows -->
+
+			<!--
+			<div id="social">
+				<div class="social-item">Kitsu</div>
+				<div class="social-item">MAL</div>
+				<div class="social-item">Twitter</div>
+				<div class="social-item">Discord</div>
+			</div><!-- Social -->	
 			
-			
-			<div class="page-item footer-container">
-			</div><!--footer-->	
-			
+			<div></div><!-- footer -->
 		</div><!--pagewrapper-->
 	</body>
 </html>
