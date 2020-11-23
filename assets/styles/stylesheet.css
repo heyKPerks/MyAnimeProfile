@@ -426,10 +426,11 @@ h4 {
 	}
 
 }
-@media (min-width: 1160px) {
+@media (min-width: 1300px) {
 	#page_wrapper {
 		display: grid;
-		grid-template-columns: 1fr minmax(250px, 300px) minmax(480px, 540px) minmax(300px, 340px) 1fr;
+		/*grid-template-columns: 1fr minmax(250px, 300px) minmax(480px, 540px) minmax(300px, 340px) 1fr;*/
+		grid-template-columns: minmax(1rem, 1fr) minmax(250px, 300px) minmax(480px, 540px) minmax(300px, 340px) minmax(1rem, 1fr);
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3rem;
