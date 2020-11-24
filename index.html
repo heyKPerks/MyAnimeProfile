@@ -34,13 +34,13 @@
 			</div><!-- bio -->
 
 			<div id="nav">
-				<button onclick="navbtn()" id="nav_about" class="nav-item nav-item-selected first-nav-item">About</button>
-				<button onclick="navbtn()" id="nav_spotlight" class="nav-item">Spotlight</button>
-				<button onclick="navbtn()" id="nav_favorites" class="nav-item">Favorites</button>
-				<button onclick="navbtn()" id="nav_linksandfollows" class="nav-item">Links and Follows</button>
+				<button onclick="navbtn()" id="nav_about" class="nav-item nav-item-active first-nav-item">About</button>
+				<button onclick="navbtn()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button>
+				<button onclick="navbtn()" id="nav_favorites" class="nav-item nav-item-active">Favorites</button>
+				<button onclick="navbtn()" id="nav_linksandfollows" class="nav-item nav-item-active">Links and Follows</button>
 			</div><!-- Nav -->
 			
-			<div id="tab_about" class="tab">
+			<div id="tab_about" class="tab tab-active">
 				<div id="about_fields">
 					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him</div>
 					<div class="about-field"><i class="fas fa-birthday-cake field-icon"></i> April</div>
@@ -80,7 +80,7 @@
 			</div><!-- about -->
 
 			<div id="main">
-				<div id="tab_spotlight" class="main-item">
+				<div id="tab_spotlight" class="tab tab-active tab-selected main-item">
 					<div class="spotlight-item"><!--Currently Watching-->
 						<h2>Currently Watching</h2>
 						<div class="tiled-list">
@@ -125,7 +125,7 @@
 				
 				</div><!-- spotlight -->
 				
-				<div id="tab_favorites" class="main-item">
+				<div id="tab_favorites" class="tab tab-active main-item">
 					<div class="favorite-item"><!--anime Series-->
 						<h2>Anime Series</h2>
 						<div class="tiled-list">
@@ -356,7 +356,7 @@
 				</div><!-- favorites -->				
 			</div><!-- main -->
 
-			<div id="tab_linksandfollows" class="tab sidebar-content">
+			<div id="tab_linksandfollows" class="tab tab-active sidebar-content">
 				<div class="lf-list">
 					<h3 class="lf-heading">Anime General</h3>				
 					<a class="lf-link" href="https://www.livechart.me/">

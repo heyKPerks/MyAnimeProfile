@@ -52,6 +52,8 @@ body {
 }
 .nav-item {
 	display: inline-block;
+	width: min-content;
+	white-space: nowrap;
 	margin-right: 1rem;
 	padding:6px 12px;
 	border-style: solid;
@@ -77,6 +79,19 @@ body {
 }
 .first-nav-item {
 	margin-left: 10px;	
+}
+
+.nav-item-active {
+	/*display: inline-block;*/
+}
+.nav-item-inactive {
+	/*display: none;*/
+}
+.tab-active {
+	/*display: block;*/
+}
+.tab-inactive {
+	/*display: none;*/
 }
 
 /* Abount ======================*/
@@ -411,8 +426,8 @@ h4 {
 			". . main ."
 			". . tab_linksandfollows .";
 	}	
+	/*
 	#nav_about {
-		/*display: inline-block;*/
 		display: none;
 	}
 	#tab_about {
@@ -424,6 +439,7 @@ h4 {
 	#tab_linksandfollows {
 		display: block;
 	}
+	*/
 
 }
 @media (min-width: 1300px) {
@@ -442,18 +458,18 @@ h4 {
 			". . main tab_linksandfollows ."
 			". . main . .";
 	}	
+	/*
 	#nav_about {
-		/*display: inline-block;*/
 		display: none;
 	}
 	#tab_about {
 		display: block;
 	}
 	#nav_linksandfollows {
-		/*display: inline-block;*/
 		display: none;
 	}
 	#tab_linksandfollows {
 		display: block;
 	}
+	*/
 }
