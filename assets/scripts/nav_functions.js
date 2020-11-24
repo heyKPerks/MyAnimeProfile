@@ -94,9 +94,10 @@ tab (tab sections), tab-active, tab-inactive, tab-selected
 /*
 one collumn, smallest screen width 
 set all nav items active
+set all tabs active
 */
 function one_collumn() {
-  console.log("function one_collum start");
+  console.log("function one_collumn start");
 
 	var i, j, navItems, tabs;
   navItems = document.getElementsByClassName("nav-item-inactive");
@@ -115,14 +116,16 @@ function one_collumn() {
     console.log(tabs[j] + " active");
 	}	
 
-  console.log("function one_collum end");
+  console.log("function one_collumn end");
 }
 
 /*
 two collumn, medium screen width 
-set about nav
+set about nav button inactive id="nav_about"
+set about tab section inactive id="tab_about"
 */
 function two_collumn() {
+
 
 }
 function three_collumn() {
