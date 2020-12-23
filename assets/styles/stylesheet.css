@@ -328,6 +328,7 @@ body {
 }
 .lf-handle-icon {
 	/*letter-spacing: .2em;*/
+	font-size: 1em;
 }
 h1 {
 	vertical-align: center;
