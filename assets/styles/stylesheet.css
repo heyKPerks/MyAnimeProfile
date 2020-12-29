@@ -131,6 +131,7 @@ body {
 .field-icon {
 	/*letter-spacing: .2em;*/
 	width: 1.5rem;
+	margin-right: 5px;
 	font-size: 1em;
 	text-align: center;
 	/*background-color: green;*/
@@ -142,8 +143,8 @@ body {
 	margin-left: 5px;
 }
 
-/* Spotlight ======================*/
-.spotlight-item {
+/* watching ======================*/
+.watching-item {
 	margin-bottom: 2rem;
 	padding: 0 10px;	
 }

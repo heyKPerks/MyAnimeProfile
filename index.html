@@ -35,15 +35,15 @@
 
 			<div id="nav">
 				<button onclick="navbtn()" id="nav_about" class="nav-item nav-item-active first-nav-item">About</button>
-				<button onclick="navbtn()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button>
-				<!-- <button onclick="navbtn()" id="nav_Watching" class="nav-item nav-item-active">Watching</button>-->
+				<!-- <button onclick="navbtn()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button> -->
+				<button onclick="navbtn()" id="nav_Watching" class="nav-item nav-item-active nav-item-selected">Watching</button>
 				<button onclick="navbtn()" id="nav_favorites" class="nav-item nav-item-active">Favorites</button>
 				<button onclick="navbtn()" id="nav_linksandfollows" class="nav-item nav-item-active">Links and Follows</button>
 			</div><!-- Nav -->
 			
 			<div id="tab_about" class="tab tab-active">
 				<div id="about_fields">
-					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him / His</div>
+					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him</div>
 					<div class="about-field"><i class="fas fa-birthday-cake field-icon"></i> April 17th</div>
 					<div class="about-field"><i class="fas fa-map-marker-alt field-icon"></i> Cincinnati, OH</div>
 					<div class="about-field"><i class="far fa-calendar field-icon"></i> Watching Since 2002</div>
@@ -66,23 +66,12 @@
 					<div class="about-tag">Adventure</div>
 					<div class="about-tag">Romance</div>
 					<div class="about-tag">Slice of Life</div>
-				</div><!-- about tags -->			
-				<!--
-				<div class="about-tags">
-					<div class="about-tag">Ahegao</div>
-					<div class="about-tag">Thighdeology</div>
-					<div class="about-tag">Anal</div>
-					<div class="about-tag">Tentacles</div>
-					<div class="about-tag">Futanari</div>
-					<div class="about-tag">Inflation</div>
-					<div class="about-tag">HMV</div>
 				</div><!-- about tags -->				
-
 			</div><!-- about -->
 
 			<div id="main">
-				<div id="tab_spotlight" class="tab tab-active tab-selected main-item">
-					<div class="spotlight-item"><!--Currently Watching-->
+				<div id="tab_watching" class="tab tab-active tab-selected main-item">
+					<div class="watching-item"><!--Currently Watching-->
 						<h2>Currently Watching</h2>
 						<div class="tiled-list">
 							<!-- <div class="tile"><a href=""><img class="thumbnail" src="" alt=""></img></a></div> -->
@@ -93,7 +82,7 @@
 						</div><!-- tiled-list -->
 					</div><!-- Currently Watching-->			
 
-					<div class="spotlight-item"><!--Waiting To Binge-->
+					<div class="watching-item"><!--Waiting To Binge-->
 						<h2>Waiting for Dub to Finish</h2>
 						<div class="tiled-list">
 							<div class="tile"><a href="https://kitsu.io/anime/kaguya-sama-wa-kokurasetai-tensai-tachi-no-renai-zunousen"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41373/large.jpg?1597698536" alt="Kaguya-sama: Love is War"></img></a></div>
@@ -107,7 +96,7 @@
 						</div><!-- tiled-list -->
 					</div><!-- Dub to Finish-->			
 
-					<div class="spotlight-item"><!--Backlog Binging-->
+					<div class="watching-item"><!--Backlog Binging-->
 						<h2>Backlog Binging</h2>
 						<div class="tiled-list">
 							<div class="tile"><a href="https://kitsu.io/anime/yahari-ore-no-seishun-love-comedy-wa-machigatteiru-kan"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42194/large.jpg?1597696997" alt="My Teen Romantic Comedy SNAFU Climax"></img></a></div>
@@ -121,7 +110,7 @@
 						</div><!-- tiled-list -->
 					</div><!--Backlog Binging -->
 
-					<div class="spotlight-item"><!--Most Anticipated-->
+					<div class="watching-item"><!--Most Anticipated-->
 						<h2>Most Anticipated</h2>
 						<div class="tiled-list">
 							<div class="tile"><a href="https://kitsu.io/anime/5-toubun-no-hanayome-2"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/42324/large.jpg?1597697087" alt="The Quintessential Quintuplets 2"></img></a></div>
@@ -135,7 +124,7 @@
 						</div><!-- tiled-list -->
 					</div><!-- Most Anticipated -->
 				
-					<div class="spotlight-item"><!--Please Dub -->
+					<div class="watching-item"><!--Please Dub -->
 						<h2>Please Dub</h2>
 						<div class="tiled-list">
 						<div class="tile"><a href="https://kitsu.io/anime/vinland-saga"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/41084/large.jpg?1597696763" alt="VINLAND SAGA"></img></a></div>
@@ -144,7 +133,7 @@
 						<div class="tile"><a href="https://kitsu.io/anime/wotaku-ni-koi-wa-muzukashii"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/13660/large.jpg?1597696908" alt="Wotakoi: Love Is Hard for Otaku"></img></a></div>
 						</div><!-- tiled-list -->
 					</div><!-- Dub to Finish-->							
-				</div><!-- spotlight -->
+				</div><!-- watching -->
 				
 				<div id="tab_favorites" class="tab tab-active main-item">
 					<div class="favorite-item"><!--anime Series-->
@@ -279,7 +268,6 @@
 							<div class="tile"><a href="https://www.imdb.com/title/tt1486217/?ref_=nv_sr_1"><img class="thumbnail" src="assets/images/thumbnails/archer.png" alt="Archer"></img></a></div>						
 							<div class="tile"><a href="https://kitsu.io/anime/teen-titans"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7928/large.jpg?1416275545" alt="Teen Titans"></img></a></div>						
 							<div class="tile"><a href="https://kitsu.io/anime/code-lyoko"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7930/large.jpg?1408462959" alt="Code Lyoko"></img></a></div>
-
 							<!--<div class="tile"><a href="https://kitsu.io/anime/xiaolin-showdown"><img class="thumbnail" src="https://media.kitsu.io/anime/poster_images/7931/large.jpg?1408462962" alt="Xiaolin Showdown"></img></a></div>-->						
 						</div>
 					</div><!--Other Animated Series-->
@@ -300,25 +288,14 @@
 							<div class="tile"><a href="https://myanimelist.net/character/498/Rin_Toosaka"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/270529.jpg" alt="Rin Toosaka"></img></a></div>
 							<div class="tile"><a href="https://myanimelist.net/character/36828/Asuna_Yuuki"><img class="thumbnail" src="https://media.kitsu.io/characters/images/35731/original.jpg?1483096805" alt="Asuna Yuuki"></img></a></div>
 						
+							<!--
 							<div class="tile"><a href="https://myanimelist.net/character/13701/Mikoto_Misaka?q=mikoto%20misaka&cat=character"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/5/378966.jpg" alt="Mikoto Misaka"></img></a></div>
 							<div class="tile"><a href="https://myanimelist.net/character/1111/CC"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/13/33815.jpg" alt="C2"></img></a></div>
 							<div class="tile"><a href="https://myanimelist.net/character/2063/Yoko_Littner"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/14/34848.jpg" alt="Yoko Littner"></img></a></div>
 							<div class="tile"><a href="https://myanimelist.net/character/19566/Mio_Akiyama"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/11/48547.jpg" alt="Mio Akiyama"></img></a></div>
-							<!-- <div class="tile"><a href="https://myanimelist.net/character/147481/Yoshino_Koharu"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/327894.jpg" alt="Yoshino Koharu"></img></a></div> -->
-						</div>
-						<!--
-							Yoshino
-							Mikoto Misaka 
-							Yoko
-							Chitoge
-							Miku
-
-							Erza
-							Hestia 
-							Balso
-							Major
-							Akane						
-						-->					
+							<div class="tile"><a href="https://myanimelist.net/character/147481/Yoshino_Koharu"><img class="thumbnail" src="https://cdn.myanimelist.net/images/characters/2/327894.jpg" alt="Yoshino Koharu"></img></a></div> 
+							-->
+						</div>	
 					</div><!--Female Characters-->
 					
 					<div class="favorite-item"><!--Male Characters-->
