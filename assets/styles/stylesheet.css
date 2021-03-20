@@ -209,6 +209,10 @@ body {
 	border-radius: 5px;
 }
 
+.more-characters {
+	margin-top: 10px;
+}
+
 .more-female {
 	display: none;
 }
