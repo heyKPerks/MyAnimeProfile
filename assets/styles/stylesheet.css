@@ -161,8 +161,53 @@ body {
 	grid-gap: 10px;
 	font-size: 0px;
 }
+
+#more_bygenre_btn {
+	width: 100%;
+	white-space: nowrap;
+	margin-top: .5rem;
+	margin-bottom: 0;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;;
+	border-color: #ec7261;
+	background-color: rgb(21,32,43);
+	color: rgb(236,114,97);
+	font-size: 1em;
+}
+#more_bygenre_btn:hover {
+	width: 100%;
+	padding:6px 12px;
+	margin-top: .5rem;
+	margin-bottom: 0;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1em;
+}
+#more_bygenre_btn:focus {
+	width: 100%;
+	padding:6px 12px;
+	margin-top: .5rem;
+	margin-bottom: 0;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1em;
+}
+
 #scrolling_genre_cards {
-	display: flex;
+	/*display: flex;*/
+	display: none;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;		
