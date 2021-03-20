@@ -165,7 +165,7 @@ body {
 #more_bygenre_btn {
 	width: 100%;
 	white-space: nowrap;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
@@ -179,7 +179,7 @@ body {
 #more_bygenre_btn:hover {
 	width: 100%;
 	padding:6px 12px;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;
@@ -193,7 +193,7 @@ body {
 #more_bygenre_btn:focus {
 	width: 100%;
 	padding:6px 12px;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;
@@ -260,7 +260,7 @@ body {
 .more-char-btn {
 	width: 100%;
 	white-space: nowrap;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
@@ -274,7 +274,7 @@ body {
 .more-char-btn:hover {
 	width: 100%;
 	padding:6px 12px;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;
@@ -288,7 +288,7 @@ body {
 .more-char-btn:focus {
 	width: 100%;
 	padding:6px 12px;
-	margin-top: .5rem;
+	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;

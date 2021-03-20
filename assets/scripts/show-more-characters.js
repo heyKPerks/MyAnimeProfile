@@ -6,7 +6,7 @@ function more_bygenre_btn() {
   var button = document.getElementById("more_bygenre_btn"); 
   
   container.style.display = "flex";
-  container.style.marginTop = "1rem";
+  /*container.style.marginTop = "1rem";*/
   button.style.display = "none";
 }
 
