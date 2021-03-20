@@ -208,6 +208,51 @@ body {
 	width: 100%;
 	border-radius: 5px;
 }
+
+.more-female {
+	display: none;
+}
+
+.more-char-btn {
+	width: 100%;
+	white-space: nowrap;
+	margin: .5rem auto 0 auto;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;;
+	border-color: #ec7261;
+	background-color: rgb(21,32,43);
+	color: rgb(236,114,97);
+	font-size: 1em;
+}
+
+.more-char-btn:hover {
+	display: inline-block;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.more-char-btn:focus {
+	display: inline-block;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 8px;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1em;
+}
+
 .video-dropdown-item { 
 	padding-top: .5rem;
 	padding-bottom: .5rem;
