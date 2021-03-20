@@ -443,7 +443,9 @@ body {
 .more-lf-anitube { 
 	display: none;
 }
-
+.more-lf-anipicsreddit {
+	display: none;
+}
 h1 {
 	vertical-align: center;
 	width: 100%;

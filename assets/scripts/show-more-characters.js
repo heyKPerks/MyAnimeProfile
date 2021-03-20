@@ -39,3 +39,16 @@ function more_anitube_btn() {
   }
   btn.style.display = "none";
 }
+
+/*Show more anipicsreddit links 
+button on click, display more-lf-anipicsreddit, hide more_anipicsreddit_btn
+*/
+function more_anipicsreddit_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anipicsreddit");
+  var btn = document.getElementById("more_anipicsreddit_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
