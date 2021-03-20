@@ -209,18 +209,14 @@ body {
 	border-radius: 5px;
 }
 
-.more-characters {
-	margin-top: 10px;
-}
-
 .more-female {
 	display: none;
 }
-
 .more-char-btn {
 	width: 100%;
 	white-space: nowrap;
-	margin: .5rem auto 0 auto;
+	margin-top: .5rem;
+	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 8px;
@@ -230,10 +226,11 @@ body {
 	color: rgb(236,114,97);
 	font-size: 1em;
 }
-
 .more-char-btn:hover {
-	display: inline-block;
+	width: 100%;
 	padding:6px 12px;
+	margin-top: .5rem;
+	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;
 	border-width: 1px;
@@ -243,10 +240,11 @@ body {
 	font-weight: bold;
 	font-size: 1em;
 }
-
 .more-char-btn:focus {
-	display: inline-block;
+	width: 100%;
 	padding:6px 12px;
+	margin-top: .5rem;
+	margin-bottom: 0;
 	border-style: solid;
 	border-radius: 8px;
 	border-width: 1px;
@@ -256,7 +254,6 @@ body {
 	font-weight: bold;
 	font-size: 1em;
 }
-
 .video-dropdown-item { 
 	padding-top: .5rem;
 	padding-bottom: .5rem;
