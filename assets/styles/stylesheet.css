@@ -446,6 +446,10 @@ body {
 .more-lf-anipicsreddit {
 	display: none;
 }
+.more-lf-anipicstwitter {
+	display: none;
+}
+
 h1 {
 	vertical-align: center;
 	width: 100%;

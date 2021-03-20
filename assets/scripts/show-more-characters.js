@@ -52,3 +52,16 @@ function more_anipicsreddit_btn() {
   }
   btn.style.display = "none";
 }
+
+/*Show more anipicstwitter links 
+button on click, display more-lf-anipicstwitter, hide more_anipictwitter_btn
+*/
+function more_anipicstwitter_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anipicstwitter");
+  var btn = document.getElementById("more_anipicstwitter_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
