@@ -26,3 +26,16 @@ function more_female_btn() {
   container.style.marginTop = "10px";
   femalebtn.style.display = "none";
 }
+
+/*Show more anitube links
+button on click, display more-lf-anitube, hide more_anitube_btn
+*/
+function more_anitube_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anitube");
+  var btn = document.getElementById("more_anitube_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}

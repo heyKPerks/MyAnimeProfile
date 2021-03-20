@@ -422,6 +422,28 @@ body {
 	/*letter-spacing: .2em;*/
 	font-size: 1em;
 }
+
+.more-lf-link-btn {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0px;
+	border-top: 1px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-style: solid;
+	border-color: rgba(136,153,165,0.3); /*#21202A*/
+	background-color: rgb(27, 40, 53);
+	font-size: 1em;
+	text-align: left;
+	color: rgb(236,114,97);
+}
+.more-lf-anitube { 
+	display: none;
+}
+
 h1 {
 	vertical-align: center;
 	width: 100%;
