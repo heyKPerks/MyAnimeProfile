@@ -1,12 +1,13 @@
 /*Show more anime series by genre
-button on click, display scrolling_genre_cards, hide button
+button on click, display scrolling_genre_cards, set fav_item_animeseries bottom margin 10px to match grid, hide button
 */
 function more_bygenre_btn() {
   var container = document.getElementById("scrolling_genre_cards");
+  var animeSeriesContainer = document.getElementById("fav_item_animeseries");
   var button = document.getElementById("more_bygenre_btn"); 
   
   container.style.display = "flex";
-  /*container.style.marginTop = "1rem";*/
+  animeSeriesContainer.style.marginBottom = "10px";
   button.style.display = "none";
 }
 
