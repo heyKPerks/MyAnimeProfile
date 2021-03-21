@@ -330,6 +330,8 @@ body {
 }
 .more-video-items-btn {
 	width: 100%;
+	display: block;
+	padding: 0;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	border: 0;
