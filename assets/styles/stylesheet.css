@@ -12,7 +12,7 @@ html {
 }
 body {
 	font-family: 'open sans';
-	background-color: rgb(21,32,43) /* rgb(7,48,66) #21202A*/;
+	background-color: rgb(21,32,43); /* rgb(7,48,66) #21202A*/
 	color: #FFFFFF;
 	font-size: 1em;
 	font-weight: 100;
@@ -58,7 +58,7 @@ body {
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 8px;
-	border-width: 1px;;
+	border-width: 1px;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
@@ -222,7 +222,7 @@ body {
 	border-width: 1px;
 	border-radius: 10px;
 	border-color: rgba(136,153,165,1); /*#21202A*/
-	/*border-color: rgba(248,104,52,1) /*rgba(0, 146, 148)*/;
+	/*border-color: rgba(248,104,52,1) /*rgba(0, 146, 148)*/
 	flex: 0 0 auto;	
 }
 .first-card {
@@ -265,7 +265,7 @@ body {
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 8px;
-	border-width: 1px;;
+	border-width: 1px;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
@@ -299,17 +299,19 @@ body {
 	font-weight: bold;
 	font-size: 1em;
 }
+
+/* Main section Favories OPs EDs ====================*/
 .video-dropdown-item { 
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	border-bottom: 1px;
 	border-style: solid;
-	border-color: rgba(136,153,165,0.3) /*rgba(0, 146, 148);*/
+	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
 }
 .video-dropdown-item:first-of-type {
 	border-top: 1px;
 	border-style: solid;
-	border-color: rgba(136,153,165,0.3) /*rgba(0, 146, 148);*/
+	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
 }
 .video-header-link { 
 	display: block;
@@ -325,6 +327,21 @@ body {
 }
 .song-title {
 	color: rgba(136,153,165,0.9);
+}
+.more-video-items-btn {
+	width: 100%;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	border: 0;
+	background-color: rgb(21,32,43);
+	color: rgb(236,114,97);
+	font-size: 1em; 
+	line-height: 1.5em;
+	text-align: left;
+}
+
+.more-video-item-op {
+	display: none;
 }
 
 /* Likes And Follows ======================*/

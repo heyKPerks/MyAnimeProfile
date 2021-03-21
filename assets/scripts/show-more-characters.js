@@ -1,3 +1,5 @@
+/*Main Section ================================================*/
+
 /*Show more anime series by genre
 button on click, display scrolling_genre_cards, set fav_item_animeseries bottom margin 10px to match grid, hide button
 */
@@ -27,6 +29,22 @@ function more_female_btn() {
   container.style.marginTop = "10px";
   femalebtn.style.display = "none";
 }
+
+/*Show more OPs
+button on click, display more-video-item-op, hide more_video_items_op_btn
+*/
+function more_video_items_op_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-video-item-op");
+  var btn = document.getElementById("more_video_items_op_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+/*Show more EDs*/
+
+/*Links and Follows Section ===================================*/
 
 /*Show more anitube links
 button on click, display more-lf-anitube, hide more_anitube_btn
