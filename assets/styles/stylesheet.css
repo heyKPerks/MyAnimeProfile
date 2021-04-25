@@ -14,7 +14,7 @@ body {
 	font-family: 'open sans';
 	background-color: rgb(21,32,43); /* rgb(7,48,66) #21202A*/
 	color: #FFFFFF;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 100;
 }
 
@@ -34,18 +34,18 @@ body {
 
 /* Profile Bio ======================*/
 #bio {
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	/*background-color: green;*/
 }
 #name{
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	padding: 0 10px;	
 	font-weight: 900;
 	/*background-color: blue;*/
 }
 #biotext {
 	padding: 0 10px;	
-	line-height: 1.5rem;
+	line-height: 1.5em;
 }
 
 /* Navigation ======================*/
@@ -56,8 +56,8 @@ body {
 	overflow-x: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;	
 	align-items: center;
-	margin-bottom: 1rem;
-	padding: 1rem 0;
+	margin-bottom: 1em;
+	padding: 1em 0;
 	border-top: 1px;
 	border-bottom: 1px;
 	border-style: solid;
@@ -68,7 +68,7 @@ body {
 	display: inline-block;
 	width: min-content;
 	white-space: nowrap;
-	margin-right: 1rem;
+	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 8px;
@@ -76,11 +76,11 @@ body {
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-size: 1em;
+	font-size: 1rem;
 }
 .nav-item-selected {
 	display: inline-block;
-	margin-right: 1rem;
+	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 8px;
@@ -89,7 +89,7 @@ body {
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 .first-nav-item {
 	margin-left: 10px;	
@@ -110,11 +110,11 @@ body {
 
 /* Abount ======================*/
 #tab_about {
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	/*background-color: purple;*/
 }
 #about_fields {
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	padding: 2px;
 
 	/*background-color: green;*/
@@ -126,8 +126,8 @@ body {
 	color: rgba(136,153,165,0.9);
 }
 .about-tags {
-	margin-bottom: 1rem;
-	padding-top: 1rem;
+	margin-bottom: 1em;
+	padding-top: 1em;
 	padding-right: 10px;
 	border-top: 1px;
 	border-style: solid;
@@ -144,9 +144,9 @@ body {
 }
 .field-icon {
 	/*letter-spacing: .2em;*/
-	width: 1.5rem;
+	width: 1.5em;
 	margin-right: 5px;
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: center;
 	/*background-color: green;*/
 }
@@ -159,12 +159,12 @@ body {
 
 /* watching ======================*/
 .watching-item {
-	margin-bottom: 2rem;
+	margin-bottom: 2em;
 	padding: 0 10px;	
 }
 /* Favorites ======================*/
 .favorite-item {
-	margin-bottom: 2rem;
+	margin-bottom: 2em;
 	padding: 0 10px;	
 }
 .tiled-list {
@@ -188,7 +188,7 @@ body {
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-size: 1em;
+	font-size: 1rem;
 }
 #more_bygenre_btn:hover {
 	width: 100%;
@@ -202,7 +202,7 @@ body {
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 #more_bygenre_btn:focus {
 	width: 100%;
@@ -216,7 +216,7 @@ body {
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 #scrolling_genre_cards {
@@ -230,7 +230,7 @@ body {
 .tiled-list-card {
 	display: inline-block;  
 	width: 210px;
-	margin-right: 1rem;
+	margin-right: 1em;
 	padding: 5px;
 	border-style: solid;
 	border-width: 1px;
@@ -283,7 +283,7 @@ body {
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-size: 1em;
+	font-size: 1rem;
 }
 .more-char-btn:hover {
 	width: 100%;
@@ -297,7 +297,7 @@ body {
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 .more-char-btn:focus {
 	width: 100%;
@@ -311,13 +311,13 @@ body {
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 /* Main section Favories OPs EDs ====================*/
 .video-dropdown-item { 
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: .5em;
+	padding-bottom: .5em;
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
@@ -332,7 +332,7 @@ body {
 	width: 100%;
 	text-decoration: none;
 	color: #FFFFFF;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 100;
 	line-height: 1.5em;
 }
@@ -346,12 +346,12 @@ body {
 	width: 100%;
 	display: block;
 	padding: 0;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: .5em;
+	padding-bottom: .5em;
 	border: 0;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-size: 1em; 
+	font-size: 1rem; 
 	line-height: 1.5em;
 	text-align: left;
 }
@@ -367,22 +367,22 @@ body {
 .lf-list {
 	background-color: rgb(27, 40, 53);
 	border-radius: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	/*padding-top: 1rem;
 	padding-bottom: 1rem;*/
 }
 .lf-heading {
-	padding-top: 1rem;
-	padding-bottom: 1rem;	
+	padding-top: 1em;
+	padding-bottom: 1em;	
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: bold;	
 }
 .lf-item-container {
 	width: 100%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-top: 1px;
@@ -453,13 +453,13 @@ body {
 }
 .lf-handle-icon {
 	/*letter-spacing: .2em;*/
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 .more-lf-link-btn {
 	width: 100%;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	padding-left: 10px;
 	padding-right: 10px;
 	border: 0px;
@@ -469,7 +469,7 @@ body {
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*#21202A*/
 	background-color: rgb(27, 40, 53);
-	font-size: 1em;
+	font-size: 1rem;
 	text-align: left;
 	color: rgb(236,114,97);
 }
@@ -487,23 +487,23 @@ h1 {
 	vertical-align: center;
 	width: 100%;
 	margin: 0;
-	padding: 1rem 10px;
-	font-size: 1.5em;
+	padding: 1em 10px;
+	font-size: 1.5rem;
 	font-weight: lighter;
 	/*background-color: pink;*/
 	/*line-height: 0;*/		
 }
 h2 { 
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	/*padding: 0 10px;	*/
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: lighter;
 }
 h4 {
 	margin-top: 5px;
 	margin-bottom: 10px;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: lighter;
 }
 
@@ -535,7 +535,7 @@ h4 {
 	grid-template-columns:minmax(300px, 500px);
 	grid-template-rows: auto;
 	/*grid-row-gap: 1rem;*/
-	grid-column-gap: 3rem;
+	grid-column-gap: 3em;
 	grid-template-areas: 
 		"title"
 		"bio"
@@ -551,7 +551,7 @@ h4 {
 		grid-template-columns: 1fr minmax(300px, 500px) 1fr;
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
-		grid-column-gap: 3rem;
+		grid-column-gap: 3em;
 		grid-template-areas: 
 			". title ."
 			". bio ."
@@ -576,7 +576,7 @@ h4 {
 		grid-template-columns: 1fr minmax(260px, 280px) minmax(320px, 540px) 1fr;
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
-		grid-column-gap: 3rem;
+		grid-column-gap: 3em;
 		grid-template-areas: 
 			". title nav ."
 			". bio main ."
@@ -608,7 +608,7 @@ h4 {
 		grid-template-columns: minmax(1rem, 1fr) minmax(250px, 300px) minmax(480px, 540px) minmax(300px, 340px) minmax(1rem, 1fr);
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
-		grid-column-gap: 3rem;
+		grid-column-gap: 3em;
 		grid-template-areas: 
 			". title nav . ."
 			". bio main  tab_linksandfollows ."
