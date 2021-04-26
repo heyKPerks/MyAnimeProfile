@@ -176,6 +176,14 @@ body {
 	font-size: 0px;
 }
 
+.scrolling-tiled-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;	
+}
+
 #more_bygenre_btn {
 	width: 100%;
 	white-space: nowrap;
@@ -263,6 +271,14 @@ body {
 	display: block;
 	text-decoration: none;
 }
+.scrolling-tiled-list > .tile {
+	display: inline-block;  
+	width: 30%;
+	margin-right: 1em;
+	padding: 5px;
+	flex: 0 0 auto;
+}
+
 .thumbnail {
 	width: 100%;
 	border-radius: 5px;
@@ -560,6 +576,14 @@ h4 {
 			". main ."
 			". tab_linksandfollows ."
 			". social .";
+	}
+	.scrolling-tiled-list {
+		display: grid;
+	}
+	.scrolling-tiled-list > .tile {
+		width: 100%;
+		display: block;
+		padding: 0;
 	}
 	.tiled-list {
 		width: 100%;
