@@ -18,21 +18,26 @@ body {
 	font-weight: 100;
 }
 
-/*====================
-	typography 
-	====================*/
+/*	============================================
+	Table of Contens
 
-/*====================
-	componenets  
-	====================*/
+	Profile Bio
+	Navigation
+	Abount Tab
+	Highlights Tab
+	Favorites Tab
+	Likes And Follows Tab
+	Media Queries
 
-/*====================
-	layout
-	====================*/
+	============================================*/
 
 
+/*	============================================
+	Profile Bio
 
-/* Profile Bio ======================*/
+	Section that includes profile picture and short bio text
+	============================================*/
+
 #bio {
 	margin-bottom: 1em;
 	/*background-color: green;*/
@@ -48,7 +53,15 @@ body {
 	line-height: 1.5em;
 }
 
-/* Navigation ======================*/
+/*	============================================
+	Navigation
+
+	Section that includes the naviation buttons
+	Horizontal scrolling pill buttons that show 
+	the selected tab and hides all others.
+	Available nav buttons depend on current screen
+	layout. 
+	============================================*/
 #nav {
 	width: 100%;
 	display: flex;
@@ -108,7 +121,11 @@ body {
 	/*display: none;*/
 }
 
-/* Abount ======================*/
+/*	============================================
+	Abount Tab
+
+	Includes demographic fields and tags
+	============================================*/
 #tab_about {
 	margin-bottom: 1em;
 	/*background-color: purple;*/
@@ -157,12 +174,32 @@ body {
 	margin-left: 5px;
 }
 
-/* watching ======================*/
+/*	============================================
+	Highlights Tab
+
+	TODO 
+	highlight recent series watched 
+	============================================*/
+
+/*	============================================
+	watching Tab
+
+	Includes items that I'm watching / keeping track of
+	list turn to horizontal scroll on small screen size 
+	============================================*/
 .watching-item {
 	margin-bottom: 2em;
 	padding: 0 10px;	
 }
-/* Favorites ======================*/
+
+/*	============================================
+	Favorites Tab
+
+	Includes grid collumn lists
+	scrolling card elements 
+	itemised list of titles 
+	============================================*/
+
 .favorite-item {
 	margin-bottom: 2em;
 	padding: 0 10px;	
@@ -329,7 +366,7 @@ body {
 	font-size: 1rem;
 }
 
-/* Main section Favories OPs EDs ====================*/
+/* Favories OPs EDs ====================*/
 .video-dropdown-item { 
 	padding-top: .5em;
 	padding-bottom: .5em;
@@ -375,7 +412,12 @@ body {
 	display: none;
 }
 
-/* Likes And Follows ======================*/
+/*	============================================
+	Likes And Follows Tab
+
+	Function as sidebar content on largest screen size 
+	============================================*/
+
 #tab_linksandfollows {
 	/*margin-bottom: 1rem;*/
 }
@@ -522,7 +564,9 @@ h4 {
 	font-weight: lighter;
 }
 
-/* Media Queries ======================*/
+/*	============================================
+	Media Queries
+	============================================*/
 #page_title_wrapper { 
 	grid-area: title;
 }
