@@ -413,6 +413,9 @@ body {
 .more-video-item-op {
 	display: none;
 }
+.more-video-item-ed {
+	display: none;
+}
 
 /*	============================================
 	Likes And Follows Tab

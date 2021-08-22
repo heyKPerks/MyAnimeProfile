@@ -22,7 +22,6 @@ function more_female_btn() {
   var container = document.getElementById("more_characters_fm");
   var femalebtn = document.getElementById("more_female_btn");
   
-
   for (i = 0; i < characters.length; i++) {
     characters[i].style.display = "block";
   } 
@@ -43,6 +42,15 @@ function more_video_items_op_btn() {
   btn.style.display = "none";
 }
 /*Show more EDs*/
+function more_video_items_ed_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-video-item-ed");
+  var btn = document.getElementById("more_video_items_ed_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
 
 /*Links and Follows Section ===================================*/
 
