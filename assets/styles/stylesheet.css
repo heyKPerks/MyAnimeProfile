@@ -658,13 +658,14 @@ h4 {
 			". . main ."
 			". . tab_linksandfollows .";
 	}	
-	/*
+	
 	#nav_about {
 		display: none;
 	}
 	#tab_about {
 		display: block;
 	}
+	/*
 	#nav_linksandfollows {
 		display: inline-block;
 	}
@@ -690,7 +691,7 @@ h4 {
 			". . main tab_linksandfollows ."
 			". . main . .";
 	}	
-	/*
+	
 	#nav_about {
 		display: none;
 	}
@@ -703,5 +704,5 @@ h4 {
 	#tab_linksandfollows {
 		display: block;
 	}
-	*/
+	
 }
