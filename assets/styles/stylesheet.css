@@ -233,6 +233,7 @@ body {
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
+	font-weight: bold;
 	font-size: 1rem;
 }
 #more_bygenre_btn:hover {
@@ -335,6 +336,7 @@ body {
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
+	font-weight: bold;
 	font-size: 1rem;
 }
 .more-char-btn:hover {
