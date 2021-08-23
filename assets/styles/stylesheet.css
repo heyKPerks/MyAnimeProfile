@@ -659,20 +659,13 @@ h4 {
 			". . tab_linksandfollows .";
 	}	
 	
+	/* Navigation and display logic */
 	#nav_about {
 		display: none;
 	}
 	#tab_about {
 		display: block;
 	}
-	/*
-	#nav_linksandfollows {
-		display: inline-block;
-	}
-	#tab_linksandfollows {
-		display: block;
-	}
-	*/
 
 }
 @media (min-width: 1300px) {
@@ -692,6 +685,7 @@ h4 {
 			". . main . .";
 	}	
 	
+	/* Navigation and display logic */
 	#nav_about {
 		display: none;
 	}
