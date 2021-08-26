@@ -33,12 +33,12 @@ function tab_selct (nav_id, tab_id) {
 
 /* Tab continuity and screen resizing ======================= */
 
-/* Small Mobile Single Collumn */
-function one_collumn () {
-	console.log("collumn one start");
+/* Small Mobile Single column */
+function one_column () {
+	console.log("column one start");
 	/*	Makes sure all tabs are in the list of actionable tabs
 			There are cases where tabs are taken out of list of actionable tabs
-			on other screen sizes and not put back on screen resize to one collumn. 
+			on other screen sizes and not put back on screen resize to one column. 
 	*/
 	var i; 
 	var x = document.getElementsByClassName("tab");
@@ -46,7 +46,7 @@ function one_collumn () {
 		x[i].classList.add("tab-actionable");
 	}
 
-	/* Hiding about tab on screen resize from larger to small one collumn layout
+	/* Hiding about tab on screen resize from larger to small one column layout
 		There is a case where on screen resize to smaller layout, about tab remains wrongly displayed.
 		I couldn't directly hide about tab on small layout, it caused problems for when wanting to select about tab.
 		Solution was to test if another tab was selected before screen shrink (which should be always by design), 
@@ -60,25 +60,25 @@ function one_collumn () {
 	}	
 }
 
-/* Medium Tablet Two Collumn */
-function two_collumn () {
-	/*	Makes sure about tab is displayed on 2 collumn resize and not hidden when tab_select runs
+/* Medium Tablet Two column */
+function two_column () {
+	/*	Makes sure about tab is displayed on 2 column resize and not hidden when tab_select runs
 			There is a case where selecting a tab, then resizing to medium screen hides about,
-			and does not show back on screen resize to 2 collumn.
+			and does not show back on screen resize to 2 column.
 	*/
 	var tab_about = document.getElementById("tab_about");	
 	tab_about.classList.remove("tab-actionable");
 	tab_about.style.display = "block";
 	
 	/*	Makes sure tab_linksandfollows gets put back in to list of actionable tabs 
-			There is a case where going from large 3 collumn back to medium 2 collumn
+			There is a case where going from large 3 column back to medium 2 column
 			keeps tab_linksandfollows wrongly out of the list of actionable tabs designed 
-			for medium 2 collumn layout. 
+			for medium 2 column layout. 
 	*/
 	var tab_linksandfollows = document.getElementById("tab_linksandfollows");
 	tab_linksandfollows.classList.add("tab-actionable");
 
-	/*	Case where expanding from small one collumn layout to medium two collumn layout
+	/*	Case where expanding from small one column layout to medium two column layout
 			if tab about was currently selected, then display and change to selected watching tab
 			to prevent no content displayed on screen resize. 
 	*/
@@ -99,30 +99,34 @@ function two_collumn () {
 	}	
 }
 
-/* Large Desktop Three Collumn */
-function three_collumn () {
-	/*	Makes sure about tab is displayed on 3 collumn resize and not hidden when tab_select runs
+/* Large Desktop Three column */
+function three_column () {
+	/*	Makes sure about tab is displayed on 3 column resize and not hidden when tab_select runs
 			There is a case where selecting a tab, then resizing to large screen hides about,
-			and does not show back on screen resize to 3 collumn.
+			and does not show back on screen resize to 3 column.
 	*/
 	var tab_about = document.getElementById("tab_about");	
 	tab_about.classList.remove("tab-actionable");
 	tab_about.style.display = "block";
 
-	/*	Makes sure linksandfollows tab is displayed on 3 collumn resize and not hidden when tab_select runs
+	/*	Makes sure linksandfollows tab is displayed on 3 column resize and not hidden when tab_select runs
 			There is a case where selecting a tab, then resizing to large screen hides linksandfollows,
-			and does not show back on screen resize to 3 collumn.
+			and does not show back on screen resize to 3 column.
 	*/
 	var tab_linksandfollows = document.getElementById("tab_linksandfollows");
 	tab_linksandfollows.classList.remove("tab-actionable");
 	tab_linksandfollows.style.display = "block";
 	
+	/*	Case where Linksandfollows tab was selected in medium 2 column layout
+			then when expanded to larger three column layout leaving nothing displayed 
+	*/
 	var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
 	console.log(current_nav_id);
 	if (current_nav_id.includes("links")){
 		tab_selct('nav_watching', 'tab_watching');
 	}
 }
+
 //Maintains selected tab content continuity with responsive design
 function actionable_tabs () {
 	// Get width of the window, used innerWidth to match with CSS grids calculations
@@ -130,16 +134,16 @@ function actionable_tabs () {
 	console.log("window width is " + w);
 
 	if (w < 900) {
-		console.log("calling collumn one");
-		one_collumn();
+		console.log("calling column one");
+		one_column();
 	}
 	if (w > 900 && w < 1299) {
-		console.log("calling collumn two");
-		two_collumn();
+		console.log("calling column two");
+		two_column();
 	}
 	if (w > 1300) {
-		console.log("calling collumn three");
-		three_collumn();
+		console.log("calling column three");
+		three_column();
 	}
 }
 
