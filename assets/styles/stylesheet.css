@@ -84,11 +84,12 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
+	font-weight: bold;
 	font-size: 1rem;
 }
 .nav-item-selected {
@@ -96,7 +97,33 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1rem;
+}
+.nav-item:hover {
+	display: inline-block;
+	margin-right: 1em;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 2em /*8px*/;
+	border-width: 1px;
+	border-color: rgb(236,114,97);
+	background-color: rgb(236,114,97);
+	color: rgb(21,32,43);
+	font-weight: bold;
+	font-size: 1rem;
+}
+.nav-item:focus {
+	display: inline-block;
+	margin-right: 1em;
+	padding:6px 12px;
+	border-style: solid;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -128,6 +155,7 @@ body {
 	============================================*/
 #tab_about {
 	margin-bottom: 1em;
+	display: none;
 	/*background-color: purple;*/
 }
 #about_fields {
@@ -187,6 +215,10 @@ body {
 	Includes items that I'm watching / keeping track of
 	list turn to horizontal scroll on small screen size 
 	============================================*/
+/*#tab_watching {
+
+}*/
+
 .watching-item {
 	margin-bottom: 2em;
 	padding: 0 10px;	
@@ -199,7 +231,9 @@ body {
 	scrolling card elements 
 	itemised list of titles 
 	============================================*/
-
+#tab_favorites {
+	display: none;
+}
 .favorite-item {
 	margin-bottom: 2em;
 	padding: 0 10px;	
@@ -228,7 +262,7 @@ body {
 	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
@@ -242,7 +276,7 @@ body {
 	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -256,7 +290,7 @@ body {
 	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -331,7 +365,7 @@ body {
 	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
@@ -345,7 +379,7 @@ body {
 	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -359,7 +393,7 @@ body {
 	margin-top: 10px;
 	margin-bottom: 0;
 	border-style: solid;
-	border-radius: 8px;
+	border-radius: 2em /*8px*/;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -425,6 +459,7 @@ body {
 
 #tab_linksandfollows {
 	/*margin-bottom: 1rem;*/
+	display: none;
 }
 .lf-list {
 	background-color: rgb(27, 40, 53);
@@ -591,12 +626,10 @@ h4 {
 #tab_linksandfollows {
 	grid-area: tab_linksandfollows;
 }
-#social {
-	grid-area: social;
-}
+
 #page_wrapper {
 	display: grid;
-	grid-template-columns:minmax(300px, 500px);
+	grid-template-columns:minmax(300px, 539px);
 	grid-template-rows: auto;
 	/*grid-row-gap: 1rem;*/
 	grid-column-gap: 3em;
@@ -606,8 +639,7 @@ h4 {
 		"nav"
 		"tab_about"
 		"main"
-		"tab_linksandfollows"
-		"social";
+		"tab_linksandfollows";
 }
 @media (min-width: 540px) {
 	#page_wrapper {
@@ -622,8 +654,7 @@ h4 {
 			". nav ."
 			". tab_about ."
 			". main ."
-			". tab_linksandfollows ."
-			". social .";
+			". tab_linksandfollows .";
 	}
 	.scrolling-tiled-list {
 		display: grid;
@@ -654,7 +685,6 @@ h4 {
 			". title nav ."
 			". bio main ."
 			". tab_about main ."
-			". social main ."
 			". . main ."
 			". . tab_linksandfollows .";
 	}	
@@ -681,8 +711,7 @@ h4 {
 			". bio main  tab_linksandfollows ."
 			". tab_about main tab_linksandfollows ."
 			". social main tab_linksandfollows ."
-			". . main tab_linksandfollows ."
-			". . main . .";
+			". . main tab_linksandfollows .";
 	}	
 	
 	/* Navigation and display logic */

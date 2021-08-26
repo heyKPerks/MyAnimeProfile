@@ -9,6 +9,7 @@
 		<!--Styles-->
 		<link rel="stylesheet" type="text/css" href="assets/styles/meyerweb-reset.css">
 		<link rel="stylesheet" type="text/css" href="assets/styles/stylesheet.css">
+		
 		<link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -19,6 +20,9 @@
 		<!--<link rel="stylesheet" type="text/css" href="assets/styles/MediaQuery-Reporter Styles.css">-->
 		<!--Scripts-->
 		<script type="text/javascript" src="assets/scripts/show-more-characters.js"></script>		
+		
+		<script type="text/javascript" src="assets/scripts/tab_functions.js"></script>		
+		
 	</head>
 	<body>
 		<div id="page_wrapper">
@@ -32,14 +36,14 @@
 			</div><!-- bio -->
 
 			<div id="nav">
-				<button onclick="navbtn()" id="nav_about" class="nav-item nav-item-active first-nav-item">About</button>
-				<!-- <button onclick="navbtn()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button> -->
-				<button onclick="navbtn()" id="nav_Watching" class="nav-item nav-item-active nav-item-selected">Watching</button>
-				<button onclick="navbtn()" id="nav_favorites" class="nav-item nav-item-active">Favorites</button>
-				<button onclick="navbtn()" id="nav_linksandfollows" class="nav-item nav-item-active">Links and Follows</button>
+				<button onclick="tab_selct('nav_about', 'tab_about')" id="nav_about" class="nav-item first-nav-item">About</button>
+				<!-- <button onclick="tab_selct()" id="nav_spotlight" class="nav-item nav-item-active nav-item-selected">Spotlight</button> -->
+				<button onclick="tab_selct('nav_watching', 'tab_watching')" id="nav_watching" class="nav-item nav-item-selected">Watching</button>
+				<button onclick="tab_selct('nav_favorites', 'tab_favorites')" id="nav_favorites" class="nav-item">Favorites</button>
+				<button onclick="tab_selct('nav_linksandfollows', 'tab_linksandfollows')" id="nav_linksandfollows" class="nav-item">Links and Follows</button>
 			</div><!-- Nav -->
 			
-			<div id="tab_about" class="tab tab-active">
+			<div id="tab_about" class="tab tab-actionable">
 				<div id="about_fields">
 					<div class="about-field"><i class="fas fa-mars field-icon"></i> He / Him</div>
 					<div class="about-field"><i class="fas fa-birthday-cake field-icon"></i> April 17th</div>
@@ -68,7 +72,7 @@
 			</div><!-- about -->
 
 			<div id="main">
-				<div id="tab_watching" class="tab tab-active tab-selected main-item">
+				<div id="tab_watching" class="tab tab-actionable main-item">
 					<div class="watching-item"><!--Currently Watching-->
 						<h2>Currently Watching</h2>
 						<div class="tiled-list scrolling-tiled-list">
@@ -162,7 +166,7 @@
 					</div><!-- Please Dub-->							
 				</div><!-- watching -->
 				
-				<div id="tab_favorites" class="tab tab-active main-item">
+				<div id="tab_favorites" class="tab tab-actionable main-item">
 					<div id="fav_item_animeseries" class="favorite-item"><!--anime Series-->
 						<h2>Anime Series</h2>
 						<div class="tiled-list">
@@ -418,7 +422,7 @@
 				</div><!-- favorites -->				
 			</div><!-- main -->
 
-			<div id="tab_linksandfollows" class="tab tab-active sidebar-content">
+			<div id="tab_linksandfollows" class="tab tab-actionable sidebar-content">
 				<div class="lf-list">
 					<h3 class="lf-heading">Anime General</h3>				
 					<a class="lf-link" href="https://www.livechart.me/">
@@ -925,15 +929,8 @@
 				</div><!-- Anipics on Twitter -->
 			</div><!-- links and follows -->
 
-			<!--
-			<div id="social">
-				<div class="social-item">Kitsu</div>
-				<div class="social-item">MAL</div>
-				<div class="social-item">Twitter</div>
-				<div class="social-item">Discord</div>
-			</div><!-- Social -->	
-			
-			<div></div><!-- footer -->
+			<!-- Social -->	
+			<!-- footer -->
 		</div><!--pagewrapper-->
 	</body>
 </html>
