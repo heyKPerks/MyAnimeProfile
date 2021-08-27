@@ -631,7 +631,7 @@ h4 {
 	display: grid;
 	grid-template-columns:minmax(300px, 539px);
 	grid-template-rows: auto;
-	/*grid-row-gap: 1rem;*/
+	grid-row-gap: 0;
 	grid-column-gap: 3em;
 	grid-template-areas: 
 		"title"
@@ -686,8 +686,14 @@ h4 {
 			". bio main ."
 			". tab_about main ."
 			". . main ."
-			". . tab_linksandfollows .";
 	}	
+	/*	used to overlap main content
+			was getting pushed down to another row without
+	*/
+	#tab_linksandfollows {
+		grid-column: 3/4;
+		grid-row: 2/5;
+	}
 	
 	/* Navigation and display logic */
 	#nav_about {
@@ -713,6 +719,13 @@ h4 {
 			". social main tab_linksandfollows ."
 			". . main tab_linksandfollows .";
 	}	
+	/*	reset grid area back 
+			because for some reason it doesn't change back after 
+			breaking out of the medium column layout exception 
+	*/
+	#tab_linksandfollows {
+		grid-area: tab_linksandfollows;
+	}
 	
 	/* Navigation and display logic */
 	#nav_about {
