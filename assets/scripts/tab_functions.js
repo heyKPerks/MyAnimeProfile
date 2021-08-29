@@ -133,6 +133,17 @@ function actionable_tabs () {
 	var w = window.innerWidth;
 	console.log("window width is " + w);
 
+	if (w < 1020) {
+		var banner = document.getElementById("profile_banner");
+		banner.style.height = "100%";
+		banner.style.width = "";
+	}
+	if ( w > 1020) {
+		var banner = document.getElementById("profile_banner");
+		banner.style.width = "100%";
+		banner.style.height = "";
+	}
+
 	if (w < 900) {
 		console.log("calling column one");
 		one_column();

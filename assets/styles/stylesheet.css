@@ -31,26 +31,58 @@ body {
 
 	============================================*/
 
-
+/*	============================================
+	Header
+	============================================*/
+	#page_title_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+		width: 100%;
+		height: 35vh;
+		margin-bottom: 1em;
+		background-color: plum;
+	}
+	#profile_banner {
+	}
 /*	============================================
 	Profile Bio
 
 	Section that includes profile picture and short bio text
 	============================================*/
+#profile_pic {
+	/*height: 100%;*/
+	width: 150px;
+	margin-bottom: 1em;
+	margin-top: -4em;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 8px;
+	border-color:  rgb(21,32,43);
+}
 
 #bio {
 	margin-bottom: 1em;
 	/*background-color: green;*/
 }
 #name{
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	padding: 0 10px;	
 	font-weight: 900;
 	/*background-color: blue;*/
 }
+#handle {
+	padding: 0 10px;	
+	margin-bottom: 1em;
+	font-size: 1rem;
+	font-weight: bold;
+	color: rgba(136,153,165,0.9);
+}
 #biotext {
 	padding: 0 10px;	
 	line-height: 1.5em;
+	font-size: 1rem;
 }
 
 /*	============================================
@@ -70,9 +102,9 @@ body {
 	-ms-overflow-style: -ms-autohiding-scrollbar;	
 	align-items: center;
 	margin-bottom: 1em;
-	padding: 1em 0;
+	padding-bottom: 1em;
 	/*border-top: 1px;*/
-	border-bottom: 1px;
+	/*border-bottom: 1px;*/
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*#21202A*/
 	/*background-color: blue;*/
@@ -168,6 +200,7 @@ body {
 	/*margin-left: 10px;
 	margin-bottom: 10px;*/
 	padding: 8px;
+	font-size: 1rem;
 	color: rgba(136,153,165,0.9);
 }
 .about-tags {
@@ -185,6 +218,7 @@ body {
 	padding: 10px;
 	border-style: solid;
 	border-width: 1px;
+	font-size: 1rem;
 	color: rgba(136,153,165,0.9);
 }
 .field-icon {
@@ -583,7 +617,7 @@ body {
 h1 {
 	vertical-align: center;
 	width: 100%;
-	margin: 0;
+	margin: auto;
 	padding: 1em 10px;
 	font-size: 1.5rem;
 	font-weight: lighter;
@@ -595,7 +629,7 @@ h2 {
 	margin-bottom: 1em;
 	/*padding: 0 10px;	*/
 	font-size: 1.5rem;
-	font-weight: lighter;
+	/*font-weight: lighter;*/
 }
 h4 {
 	margin-top: 5px;
@@ -649,7 +683,7 @@ h4 {
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
 		grid-template-areas: 
-			". title ."
+			"title title title"
 			". bio ."
 			". nav ."
 			". tab_about ."
@@ -682,17 +716,23 @@ h4 {
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
 		grid-template-areas: 
+			"title title title title"
+			". bio nav ."
+			". bio main ."
+			". tab_about main ."
+			". . main .";
+		/*grid-template-areas: 
 			". title nav ."
 			". bio main ."
 			". tab_about main ."
-			". . main ."
+			". . main .";*/
 	}	
 	/*	used to overlap main content
 			was getting pushed down to another row without
 	*/
 	#tab_linksandfollows {
 		grid-column: 3/4;
-		grid-row: 2/5;
+		grid-row: 3/6;
 	}
 	
 	/* Navigation and display logic */
@@ -712,13 +752,24 @@ h4 {
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
+		/*
 		grid-template-areas: 
 			". title nav . ."
 			". bio main  tab_linksandfollows ."
 			". tab_about main tab_linksandfollows ."
 			". social main tab_linksandfollows ."
 			". . main tab_linksandfollows .";
+		*/
+		grid-template-areas: 
+		"title title title title title"
+		". bio nav . ."
+		". bio main tab_linksandfollows ."
+		". tab_about main tab_linksandfollows ."
+		". . main tab_linksandfollows ."		
+		/*". . main . ."*/;
+		
 	}	
+	
 	/*	reset grid area back 
 			because for some reason it doesn't change back after 
 			breaking out of the medium column layout exception 
