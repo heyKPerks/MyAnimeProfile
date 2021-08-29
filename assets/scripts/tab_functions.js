@@ -133,6 +133,9 @@ function actionable_tabs () {
 	var w = window.innerWidth;
 	console.log("window width is " + w);
 
+	/*scaling profile banner image by height or width,
+		depending on screen size 
+	*/
 	if (w < 1020) {
 		var banner = document.getElementById("profile_banner");
 		banner.style.height = "100%";

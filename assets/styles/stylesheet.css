@@ -42,15 +42,43 @@ body {
 		width: 100%;
 		height: 35vh;
 		margin-bottom: 1em;
-		background-color: plum;
-	}
-	#profile_banner {
 	}
 /*	============================================
 	Profile Bio
 
 	Section that includes profile picture and short bio text
 	============================================*/
+#profile_pic {
+	grid-area: propic;
+}
+#name {
+	grid-area: name;
+}
+#handle {
+	grid-area: handle
+}
+#biotext {
+	grid-area: biotext;
+}
+#bio_socials {
+	grid-area: bio_socials;
+	justify-self: end;
+}
+
+#bio {
+	display: grid;
+	margin-bottom: 1em;
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: auto;
+	/*grid-row-gap: 1rem;*/
+	grid-template-areas: 
+		"propic bio_socials"
+		"name name"
+		"handle handle"
+		"biotext biotext";
+
+	/*background-color: green;*/
+}
 #profile_pic {
 	/*height: 100%;*/
 	width: 150px;
@@ -61,13 +89,8 @@ body {
 	border-width: 8px;
 	border-color:  rgb(21,32,43);
 }
-
-#bio {
-	margin-bottom: 1em;
-	/*background-color: green;*/
-}
 #name{
-	margin-bottom: .5em;
+	margin-bottom: .2em;
 	padding: 0 10px;	
 	font-weight: 900;
 	/*background-color: blue;*/
@@ -83,6 +106,46 @@ body {
 	padding: 0 10px;	
 	line-height: 1.5em;
 	font-size: 1rem;
+}
+#bio_socials {
+	padding-right: 10px;
+	font-size: 0;
+	
+}
+.bio-social-item {	
+	display: inline-block;
+	/*width: min-content;*/
+	margin-left: .2em;
+	padding: 6px;
+	border-style: solid;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	/*font-weight: bold;*/
+	text-decoration: none;
+}
+.bio-social-item:first-child {
+	margin-left: 0;
+}
+
+#bio-social-kitsu > img {
+	width: 1.5rem;
+}
+#bio-social-kitsu:hover { 
+	background-color: #4a3848;
+}
+#bio-social-twitter {
+	color: rgb(29 161 242);
+}
+#bio-social-twitter:hover {
+	color: white;
+	background-color: rgb(29 161 242);
+}
+#bio-social-discord {
+	color: rgb(88 101 242);
+}
+#bio-social-discord:hover {
+	color: white;
+	background-color: rgb(88 101 242);
 }
 
 /*	============================================
