@@ -81,12 +81,13 @@ body {
 }
 #profile_pic {
 	/*height: 100%;*/
-	width: 150px;
-	margin-bottom: 1em;
+	width: 120px;
+	margin-left: 10px;
+	margin-bottom: .5em;
 	margin-top: -4em;
 	border-radius: 50%;
 	border-style: solid;
-	border-width: 8px;
+	border-width: 5px;
 	border-color:  rgb(21,32,43);
 }
 #name{
@@ -108,8 +109,9 @@ body {
 	font-size: 1rem;
 }
 #bio_socials {
-	padding-right: 10px;
+	padding-right: 2rem;
 	font-size: 0;
+	/*background-color: whitesmoke;*/
 	
 }
 .bio-social-item {	
@@ -119,7 +121,7 @@ body {
 	padding: 6px;
 	border-style: solid;
 	border-radius: 50%;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	/*font-weight: bold;*/
 	text-decoration: none;
 }
@@ -128,7 +130,7 @@ body {
 }
 
 #bio-social-kitsu > img {
-	width: 1.5rem;
+	width: 1rem;
 }
 #bio-social-kitsu:hover { 
 	background-color: #4a3848;
