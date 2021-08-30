@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 html {
   -webkit-box-sizing: border-box;
@@ -34,15 +35,33 @@ body {
 /*	============================================
 	Header
 	============================================*/
-	#page_title_wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-		width: 100%;
-		height: 35vh;
-		margin-bottom: 1em;
-	}
+#page_title_wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	width: 100%;
+	height: 35vh;
+	margin-bottom: 1em;
+	background-color: black;
+}
+#page_title {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	align-self: end;
+	padding-bottom: 6rem;
+	text-align: center;
+	font-family: 'Carter One', cursive;
+	font-size: 8vh;
+	color: whitesmoke;
+	text-shadow: 2px 2px 5px rgb(236,114,97);
+	/*line-height: 0;*/				
+}
+
+#profile_banner {
+	opacity: 0.4;
+}
 /*	============================================
 	Profile Bio
 
@@ -50,6 +69,7 @@ body {
 	============================================*/
 #profile_pic {
 	grid-area: propic;
+	z-index: 10;
 }
 #name {
 	grid-area: name;
@@ -686,16 +706,6 @@ body {
 	display: none;
 }
 
-h1 {
-	vertical-align: center;
-	width: 100%;
-	margin: auto;
-	padding: 1em 10px;
-	font-size: 1.5rem;
-	font-weight: lighter;
-	/*background-color: pink;*/
-	/*line-height: 0;*/		
-}
 h2 { 
 	width: 100%;
 	margin-bottom: 1em;
