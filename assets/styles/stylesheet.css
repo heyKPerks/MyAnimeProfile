@@ -49,14 +49,14 @@ body {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	align-self: end;
-	padding-bottom: 8vh;
+	align-self: center;
+	/*padding-bottom: 8vh;*/
 	text-align: center;
 	font-family: 'Carter One', cursive;
 	font-size: 8vh;
 	color: whitesmoke;
 	text-shadow: 2px 2px 5px rgb(236,114,97);
-	/*line-height: 0;*/				
+	/*line-height: 0;	*/
 }
 
 #profile_banner {
