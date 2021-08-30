@@ -112,10 +112,10 @@ body {
 	width: max-content;
 	height: max-content;
 	margin-right: 1rem;
-	padding:0 12px;
+	padding: 0 6px;
 	font-size: 0;
 	border-style: solid;;
-	border-width: 1px;
+	/*border-width: 1px;*/
 	border-radius: 2rem;	
 	border-color: rgba(136,153,165,0.3); /*#21202A*/
 	/*background-color: whitesmoke;*/
@@ -124,11 +124,11 @@ body {
 .bio-social-item {	
 	display: inline-block;
 	/*width: min-content;*/
-	margin-left: .2em;
+	margin-left: .4em;
 	padding: 6px;
 	border-style: solid;
 	border-radius: 50%;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	/*font-weight: bold;*/
 	text-decoration: none;
 }
@@ -137,7 +137,7 @@ body {
 }
 
 #bio-social-kitsu > img {
-	width: 1rem;
+	width: 1.2rem;
 }
 #bio-social-kitsu:hover { 
 	background-color: #4a3848;

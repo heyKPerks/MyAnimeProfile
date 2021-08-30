@@ -136,12 +136,12 @@ function actionable_tabs () {
 	/*scaling profile banner image by height or width,
 		depending on screen size 
 	*/
-	if (w < 1020) {
+	if (w < 900) {
 		var banner = document.getElementById("profile_banner");
 		banner.style.height = "100%";
 		banner.style.width = "";
 	}
-	if ( w > 1020) {
+	if ( w > 900) {
 		var banner = document.getElementById("profile_banner");
 		banner.style.width = "100%";
 		banner.style.height = "";
