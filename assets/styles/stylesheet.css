@@ -109,8 +109,15 @@ body {
 	font-size: 1rem;
 }
 #bio_socials {
-	padding-right: 2rem;
+	width: max-content;
+	height: max-content;
+	margin-right: 1rem;
+	padding:0 12px;
 	font-size: 0;
+	border-style: solid;;
+	border-width: 1px;
+	border-radius: 2rem;	
+	border-color: rgba(136,153,165,0.3); /*#21202A*/
 	/*background-color: whitesmoke;*/
 	
 }
