@@ -22,6 +22,7 @@ body {
 /*	============================================
 	Table of Contens
 
+	Header
 	Profile Bio
 	Navigation
 	Abount Tab
@@ -50,16 +51,15 @@ body {
 	z-index: 10;
 	width: 100%;
 	align-self: center;
-	/*padding-bottom: 8vh;*/
 	text-align: center;
 	font-family: 'Carter One', cursive;
 	font-size: 8vh;
 	color: whitesmoke;
 	text-shadow: 2px 2px 5px rgb(236,114,97);
-	/*line-height: 0;	*/
 }
 
 #profile_banner {
+	/*height and width managed in js script*/
 	opacity: 0.4;
 }
 /*	============================================
@@ -69,7 +69,7 @@ body {
 	============================================*/
 #profile_pic {
 	grid-area: propic;
-	z-index: 10;
+	z-index: 10; /*needed due to being eccfected by banner styles when overlapped*/
 }
 #name {
 	grid-area: name;
@@ -90,17 +90,13 @@ body {
 	margin-bottom: 1em;
 	grid-template-columns: max-content 1fr;
 	grid-template-rows: auto;
-	/*grid-row-gap: 1rem;*/
 	grid-template-areas: 
 		"propic bio_socials"
 		"name name"
 		"handle handle"
 		"biotext biotext";
-
-	/*background-color: green;*/
 }
 #profile_pic {
-	/*height: 100%;*/
 	width: 120px;
 	margin-left: 10px;
 	margin-bottom: .5em;
@@ -114,7 +110,6 @@ body {
 	margin-bottom: .2em;
 	padding: 0 10px;	
 	font-weight: 900;
-	/*background-color: blue;*/
 }
 #handle {
 	padding: 0 10px;	
@@ -137,9 +132,7 @@ body {
 	border-style: solid;;
 	/*border-width: 1px;*/
 	border-radius: 2rem;	
-	border-color: rgba(136,153,165,0.3); /*#21202A*/
-	/*background-color: whitesmoke;*/
-	
+	border-color: rgba(136,153,165,0.3);
 }
 .bio-social-item {	
 	display: inline-block;
@@ -149,7 +142,6 @@ body {
 	border-style: solid;
 	border-radius: 50%;
 	font-size: 1.2rem;
-	/*font-weight: bold;*/
 	text-decoration: none;
 }
 .bio-social-item:first-child {
@@ -198,7 +190,7 @@ body {
 	/*border-top: 1px;*/
 	/*border-bottom: 1px;*/
 	border-style: solid;
-	border-color: rgba(136,153,165,0.3); /*#21202A*/
+	border-color: rgba(136,153,165,0.3);
 	/*background-color: blue;*/
 }
 .nav-item {
@@ -208,7 +200,7 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 2em /*8px*/;
+	border-radius: 2em;
 	border-width: 1px;
 	border-color: #ec7261;
 	background-color: rgb(21,32,43);
@@ -221,7 +213,7 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 2em /*8px*/;
+	border-radius: 2em;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -234,7 +226,7 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 2em /*8px*/;
+	border-radius: 2em;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -247,7 +239,7 @@ body {
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 2em /*8px*/;
+	border-radius: 2em;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
@@ -259,19 +251,6 @@ body {
 	margin-left: 10px;	
 }
 
-.nav-item-active {
-	/*display: inline-block;*/
-}
-.nav-item-inactive {
-	/*display: none;*/
-}
-.tab-active {
-	/*display: block;*/
-}
-.tab-inactive {
-	/*display: none;*/
-}
-
 /*	============================================
 	Abount Tab
 
@@ -280,13 +259,10 @@ body {
 #tab_about {
 	margin-bottom: 1em;
 	display: none;
-	/*background-color: purple;*/
 }
 #about_fields {
 	margin-bottom: 1em;
 	padding: 2px;
-
-	/*background-color: green;*/
 }
 .about-field {
 	/*margin-left: 10px;
@@ -319,7 +295,6 @@ body {
 	margin-right: 5px;
 	font-size: 1rem;
 	text-align: center;
-	/*background-color: green;*/
 }
 .waifu {
 	width: 25px;
@@ -616,44 +591,6 @@ body {
 	display: block;
 	text-decoration: none;
 }
-
-/*
-.linksdrop-container {
-	position: relative;
-	display: inline-block;	
-	float: right;
-}
-.linksdropbtn {
-	padding: 5px 20px;
-	border-style: solid;
-	border-radius: 15px;
-	border-width: 1px;
-	border-color: rgba(0, 146, 148, .1);
-	color: white;
-	background-color: rgba(0, 146, 148, .1);
-	text-decoration: none;
-}
-.linksdropbtn-content {
-	display: none;
-	position: absolute;
-	right: 0;
-	width: 200px;
-	border-style: solid;
-	border-color: white;
-	border-width: 1px;
-	border-radius: 10px;
-	background-color: rgb(21,32,43) /* rgb(7,48,66) #21202A;
-	z-index: 1;
-}
-.linksdropbtn-item {
-	text-decoration: none;
-	display: block;
-	padding: 10px;
-	width: 100%;
-	color: white;
-}
-*/
-
 .lf-image {
 	display: inline-block;
 	vertical-align: middle;
@@ -678,7 +615,6 @@ body {
 	/*letter-spacing: .2em;*/
 	font-size: 1rem;
 }
-
 .more-lf-link-btn {
 	width: 100%;
 	padding-top: 1em;
@@ -844,15 +780,12 @@ h4 {
 		*/
 		grid-template-areas: 
 		"title title title title title"
-		". bio nav . ."
+		". bio nav nav ."
 		". bio main tab_linksandfollows ."
 		". tab_about main tab_linksandfollows ."
-		". . main tab_linksandfollows ."		
-		/*". . main . ."*/;
-		
+		". . main tab_linksandfollows .";		
 	}	
-	
-	/*	reset grid area back 
+		/*	reset grid area back 
 			because for some reason it doesn't change back after 
 			breaking out of the medium column layout exception 
 	*/
