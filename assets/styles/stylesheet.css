@@ -133,15 +133,18 @@ body {
 	/*border-width: 1px;*/
 	border-radius: 2rem;	
 	border-color: rgba(136,153,165,0.3);
+	
 }
 .bio-social-item {	
 	display: inline-block;
-	/*width: min-content;*/
+	width: 2rem;
+	height: 2rem;
 	margin-left: .4em;
 	padding: 6px;
 	border-style: solid;
 	border-radius: 50%;
 	font-size: 1.2rem;
+	text-align: center;
 	text-decoration: none;
 }
 .bio-social-item:first-child {
