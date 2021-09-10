@@ -154,20 +154,20 @@ body {
 #bio-social-kitsu > img {
 	width: 1.2rem;
 }
-#bio-social-kitsu:hover { 
+#bio-social-kitsu:hover, #bio-social-kitsu:focus  { 
 	background-color: #4a3848;
 }
 #bio-social-twitter {
 	color: rgb(29 161 242);
 }
-#bio-social-twitter:hover {
+#bio-social-twitter:hover, #bio-social-twitter:focus {
 	color: white;
 	background-color: rgb(29 161 242);
 }
 #bio-social-discord {
 	color: rgb(88 101 242);
 }
-#bio-social-discord:hover {
+#bio-social-discord:hover, #bio-social-discord:focus {
 	color: white;
 	background-color: rgb(88 101 242);
 }
@@ -205,7 +205,7 @@ body {
 	border-style: solid;
 	border-radius: 2em;
 	border-width: 1px;
-	border-color: #ec7261;
+	border-color: rgb(236,114,97);
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
 	font-weight: bold;
@@ -224,20 +224,7 @@ body {
 	font-weight: bold;
 	font-size: 1rem;
 }
-.nav-item:hover {
-	display: inline-block;
-	margin-right: 1em;
-	padding:6px 12px;
-	border-style: solid;
-	border-radius: 2em;
-	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
-	font-weight: bold;
-	font-size: 1rem;
-}
-.nav-item:focus {
+.nav-item:hover, .nav-item:focus {
 	display: inline-block;
 	margin-right: 1em;
 	padding:6px 12px;
@@ -368,13 +355,13 @@ body {
 	border-style: solid;
 	border-radius: 2em /*8px*/;
 	border-width: 1px;;
-	border-color: #ec7261;
+	border-color: rgb(236,114,97);
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
 	font-weight: bold;
 	font-size: 1rem;
 }
-#more_bygenre_btn:hover {
+#more_bygenre_btn:hover, #more_bygenre_btn:focus {
 	width: 100%;
 	padding:6px 12px;
 	margin-top: 10px;
@@ -388,21 +375,6 @@ body {
 	font-weight: bold;
 	font-size: 1rem;
 }
-#more_bygenre_btn:focus {
-	width: 100%;
-	padding:6px 12px;
-	margin-top: 10px;
-	margin-bottom: 0;
-	border-style: solid;
-	border-radius: 2em /*8px*/;
-	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
-	font-weight: bold;
-	font-size: 1rem;
-}
-
 #scrolling_genre_cards {
 	/*display: flex;*/
 	display: none;
@@ -443,14 +415,7 @@ body {
 	display: block;
 	text-decoration: none;
 }
-.tile:hover {
-	border-style: solid;
-	border-width: 2px;
-	border-radius: 5px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-}
-.tile:focus {
+.tile:hover, .tile:focus {
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 5px;
@@ -485,21 +450,7 @@ body {
 	font-weight: bold;
 	font-size: 1rem;
 }
-.more-char-btn:hover {
-	width: 100%;
-	padding:6px 12px;
-	margin-top: 10px;
-	margin-bottom: 0;
-	border-style: solid;
-	border-radius: 2em /*8px*/;
-	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
-	font-weight: bold;
-	font-size: 1rem;
-}
-.more-char-btn:focus {
+.more-char-btn:hover, .more-char-btn:focus {
 	width: 100%;
 	padding:6px 12px;
 	margin-top: 10px;
@@ -751,11 +702,6 @@ body {
 			". bio main ."
 			". tab_about main ."
 			". . main .";
-		/*grid-template-areas: 
-			". title nav ."
-			". bio main ."
-			". tab_about main ."
-			". . main .";*/
 	}	
 	/*	used to overlap main content
 			was getting pushed down to another row without
@@ -782,14 +728,6 @@ body {
 		grid-template-rows: auto;
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
-		/*
-		grid-template-areas: 
-			". title nav . ."
-			". bio main  tab_linksandfollows ."
-			". tab_about main tab_linksandfollows ."
-			". social main tab_linksandfollows ."
-			". . main tab_linksandfollows .";
-		*/
 		grid-template-areas: 
 		"header header header header header"
 		". bio nav nav ."
