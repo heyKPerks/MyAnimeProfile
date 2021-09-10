@@ -36,7 +36,7 @@ body {
 /*	============================================
 	Header
 	============================================*/
-#page_title_wrapper {
+#header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -106,12 +106,14 @@ body {
 	border-width: 5px;
 	border-color:  rgb(21,32,43);
 }
-#name{
+#name /*<h2> heading*/{
+	width: 100%;
 	margin-bottom: .2em;
 	padding: 0 10px;	
+	font-size: 1.5rem;
 	font-weight: 900;
 }
-#handle {
+#handle /*<h4> heading*/{	
 	padding: 0 10px;	
 	margin-bottom: 1em;
 	font-size: 1rem;
@@ -653,14 +655,15 @@ body {
 	display: none;
 }
 
-h2 { 
+.section-heading /*<h2> heading*/{
 	width: 100%;
 	margin-bottom: 1em;
 	/*padding: 0 10px;	*/
 	font-size: 1.5rem;
 	/*font-weight: lighter;*/
 }
-h4 {
+
+.tile-card-heading /*<h4> heading*/{
 	margin-top: 5px;
 	margin-bottom: 10px;
 	font-size: 1rem;
@@ -670,8 +673,8 @@ h4 {
 /*	============================================
 	Media Queries
 	============================================*/
-#page_title_wrapper { 
-	grid-area: title;
+#header { 
+	grid-area: header;
 }
 #bio {
 	grid-area: bio;
@@ -697,7 +700,7 @@ h4 {
 	grid-row-gap: 0;
 	grid-column-gap: 3em;
 	grid-template-areas: 
-		"title"
+		"header"
 		"bio"
 		"nav"
 		"tab_about"
@@ -712,7 +715,7 @@ h4 {
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
 		grid-template-areas: 
-			"title title title"
+			"header header header"
 			". bio ."
 			". nav ."
 			". tab_about ."
@@ -745,7 +748,7 @@ h4 {
 		/*grid-row-gap: 1rem;*/
 		grid-column-gap: 3em;
 		grid-template-areas: 
-			"title title title title"
+			"header header header header"
 			". bio nav ."
 			". bio main ."
 			". tab_about main ."
@@ -790,7 +793,7 @@ h4 {
 			". . main tab_linksandfollows .";
 		*/
 		grid-template-areas: 
-		"title title title title title"
+		"header header header header header"
 		". bio nav nav ."
 		". bio main tab_linksandfollows ."
 		". tab_about main tab_linksandfollows ."
