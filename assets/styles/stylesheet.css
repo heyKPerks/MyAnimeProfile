@@ -134,8 +134,7 @@ body {
 	border-style: solid;;
 	/*border-width: 1px;*/
 	border-radius: 2rem;	
-	border-color: rgba(136,153,165,0.3);
-	
+	border-color: rgba(136,153,165,0.3);	
 }
 .bio-social-item {	
 	display: inline-block;
@@ -152,7 +151,6 @@ body {
 .bio-social-item:first-child {
 	margin-left: 0;
 }
-
 #bio-social-kitsu > img {
 	width: 1.2rem;
 }
@@ -517,19 +515,19 @@ body {
 }
 
 /* Favories OPs EDs ====================*/
-.video-dropdown-item { 
+.OP_ED-item { 
 	padding-top: .5em;
 	padding-bottom: .5em;
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
 }
-.video-dropdown-item:first-of-type {
+.OP_ED-item:first-of-type {
 	border-top: 1px;
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
 }
-.video-header-link { 
+.OP_ED-header-link { 
 	display: block;
 	width: 100%;
 	text-decoration: none;
@@ -538,13 +536,13 @@ body {
 	font-weight: 100;
 	line-height: 1.5em;
 }
-.song-anime {
+.OP_ED-anime {
 	display: block;
 }
-.song-title {
+.OP_ED-title {
 	color: rgba(136,153,165,0.9);
 }
-.more-video-items-btn {
+.more-OP_ED-item-btn {
 	width: 100%;
 	display: block;
 	padding: 0;
@@ -558,10 +556,10 @@ body {
 	text-align: left;
 }
 
-.more-video-item-op {
+.more-OP_ED-item-op {
 	display: none;
 }
-.more-video-item-ed {
+.more-OP_ED-item-ed {
 	display: none;
 }
 

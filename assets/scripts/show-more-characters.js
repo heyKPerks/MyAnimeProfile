@@ -32,20 +32,20 @@ function more_female_btn() {
 /*Show more OPs
 button on click, display more-video-item-op, hide more_video_items_op_btn
 */
-function more_video_items_op_btn() {
+function more_OP_ED_item_op_btn() {
   var i;
-  var links = document.getElementsByClassName("more-video-item-op");
-  var btn = document.getElementById("more_video_items_op_btn");
+  var links = document.getElementsByClassName("more-OP_ED-item-op");
+  var btn = document.getElementById("more_OP_ED_item_op_btn");
   for (i = 0; i < links.length; i++) {
     links[i].style.display = "block";
   }
   btn.style.display = "none";
 }
 /*Show more EDs*/
-function more_video_items_ed_btn() {
+function more_OP_ED_item_ed_btn() {
   var i;
-  var links = document.getElementsByClassName("more-video-item-ed");
-  var btn = document.getElementById("more_video_items_ed_btn");
+  var links = document.getElementsByClassName("more-OP_ED-item-ed");
+  var btn = document.getElementById("more_OP_ED_item_ed_btn");
   for (i = 0; i < links.length; i++) {
     links[i].style.display = "block";
   }
