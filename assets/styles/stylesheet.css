@@ -430,6 +430,7 @@ body {
 }
 .tile-image {
 	width: 100%;
+	vertical-align: middle;
 	border-radius: 5px;
 }
 .more-female {
@@ -566,7 +567,7 @@ body {
 }
 .lf-displayname {
 	display: block;
-	margin-bottom: 5px;
+	margin-bottom: .3em;
 	color: white;
 }
 .lf-handle {
