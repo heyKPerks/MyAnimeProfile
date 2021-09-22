@@ -422,6 +422,28 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 }
+
+/*	tooltip objects not working properly 
+		keeping display none state so I don't have to remove code at the moment*/
+.tooltip {
+	position: absolute;
+	display: none;
+	width: 100px;
+	margin-top: 2px;
+	padding: .2em;
+	border-radius: 8px;
+	font-size: 1rem;
+	font-weight: 100;
+	line-height: 1.3rem;
+	text-align: center;
+	background-color: black;
+	color: white;
+	z-index: 999;
+}
+.tile:hover > .tooltip, .tile:focus > .tooltip {
+	/*display: block;*/
+}
+
 .scrolling-tiled-list > .tile {
 	display: inline-block;  
 	width: 36%;
