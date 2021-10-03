@@ -1,37 +1,138 @@
-/*	Nav Button Function 
-		show selected tab
-		hid all actionable tabs */
-function tab_selct (nav_id, tab_id) {
-	console.log(nav_id);
-	console.log(tab_id);
-	
-	var i;
-	var selected_nav = document.getElementById(nav_id);
-	console.log("selected nav");
-	console.log(selected_nav);
-	var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
-	var current_nav = document.getElementById(current_nav_id);
-	console.log("current nav");
-	console.log(current_nav);
-	var selected_tab = document.getElementById(tab_id);
-	var actionable_tabs = document.getElementsByClassName("tab-actionable");
-	
-	current_nav.classList.remove("nav-item-selected");
-	selected_nav.classList.add("nav-item-selected");
-	
-	console.log("the selected tab is " + selected_tab);
-	for (i = 0; i < actionable_tabs.length; i++) {
-		console.log("actionable tab on button select " + actionable_tabs[i]);
-	}
+/*=============================================================
+	Button functions
+=============================================================*/
 
-	for (i = 0; i < actionable_tabs.length; i++) {
-		actionable_tabs[i].style.display = "none";
-	}
-	
-	selected_tab.style.display = "block";
+/*Main Nav Section ================================================*/
+/*	on click, show selected tab, hide all actionable tabs */
+		function tab_selct (nav_id, tab_id) {
+			console.log(nav_id);
+			console.log(tab_id);
+			
+			var i;
+			var selected_nav = document.getElementById(nav_id);
+			console.log("selected nav");
+			console.log(selected_nav);
+			var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
+			var current_nav = document.getElementById(current_nav_id);
+			console.log("current nav");
+			console.log(current_nav);
+			var selected_tab = document.getElementById(tab_id);
+			var actionable_tabs = document.getElementsByClassName("tab-actionable");
+			
+			current_nav.classList.remove("nav-item-selected");
+			selected_nav.classList.add("nav-item-selected");
+			
+			console.log("the selected tab is " + selected_tab);
+			for (i = 0; i < actionable_tabs.length; i++) {
+				console.log("actionable tab on button select " + actionable_tabs[i]);
+			}
+		
+			for (i = 0; i < actionable_tabs.length; i++) {
+				actionable_tabs[i].style.display = "none";
+			}
+			
+			selected_tab.style.display = "block";
+		}
+
+/*Main Section ================================================*/
+
+/*Show more anime series by genre
+button on click, display scrolling_genre_cards, set fav_item_animeseries bottom margin 10px to match grid, hide button
+*/
+function more_bygenre_btn() {
+  var container = document.getElementById("scrolling_genre_cards");
+  var animeSeriesContainer = document.getElementById("fav_item_animeseries");
+  var button = document.getElementById("more_bygenre_btn"); 
+  
+  container.style.display = "flex";
+  animeSeriesContainer.style.marginBottom = "10px";
+  button.style.display = "none";
 }
 
-/* Tab continuity and screen resizing ======================= */
+/*Show more female characters
+button on click, display more female div, hide button
+*/
+function more_female_btn() {
+  var i;
+  var characters = document.getElementsByClassName("more-female");
+  var container = document.getElementById("more_characters_fm");
+  var femalebtn = document.getElementById("more_female_btn");
+  
+  for (i = 0; i < characters.length; i++) {
+    characters[i].style.display = "block";
+  } 
+  container.style.marginTop = "10px";
+  femalebtn.style.display = "none";
+}
+
+/*Show more OPs
+button on click, display more-video-item-op, hide more_video_items_op_btn
+*/
+function more_OP_ED_item_op_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-OP_ED-item-op");
+  var btn = document.getElementById("more_OP_ED_item_op_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+/*Show more EDs*/
+function more_OP_ED_item_ed_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-OP_ED-item-ed");
+  var btn = document.getElementById("more_OP_ED_item_ed_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+
+/*Links and Follows Section ===================================*/
+
+/*Show more anitube links
+button on click, display more-lf-anitube, hide more_anitube_btn
+*/
+function more_anitube_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anitube");
+  var btn = document.getElementById("more_anitube_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+
+/*Show more anipicsreddit links 
+button on click, display more-lf-anipicsreddit, hide more_anipicsreddit_btn
+*/
+function more_anipicsreddit_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anipicsreddit");
+  var btn = document.getElementById("more_anipicsreddit_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+
+/*Show more anipicstwitter links 
+button on click, display more-lf-anipicstwitter, hide more_anipictwitter_btn
+*/
+function more_anipicstwitter_btn() {
+  var i;
+  var links = document.getElementsByClassName("more-lf-anipicstwitter");
+  var btn = document.getElementById("more_anipicstwitter_btn");
+  for (i = 0; i < links.length; i++) {
+    links[i].style.display = "block";
+  }
+  btn.style.display = "none";
+}
+/*=============================================================
+	Content continuity with screen resizing
+=============================================================*/
+
+/* Layout changes with screen resizing ======================= */
 
 /* Small Mobile Single column */
 function one_column () {
