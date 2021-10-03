@@ -128,7 +128,7 @@ function three_column () {
 }
 
 //Maintains selected tab content continuity with responsive design
-function actionable_tabs () {
+function tab_continuity () {
 	// Get width of the window, used innerWidth to match with CSS grids calculations
 	var w = window.innerWidth;
 	console.log("window width is " + w);
@@ -162,12 +162,52 @@ function actionable_tabs () {
 }
 
 // Attaching the event listener function to window's resize event
-window.addEventListener("resize", actionable_tabs);
+
+window.addEventListener("resize", tab_continuity);
 
 /*	Calling the function for the first time after page loads
 		had to call function after page load because otherwise failed finding divs by ID
 		and returned null for elements
 */
 window.onload = function afterWebPageLoad() { 
-  actionable_tabs();
+  tab_continuity();
 } 
+
+// testing matchMedia ========================================================
+/*
+function tab_continuity() {
+	var size_small = window.matchMedia('(min-width:300px) and (max-width: 899px)');
+	var size_medium = window.matchMedia('(min-width: 900px)');
+	var size_large = window.matchMedia('(min-width: 1300px)');
+
+	var banner = document.getElementById("profile_banner");
+
+  // Check if the media query is true
+	if (size_small.matches) {
+		console.log("matchMedia function calling column one");
+		one_column();
+
+		banner.style.height = "100%";
+		banner.style.width = "";
+  }
+	if (size_medium.matches) {
+		console.log("matchMedia function calling column two");
+		two_column();
+
+		banner.style.width = "100%";
+		banner.style.height = "";
+  }
+	if (size_large.matches) {
+		console.log("matchMedia function calling column three");
+		three_column();
+		
+		banner.style.width = "100%";
+		banner.style.height = "";
+  }
+}
+
+// Register event listener
+window.addEventListener("resize", tab_continuity);
+// Initial check
+tab_continuity();
+*/
