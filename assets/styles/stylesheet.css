@@ -50,10 +50,11 @@ body {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
+	padding: 0 1em;
 	align-self: center;
 	text-align: center;
 	font-family: 'Carter One', cursive;
-	font-size: 6vh;
+	font-size: 3.5rem;
 	color: whitesmoke;
 	text-shadow: 2px 2px 5px rgb(236,114,97);
 }
@@ -599,6 +600,15 @@ body {
 .lf-handle-icon {
 	/*letter-spacing: .2em;*/
 	font-size: 1rem;
+}
+.nsfw-tag {
+	vertical-align: middle;
+	font-size: .7rem;
+	padding: 0 .3em;	
+	color: #FF585B;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FF585B;
 }
 .more-lf-link-btn {
 	width: 100%;
