@@ -660,6 +660,42 @@ body {
 }
 
 /*	============================================
+	Footer
+	============================================*/
+#footer {
+	width: 100%;
+	background: #1b2329;
+	padding: 1em;
+}
+.footer-header {
+	width: 300px;
+	margin: auto;
+	margin-bottom: .5em;
+	/*text-align: center;*/
+	font-size: 1.5rem;	
+	color: white;
+	
+}
+.footer-text {
+	width: 300px;
+	margin: auto;
+	margin-bottom: .5em;
+	line-height: 1.5em;
+	/*text-align: center;*/
+	font-size: 1rem;
+	color: white;
+	
+}
+.copyright {
+	width: 300px;
+	margin: auto;
+	/*text-align: center;*/
+	font-size: 1rem;
+	color: rgba(136,153,165,0.9);
+	
+}
+
+/*	============================================
 	Media Queries
 	============================================*/
 #header { 
@@ -681,6 +717,9 @@ body {
 #tab_linksandfollows {
 	grid-area: tab_linksandfollows;
 }
+#footer {
+	grid-area: footer;
+}
 
 #page_wrapper {
 	display: grid;
@@ -694,7 +733,8 @@ body {
 		"nav"
 		"tab_about"
 		"main"
-		"tab_linksandfollows";
+		"tab_linksandfollows"
+		"footer";
 }
 @media (min-width: 540px) {
 	#page_wrapper {
@@ -709,7 +749,8 @@ body {
 			". nav ."
 			". tab_about ."
 			". main ."
-			". tab_linksandfollows .";
+			". tab_linksandfollows ."
+			"footer footer footer";
 	}
 	.scrolling-tiled-list {
 		display: grid;
@@ -741,7 +782,8 @@ body {
 			". bio nav ."
 			". bio main ."
 			". tab_about main ."
-			". . main .";
+			". . main ."
+			"footer footer footer footer";
 	}	
 	/*	used to overlap main content
 			was getting pushed down to another row without
@@ -773,7 +815,8 @@ body {
 		". bio nav nav ."
 		". bio main tab_linksandfollows ."
 		". tab_about main tab_linksandfollows ."
-		". . main tab_linksandfollows .";		
+		". . main tab_linksandfollows ."
+		"footer footer footer footer footer";		
 	}	
 		/*	reset grid area back 
 			because for some reason it doesn't change back after 
