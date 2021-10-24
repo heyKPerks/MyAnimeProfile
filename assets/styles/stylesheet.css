@@ -50,11 +50,11 @@ body {
 	position: absolute;
 	z-index: 10;
 	width: 100%;
-	padding: 0 1em;
+	padding: 2em;
 	align-self: center;
 	text-align: center;
 	font-family: 'Carter One', cursive;
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	color: whitesmoke;
 	text-shadow: 2px 2px 5px rgb(236,114,97);
 }
