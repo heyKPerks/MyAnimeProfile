@@ -114,7 +114,7 @@ body {
 	font-size: 1.5rem;
 	font-weight: 100;
 }
-#handle /*<h4> heading*/{	
+#handle /*<h3> heading*/{	
 	padding: 0 10px;	
 	margin-bottom: 1em;
 	font-size: 1rem;
@@ -559,7 +559,7 @@ body {
 	padding-bottom: 1em;	
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 700;	
 }
 .lf-item-container {
@@ -638,20 +638,22 @@ body {
 
 .section-heading /*<h2> heading*/{
 	width: 100%;
-	margin-bottom: .5em;
+	margin-bottom: .3em;
 	font-size: 1.5rem;	
 	font-weight: 100;
 }
 .section-subheading /*<h3> sesction sub heading */ {
 	display: block;
 	width: 100%;
-	margin-top: .5em;
-	padding-bottom: 1em;
-	font-size: 1rem;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 1.2rem;
 	font-weight: 700;	
 	color: rgba(136,153,165,0.9);
 }
-
+.section-subheading:first-of-type {
+	margin-top: 0;
+}
 .tile-card-heading /*<h4> heading*/{
 	margin-top: 5px;
 	margin-bottom: 10px;
