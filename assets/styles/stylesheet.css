@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 html {
   -webkit-box-sizing: border-box;
@@ -12,11 +12,11 @@ html {
   box-sizing: inherit;
 }
 body {
-	font-family: 'open sans';
+	font-family: 'Nunito', 'arial', sans-serif;;
 	background-color: rgb(21,32,43); /* rgb(7,48,66) #21202A*/
 	color: #FFFFFF;
 	font-size: 1rem;
-	font-weight: 100;
+	font-weight: 400;
 }
 
 /*	============================================
@@ -112,13 +112,13 @@ body {
 	margin-bottom: .3em;
 	padding: 0 10px;	
 	font-size: 1.5rem;
-	font-weight: 900;
+	font-weight: 100;
 }
 #handle /*<h4> heading*/{	
 	padding: 0 10px;	
 	margin-bottom: 1em;
 	font-size: 1rem;
-	font-weight: bold;
+	font-weight: 700;
 	color: rgba(136,153,165,0.9);
 }
 #biotext {
@@ -209,7 +209,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 .nav-item-selected {
@@ -222,7 +222,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 .nav-item:hover, .nav-item:focus {
@@ -235,7 +235,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 .first-nav-item {
@@ -359,7 +359,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 #more_bygenre_btn:hover, #more_bygenre_btn:focus {
@@ -373,7 +373,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 #scrolling_genre_cards {
@@ -471,7 +471,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(21,32,43);
 	color: rgb(236,114,97);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 .more-char-btn:hover, .more-char-btn:focus {
@@ -485,7 +485,7 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 	color: rgb(21,32,43);
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 1rem;
 }
 
@@ -508,7 +508,6 @@ body {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 1rem;
-	font-weight: 100;
 	line-height: 1.5em;
 }
 .OP_ED-anime {
@@ -561,7 +560,7 @@ body {
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 1rem;
-	font-weight: bold;	
+	font-weight: 700;	
 }
 .lf-item-container {
 	width: 100%;
@@ -639,16 +638,17 @@ body {
 
 .section-heading /*<h2> heading*/{
 	width: 100%;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 	font-size: 1.5rem;	
+	font-weight: 100;
 }
 .section-subheading /*<h3> sesction sub heading */ {
 	display: block;
 	width: 100%;
-	margin-top: 1em;
+	margin-top: .5em;
 	padding-bottom: 1em;
-	font-size: 1.2rem;
-	font-weight: bold;	
+	font-size: 1rem;
+	font-weight: 700;	
 	color: rgba(136,153,165,0.9);
 }
 
@@ -656,7 +656,7 @@ body {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	font-size: 1rem;
-	font-weight: lighter;
+	font-weight: 100;
 }
 
 /*	============================================
