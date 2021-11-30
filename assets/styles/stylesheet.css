@@ -112,7 +112,7 @@ body {
 	margin-bottom: .3em;
 	padding: 0 10px;	
 	font-size: 1.5rem;
-	font-weight: 100;
+	font-weight: 900;
 }
 #handle /*<h3> heading*/{	
 	padding: 0 10px;	
@@ -555,8 +555,8 @@ body {
 	padding-bottom: 1rem;*/
 }
 .lf-heading {
-	padding-top: 1em;
-	padding-bottom: 1em;	
+	padding-top: .7em;
+	padding-bottom: .7em;	
 	padding-left: 10px;
 	padding-right: 10px;
 	font-size: 1.2rem;
@@ -638,9 +638,9 @@ body {
 
 .section-heading /*<h2> heading*/{
 	width: 100%;
-	margin-bottom: .3em;
+	margin-bottom: .5em;
 	font-size: 1.5rem;	
-	font-weight: 100;
+	font-weight: 400;
 }
 .section-subheading /*<h3> sesction sub heading */ {
 	display: block;
@@ -658,7 +658,7 @@ body {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	font-size: 1rem;
-	font-weight: 100;
+	font-weight: 700;
 }
 
 /*	============================================
