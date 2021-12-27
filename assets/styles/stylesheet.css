@@ -376,7 +376,7 @@ body {
 	font-weight: 700;
 	font-size: 1rem;
 }
-#scrolling_genre_cards {
+.scrolling-cards {
 	/*display: flex;*/
 	display: none;
 	flex-wrap: nowrap;
