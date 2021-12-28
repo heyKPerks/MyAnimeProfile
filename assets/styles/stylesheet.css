@@ -347,7 +347,7 @@ body {
 	-ms-overflow-style: -ms-autohiding-scrollbar;	
 }
 
-#more_bygenre_btn {
+.btn-pill-full-width {
 	width: 100%;
 	white-space: nowrap;
 	margin-top: 10px;
@@ -362,7 +362,7 @@ body {
 	font-weight: 700;
 	font-size: 1rem;
 }
-#more_bygenre_btn:hover, #more_bygenre_btn:focus {
+.btn-pill-full-width:hover, .btn-pill-full-width:focus {
 	width: 100%;
 	padding:6px 12px;
 	margin-top: 10px;
@@ -456,38 +456,6 @@ body {
 	vertical-align: middle;
 	border-radius: 5px;
 }
-.more-female {
-	display: none;
-}
-.more-char-btn {
-	width: 100%;
-	white-space: nowrap;
-	margin-top: 10px;
-	margin-bottom: 0;
-	padding:6px 12px;
-	border-style: solid;
-	border-radius: 2em /*8px*/;
-	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(21,32,43);
-	color: rgb(236,114,97);
-	font-weight: 700;
-	font-size: 1rem;
-}
-.more-char-btn:hover, .more-char-btn:focus {
-	width: 100%;
-	padding:6px 12px;
-	margin-top: 10px;
-	margin-bottom: 0;
-	border-style: solid;
-	border-radius: 2em /*8px*/;
-	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
-	font-weight: 700;
-	font-size: 1rem;
-}
 
 /* Favories OPs EDs ====================*/
 .OP_ED-item { 
@@ -515,19 +483,6 @@ body {
 }
 .OP_ED-title {
 	color: rgba(136,153,165,0.9);
-}
-.more-OP_ED-item-btn {
-	width: 100%;
-	display: block;
-	padding: 0;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border: 0;
-	background-color: rgb(21,32,43);
-	color: rgb(236,114,97);
-	font-size: 1rem; 
-	line-height: 1.5em;
-	text-align: left;
 }
 
 .more-OP_ED-item-op {
