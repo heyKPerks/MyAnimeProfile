@@ -13,8 +13,8 @@ html {
 }
 body {
 	font-family: 'Nunito', 'arial', sans-serif;;
-	background-color: rgb(21,32,43); /* rgb(7,48,66) #21202A*/
-	color: #FFFFFF;
+	background-color: rgb(0,0,0); /* rgb(7,48,66) #21202A*/
+	color: rgb(214,217,219);
 	font-size: 1rem;
 	font-weight: 400;
 }
@@ -55,7 +55,7 @@ body {
 	text-align: center;
 	font-family: 'Carter One', cursive;
 	font-size: 2.5rem;
-	color: whitesmoke;
+	color: rgb(214,217,219);
 	text-shadow: 2px 2px 5px rgb(236,114,97);
 }
 
@@ -105,7 +105,7 @@ body {
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 5px;
-	border-color:  rgb(21,32,43);
+	border-color:  rgb(0,0,0);
 }
 #name /*<h2> heading*/{
 	width: 100%;
@@ -207,7 +207,7 @@ body {
 	border-radius: 2em;
 	border-width: 1px;
 	border-color: rgb(236,114,97);
-	background-color: rgb(21,32,43);
+	background-color: rgb(0,0,0);
 	color: rgb(236,114,97);
 	font-weight: 700;
 	font-size: 1rem;
@@ -221,7 +221,7 @@ body {
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
+	color: rgb(0,0,0);
 	font-weight: 700;
 	font-size: 1rem;
 }
@@ -234,7 +234,7 @@ body {
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
+	color: rgb(0,0,0);
 	font-weight: 700;
 	font-size: 1rem;
 }
@@ -357,7 +357,7 @@ body {
 	border-radius: 2em /*8px*/;
 	border-width: 1px;;
 	border-color: rgb(236,114,97);
-	background-color: rgb(21,32,43);
+	background-color: rgb(0,0,0);
 	color: rgb(236,114,97);
 	font-weight: 700;
 	font-size: 1rem;
@@ -372,7 +372,7 @@ body {
 	border-width: 1px;
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
-	color: rgb(21,32,43);
+	color: rgb(0,0,0);
 	font-weight: 700;
 	font-size: 1rem;
 }
@@ -474,7 +474,7 @@ body {
 	display: block;
 	width: 100%;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: rgb(214,217,219);
 	font-size: 1rem;
 	line-height: 1.5em;
 }
@@ -503,7 +503,7 @@ body {
 	display: none;
 }
 .lf-list {
-	background-color: rgb(27, 40, 53);
+	background-color: rgb(22,24,28);
 	border-radius: 10px;
 	margin-bottom: 1em;
 	/*padding-top: 1rem;
@@ -545,7 +545,7 @@ body {
 .lf-displayname {
 	display: block;
 	margin-bottom: .3em;
-	color: white;
+	color: rgb(214,217,219);
 }
 .lf-handle {
 	display: block;
@@ -576,7 +576,7 @@ body {
 	border-bottom-right-radius: 10px;
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*#21202A*/
-	background-color: rgb(27, 40, 53);
+	background-color: rgb(22,24,28);
 	font-size: 1rem;
 	text-align: left;
 	color: rgb(236,114,97);
@@ -629,7 +629,7 @@ body {
 	margin: auto;
 	margin-bottom: .5em;
 	font-size: 1.5rem;	
-	color: white;
+	color: rgb(214,217,219);
 	
 }
 .footer-text {
@@ -638,7 +638,7 @@ body {
 	margin-bottom: .5em;
 	line-height: 1.5em;
 	font-size: 1rem;
-	color: white;	
+	color: rgb(214,217,219);	
 }
 
 /*========================================*/
