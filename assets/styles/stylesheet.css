@@ -22,6 +22,7 @@ body {
 /*	============================================
 	Table of Contens
 
+	Modals
 	Header
 	Profile Bio
 	Navigation
@@ -33,6 +34,117 @@ body {
 
 	============================================*/
 
+/*	============================================
+	Modals 
+	============================================*/
+.modal-container {
+	background-color: rgb(0,0,0, 0.6);
+	display: flex;
+	align-items: top;
+	justify-content: center; 
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 20;
+}
+#discord_modal_content {
+	display: block;
+	width: 600px;
+	min-width: 300px;	
+	height: max-content;
+	margin: 0;
+	margin-top: 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 2em;
+	background-color: rgb(22,24,28, .9);
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.modal-heading {
+	width: 100%;
+	margin-bottom: .5em;
+	font-size: 2rem;	
+	font-weight: 400;
+	text-align: center;
+}
+.modal-subheading {
+	width: 100%;
+	padding-top: .5em;
+	padding-bottom: .5em;	
+	font-size: 1.2rem;
+	font-weight: 700;	
+}
+
+.discord-modal-item {
+	background-color: #23272a;
+	width: 100%;
+	margin-bottom: 1em;
+	padding: .3em .5em;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+
+}
+.discord-modal-item-label {
+	display: block;
+}
+.discord-modal-item-image {
+	width: 40px;
+	height: 40px;
+	margin-right: .4em;
+	vertical-align: middle;	
+	border-radius: 50%;
+}
+.discord-modal-item-text {
+	font-size: 1.2rem;
+}
+#discord_num {
+	margin-left: .2em;
+	color:#7289da;
+}
+.discord-modal-btn {
+	align-self: stretch;
+	margin-left: auto;
+	width: 100px;
+	white-space: nowrap;
+	padding:6px 12px;
+	border-radius: 10px;
+	border-style: none;
+	background-color: rgb(236,114,97);
+	border-width: 0;
+	color: rgb(22,24,28);
+	font-weight: 700;
+	font-size: 1rem;
+}
+.discord-modal-btn:hover, .discord-modal-btn:focus {
+	cursor: pointer;
+	text-decoration: underline;	
+}
+
+#discord_modal_btn_close {
+	margin-top: 2em;
+	width: 100%;
+	white-space: nowrap;
+	padding:6px 12px;
+	border-radius: 10px;
+	border-style: solid;
+	background-color: rgb(22,24,28);
+	border-color: rgb(214,217,219);
+	border-width: 1px;
+	color: rgb(214,217,219);
+	font-weight: 700;
+	font-size: 1rem;
+}
+#discord_modal_btn_close:hover, #discord_modal_btn_close:focus {
+	cursor: pointer;
+	text-decoration: underline;	
+	background-color: #4a3848;
+}
 /*	============================================
 	Header
 	============================================*/
