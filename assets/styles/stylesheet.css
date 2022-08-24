@@ -239,31 +239,29 @@ body {
 	font-size: 1rem;
 }
 #bio_socials {
+	display: flex;
+	justify-items: center;
+	gap: .4em;
 	width: max-content;
 	height: max-content;
 	margin-right: 1rem;
-	padding: 0 6px;
-	font-size: 0;
-	border-style: solid;
-	/*border-width: 1px;*/
+	padding: 0 6px;	
+	/*border-style: solid;
+	border-width: 1px;*/
 	border-radius: 2rem;	
 	border-color: rgba(136,153,165,0.3);	
 }
 .bio-social-item {	
-	display: inline-block;
+	display: block;
 	width: 2rem;
 	height: 2rem;
-	margin-left: .4em;
 	padding: 6px;
-	border-style: solid;
 	border-radius: 50%;
 	font-size: 1.2rem;
 	text-align: center;
 	text-decoration: none;
 }
-.bio-social-item:first-child {
-	margin-left: 0;
-}
+
 #bio-social-kitsu > img {
 	width: 1.2rem;
 }
@@ -277,12 +275,29 @@ body {
 	color: white;
 	background-color: rgb(29 161 242);
 }
-#bio-social-discord {
+#social_discord_btn {
+	width: 2rem;
+	height: 2rem;
+	padding: 6px;
+	border-radius: 50%;
+	border-style: none;
+	border-width: 0;
+	font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
 	color: rgb(88 101 242);
+	background-color:rgb(0,0,0);
 }
-#bio-social-discord:hover, #bio-social-discord:focus {
+#social_discord_btn:hover, #social_discord_btn:focus {
 	color: white;
 	background-color: rgb(88 101 242);
+}
+#bio_social-github {
+	color: white;
+}
+#bio_social-github:hover, #bio_social-github:focus {
+	color: black;
+	background-color: white;	
 }
 
 /*	============================================
@@ -733,7 +748,7 @@ body {
 	============================================*/
 #footer {
 	width: 100%;
-	background: #1b2329;
+	background-color: #1b2329;
 	padding: 1em;
 }
 .footer-header {
@@ -755,54 +770,63 @@ body {
 
 /*========================================*/
 #footer_socials {
-	display: block;
+	display: flex;
+	justify-items: center;
+	gap: .4em;
 	width: 300px;
+	height: max-content;
 	margin: auto;
 	margin-bottom: 1em;
+	/*border-style: solid;
+	border-width: 1px;*/
+	border-radius: 2rem;	
+	border-color: rgba(136,153,165,0.3);	
 }
 .footer-social-item {	
-	display: inline-block;
 	width: 2rem;
 	height: 2rem;
-	margin-left: .4em;
 	padding: 6px;
-	border-style: solid;
 	border-radius: 50%;
 	font-size: 1.2rem;
 	text-align: center;
-	text-decoration: none;
-	border-color: #1b2329;
-	
-}
-.footer-social-item:first-child {
-	margin-left: 0;
+	text-decoration: none;	
 }
 #footer_social-kitsu > img {
 	width: 1.2rem;
 }
-#footer_social-kitsu:hover, #bio-social-kitsu:focus  { 
+#footer_social-kitsu:hover, #footer_social-kitsu:focus  { 
 	background-color: #4a3848;
 }
 #footer_social-twitter {
 	color: rgb(29 161 242);
 }
-#footer_social-twitter:hover, #bio-social-twitter:focus {
+#footer_social-twitter:hover, #footer_social-twitter:focus {
 	color: white;
 	background-color: rgb(29 161 242);
 }
-#footer_social-discord {
+#footer_social_discord_btn {
+	width: 2rem;
+	height: 2rem;
+	padding: 6px;
+	border-radius: 50%;
+	border-style: none;
+	border-width: 0;
+	font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
 	color: rgb(88 101 242);
+	background-color: #1b2329;
 }
-#footer_social-discord:hover, #bio-social-discord:focus {
+#footer_social_discord_btn:hover, #footer_social_discord_btn:focus {
 	color: white;
 	background-color: rgb(88 101 242);
 }
 #footer_social-github {
 	color: white;
 }
-#footer_social-github:hover, #bio-social-twitter:focus {
-	color: white;
-	background-color: black;	
+#footer_social-github:hover, #footer_social-github:focus {
+	color: black;
+	background-color: white;	
 }
 
 .copyright {
