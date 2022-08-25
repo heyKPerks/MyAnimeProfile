@@ -48,6 +48,8 @@ body {
 	height: 100vh;
 	width: 100vw;
 	z-index: 20;
+	overflow-y:scroll;
+    overflow-x:hidden;
 }
 #discord_modal_content {
 	display: block;
@@ -62,7 +64,6 @@ body {
 	background-color: rgb(22,24,28, .9);
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-	overflow: hidden;
 }
 
 .modal-heading {
