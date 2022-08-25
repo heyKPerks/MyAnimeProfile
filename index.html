@@ -39,7 +39,7 @@
 				<div id="bio_socials">
 					<a href="https://kitsu.io/users/heyKPerks" id="bio-social-kitsu"class="bio-social-item"><img src="assets/images/icons/kitsu.ico"></img></a>
 					<a href="https://twitter.com/heyKPerks" id="bio-social-twitter"class="bio-social-item"><i class="fab fa-twitter"></i></a>						
-					<button id="social_discord_btn" class="bio-social-item"><i class="fab fa-discord"></i></button>
+					<button onclick="show_discord_modal()" id="social_discord_btn" class="bio-social-item"><i class="fab fa-discord"></i></button>
 					<a href="https://github.com/heyKPerks/MyAnimeProfile" id="bio_social-github"class="bio-social-item"><i class="fab fa-github"></i></a>
 				</div>
 			</div><!-- bio -->
@@ -1116,7 +1116,7 @@
 				<div id="footer_socials">
 					<a href="https://kitsu.io/users/heyKPerks" id="footer_social-kitsu"class="footer-social-item"><img src="assets/images/icons/kitsu.ico"></img></a>
 					<a href="https://twitter.com/heyKPerks" id="footer_social-twitter"class="footer-social-item"><i class="fab fa-twitter"></i></a>
-					<button id="footer_social_discord_btn" class="bio-social-item"><i class="fab fa-discord"></i></button>
+					<button onclick="show_discord_modal()" id="footer_social_discord_btn" class="bio-social-item"><i class="fab fa-discord"></i></button>
 					<a href="https://github.com/heyKPerks/MyAnimeProfile" id="footer_social-github"class="footer-social-item"><i class="fab fa-github"></i></a>
 				</div>
 				<p class="copyright">&copy; 2022, All right reserved</p>
@@ -1125,7 +1125,7 @@
 		</div><!--pagewrapper-->
 
 		<!-- Modals -->
-		<!--
+
 		<div id="discord_modal_container" class="modal-container">
 			<div id="discord_modal_content">
 				<h2 class="modal-heading"><i class="fab fa-discord"></i> Discord</h2>
@@ -1135,7 +1135,7 @@
 						<img loading="Lazy" class="discord-modal-item-image" src="assets/images/KP.png" alt="heykperks logo"></img>
 						<span class="discord-modal-item-text">heyKPerks<span id="discord_num">#4655</span></span>
 					</div>
-					<button class="discord-modal-btn">Copy</button>
+					<button onclick="copy_discord_name()" class="discord-modal-btn">Copy</button>
 				</div>				
 				<h3 class="modal-subheading">Join My Server</h3>					
 				<div class="discord-modal-item">
@@ -1143,11 +1143,11 @@
 						<img loading="Lazy" class="discord-modal-item-image" src="assets/images/perksplace.png" alt="heykperks logo"></img>
 						<span class="discord-modal-item-text">PerksPlace</span>
 					</div>
-					<button class="discord-modal-btn">Join</button>
+					<button onclick="window.location.href='https://discord.gg/gQ3SKfn';" class="discord-modal-btn">Join</button>
 				</div>				
-				<button id="discord_modal_btn_close" class="modal-btn-close">Close</button>
+				<button onclick="close_discord_modal()" id="discord_modal_btn_close" class="modal-btn-close">Close</button>
 			</div>
-		</div> -->
+		</div> 
 		<!-- Discord Modals Container -->
 
 	</body>

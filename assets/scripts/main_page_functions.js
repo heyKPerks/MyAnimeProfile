@@ -1,38 +1,61 @@
 /*=============================================================
 	Button functions
 =============================================================*/
+/*Discord Modal Functions ====================================*/
+
+/*Show Discord Modal
+button on click, display discord_modal_container block */
+function show_discord_modal () {
+	var modal = document.getElementById("discord_modal_container");
+	modal.style.display = "flex";
+}
+
+/*Close Discord Modal
+button on click, display discord_modal_container none */
+function close_discord_modal () {
+	var modal = document.getElementById("discord_modal_container");
+	modal.style.display = "none";
+}
+
+/*Copy Discord Username to Clipboard
+button on cancelIdleCallback, copy text to clipboard */
+function copy_discord_name () {
+	navigator.clipboard.writeText("heyKPerks#4655");
+	alert("copied to clipboard: " + "heyKPerks#4655");
+}
+
 
 /*Main Nav Section ================================================*/
 /*	on click, show selected tab, hide all actionable tabs */
-		function tab_selct (nav_id, tab_id) {
-			console.log(nav_id);
-			console.log(tab_id);
-			
-			var i;
-			var selected_nav = document.getElementById(nav_id);
-			console.log("selected nav");
-			console.log(selected_nav);
-			var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
-			var current_nav = document.getElementById(current_nav_id);
-			console.log("current nav");
-			console.log(current_nav);
-			var selected_tab = document.getElementById(tab_id);
-			var actionable_tabs = document.getElementsByClassName("tab-actionable");
-			
-			current_nav.classList.remove("nav-item-selected");
-			selected_nav.classList.add("nav-item-selected");
-			
-			console.log("the selected tab is " + selected_tab);
-			for (i = 0; i < actionable_tabs.length; i++) {
-				console.log("actionable tab on button select " + actionable_tabs[i]);
-			}
-		
-			for (i = 0; i < actionable_tabs.length; i++) {
-				actionable_tabs[i].style.display = "none";
-			}
-			
-			selected_tab.style.display = "block";
-		}
+function tab_selct (nav_id, tab_id) {
+	console.log(nav_id);
+	console.log(tab_id);
+	
+	var i;
+	var selected_nav = document.getElementById(nav_id);
+	console.log("selected nav");
+	console.log(selected_nav);
+	var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
+	var current_nav = document.getElementById(current_nav_id);
+	console.log("current nav");
+	console.log(current_nav);
+	var selected_tab = document.getElementById(tab_id);
+	var actionable_tabs = document.getElementsByClassName("tab-actionable");
+	
+	current_nav.classList.remove("nav-item-selected");
+	selected_nav.classList.add("nav-item-selected");
+	
+	console.log("the selected tab is " + selected_tab);
+	for (i = 0; i < actionable_tabs.length; i++) {
+		console.log("actionable tab on button select " + actionable_tabs[i]);
+	}
+
+	for (i = 0; i < actionable_tabs.length; i++) {
+		actionable_tabs[i].style.display = "none";
+	}
+	
+	selected_tab.style.display = "block";
+}
 
 /*Main Section ================================================*/
 
