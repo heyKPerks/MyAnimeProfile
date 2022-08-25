@@ -53,14 +53,13 @@ body {
 }
 #discord_modal_content {
 	display: block;
+	position: relative;
 	width: 600px;
 	min-width: 300px;	
 	height: max-content;
 	margin: 0;
-	margin-top: 4em;
-	margin-left: 1em;
-	margin-right: 1em;
-	padding: 2em;
+	margin: 4em 1em;
+	padding: 2em 1em;
 	background-color: rgb(22,24,28, .9);
 	border-radius: 10px;
 	box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
@@ -85,12 +84,17 @@ body {
 	width: 100%;
 	margin-bottom: 1em;
 	padding: .3em .5em;
-	display: flex;
-	align-items: center;
+	/*display: flex;
+	align-items: center;*/
+	display: grid;
+	grid-template-columns: minmax(min-content, 400px) 1fr;
+	grid-template-rows: auto;
+	gap: 10px;
 	border-radius: 10px;
 }
 .discord-modal-item-label {
 	display: block;
+	width: 100%;
 }
 .discord-modal-item-image {
 	width: 40px;
@@ -108,9 +112,9 @@ body {
 }
 .discord-modal-btn {
 	display: block;
-	align-self: stretch;
-	margin-left: auto;
-	width: 100px;
+	/*align-self: stretch;
+	margin-left: auto;*/
+	width: 100%;
 	white-space: nowrap;
 	padding:6px 12px;
 	border-radius: 10px;
