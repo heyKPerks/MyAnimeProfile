@@ -61,9 +61,7 @@ body {
 	margin: 4em 1em;
 	padding: 2em 1em;
 	background-color: rgb(22,24,28, .9);
-	border-radius: 10px;
-	box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-}
+	border-radius: 10px;}
 
 .modal-heading {
 	width: 100%;
@@ -72,52 +70,42 @@ body {
 	font-weight: 400;
 	text-align: center;
 }
-.modal-subheading {
-	width: 100%;
-	padding-top: .5em;
-	padding-bottom: .5em;	
-	font-size: 1.2rem;
-	font-weight: 700;	
-}
-.discord-modal-item {
-	background-color: #23272a;
-	width: 100%;
-	margin-bottom: 1em;
-	padding: .3em .5em;
-	/*display: flex;
-	align-items: center;*/
+.dicord-modal-item-grid {
 	display: grid;
-	grid-template-columns: minmax(min-content, 400px) 1fr;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
 	grid-template-rows: auto;
-	gap: 10px;
-	border-radius: 10px;
+	gap: .5em;
 }
-.discord-modal-item-label {
-	display: block;
+.dicord-modal-item-heading {
+	grid-area: dmi-heading;
 	width: 100%;
+	padding-bottom: .5em;	
+	font-size: 1rem;	
+	text-transform: uppercase;
+	color:rgb(169, 169, 172)
 }
 .discord-modal-item-image {
-	width: 40px;
-	height: 40px;
-	margin-right: .4em;
-	vertical-align: middle;	
-	border-radius: 50%;
+	grid-area: dmi-image;
+	width: 100%;
+	border-radius: 10px;
 }
 .discord-modal-item-text {
-	font-size: 1.2rem;
+	grid-area: dmi-text;
+	font-size: 1.2rem;	
+	font-weight: 700;
 }
 #discord_num {
 	margin-left: .2em;
 	color:#7289da;
 }
 .discord-modal-btn {
+	grid-area: dmi-btn;
 	display: block;
-	/*align-self: stretch;
-	margin-left: auto;*/
+	margin: 0;
 	width: 100%;
 	white-space: nowrap;
-	padding:6px 12px;
-	border-radius: 10px;
+	padding:3px 12px;
+	border-radius: 2em;
 	border-style: none;
 	background-color: rgb(236,114,97);
 	border-width: 0;
@@ -130,13 +118,27 @@ body {
 	cursor: pointer;
 	text-decoration: underline;	
 }
-
+.discord-modal-item {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50px 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"dmi-heading dmi-heading"
+	"dmi-image dmi-text"
+	"dmi-image dmi-btn";
+	grid-column-gap: 1em;
+	grid-row-gap: .5em;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #23272a;
+}
 #discord_modal_btn_close {
 	margin-top: 2em;
 	width: 100%;
 	white-space: nowrap;
 	padding:6px 12px;
-	border-radius: 10px;
+	border-radius: 2em;
 	border-style: solid;
 	background-color: rgb(22,24,28);
 	border-color: rgb(214,217,219);
@@ -150,7 +152,6 @@ body {
 	text-decoration: underline;	
 	background-color:rgb(214,217,219);
 	color: rgb(22,24,28);
-
 }
 /*	============================================
 	Header
