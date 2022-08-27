@@ -13,10 +13,10 @@ html {
 }
 body {
 	font-family: 'Nunito', 'arial', sans-serif;;
-	background-color: rgb(0,0,0); /* rgb(7,48,66) #21202A*/
-	color: rgb(214,217,219);
 	font-size: 1rem;
 	font-weight: 400;
+	background-color: rgb(0,0,0); /* rgb(7,48,66) #21202A*/
+	color: rgb(214,217,219);
 }
 
 /*	============================================
@@ -38,25 +38,25 @@ body {
 	Modals 
 	============================================*/
 .modal-container {
-	background-color: rgb(0,0,0, 0.6);
 	display: none;
 	align-items: top;
 	justify-content: center; 
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;
-	width: 100vw;
+	height: 100vh;	
+	width: 100vw;	
 	z-index: 20;
 	overflow-y:scroll;
     overflow-x:hidden;
+	background-color: rgb(0,0,0, 0.6);
 }
 #discord_modal_content {
 	display: block;
 	position: relative;
+	height: max-content;
 	width: 600px;
 	min-width: 300px;	
-	height: max-content;
 	margin: 0;
 	margin: 4em 1em;
 	padding: 2em 1em;
@@ -361,6 +361,7 @@ body {
 	font-size: 1rem;
 }
 .nav-item:hover, .nav-item:focus {
+	cursor: pointer;
 	display: inline-block;
 	margin-right: 1em;
 	padding:6px 12px;
@@ -498,6 +499,7 @@ body {
 	font-size: 1rem;
 }
 .btn-pill-full-width:hover, .btn-pill-full-width:focus {
+	cursor: pointer;
 	width: 100%;
 	padding:6px 12px;
 	margin-top: 10px;
@@ -559,27 +561,6 @@ body {
 	background-color: rgb(236,114,97);
 }
 
-/*	tooltip objects not working properly 
-		keeping display none state so I don't have to remove code at the moment*/
-.tooltip {
-	position: absolute;
-	display: none;
-	width: 100px;
-	margin-top: 2px;
-	padding: .2em;
-	border-radius: 8px;
-	font-size: 1rem;
-	font-weight: 100;
-	line-height: 1.3rem;
-	text-align: center;
-	background-color: black;
-	color: white;
-	z-index: 999;
-}
-.tile:hover > .tooltip, .tile:focus > .tooltip {
-	/*display: block;*/
-}
-
 .scrolling-tiled-list > .tile {
 	display: inline-block;  
 	width: 36%;
@@ -599,6 +580,9 @@ body {
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*rgba(0, 146, 148);*/
+}
+.OP_ED-item:hover, .OP_ED-item:focus {
+	background-color: rgb(255, 255, 255, .1);
 }
 .OP_ED-item:first-of-type {
 	border-top: 1px;
@@ -662,6 +646,9 @@ body {
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3); /*#21202A*/
 }
+.lf-item-container:hover, .lf-item-container:focus {
+	background-color: rgb(255, 255, 255, .1);
+}
 .lf-link {
 	display: block;
 	text-decoration: none;
@@ -716,6 +703,11 @@ body {
 	text-align: left;
 	color: rgb(236,114,97);
 }
+.more-lf-link-btn:hover, .more-lf-link-btn:focus {
+	cursor: pointer;
+	background-color: rgb(255, 255, 255, .1);
+}
+
 .more-lf-anitube { 
 	display: none;
 }

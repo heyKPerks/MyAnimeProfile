@@ -1,6 +1,7 @@
 /*=============================================================
 	Button functions
 =============================================================*/
+
 /*Discord Modal Functions ====================================*/
 
 /*Show Discord Modal
@@ -9,21 +10,18 @@ function show_discord_modal () {
 	var modal = document.getElementById("discord_modal_container");
 	modal.style.display = "flex";
 }
-
 /*Close Discord Modal
 button on click, display discord_modal_container none */
 function close_discord_modal () {
 	var modal = document.getElementById("discord_modal_container");
 	modal.style.display = "none";
 }
-
 /*Copy Discord Username to Clipboard
 button on cancelIdleCallback, copy text to clipboard */
 function copy_discord_name () {
 	navigator.clipboard.writeText("heyKPerks#4655");
 	alert("copied to clipboard: " + "heyKPerks#4655");
 }
-
 
 /*Main Nav Section ================================================*/
 /*	on click, show selected tab, hide all actionable tabs */
@@ -148,6 +146,7 @@ function more_anipicstwitter_btn() {
   }
   btn.style.display = "none";
 }
+
 /*=============================================================
 	Content continuity with screen resizing
 =============================================================*/
