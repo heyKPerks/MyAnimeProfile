@@ -44,8 +44,8 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	height: 100vh;	
 	width: 100vw;	
+	height: 100vh;	
 	z-index: 20;
 	overflow-y:scroll;
     overflow-x:hidden;
@@ -53,16 +53,16 @@ body {
 }
 #discord_modal_content {
 	display: block;
-	position: relative;
-	height: max-content;
+	position: relative;	
 	width: 600px;
 	min-width: 300px;	
+	height: max-content;
 	margin: 0;
 	margin: 4em 1em;
 	padding: 2em 1em;
 	background-color: rgb(22,24,28, .9);
-	border-radius: 10px;}
-
+	border-radius: 10px;
+}
 .modal-heading {
 	width: 100%;
 	margin-bottom: .5em;
@@ -101,25 +101,24 @@ body {
 .discord-modal-btn {
 	grid-area: dmi-btn;
 	display: block;
-	margin: 0;
 	width: 100%;
-	white-space: nowrap;
+	margin: 0;
 	padding:3px 12px;
 	border-radius: 2em;
 	border-style: none;
-	background-color: rgb(236,114,97);
 	border-width: 0;
-	text-decoration: none;
-	color: rgb(22,24,28);
-	font-weight: 700;
 	font-size: 1rem;
+	font-weight: 700;
+	text-decoration: none;
+	white-space: nowrap;
+	background-color: rgb(236,114,97);
+	color: rgb(22,24,28);
 }
 .discord-modal-btn:hover, .discord-modal-btn:focus {
 	cursor: pointer;
 	text-decoration: underline;	
 }
 .discord-modal-item {
-	width: 100%;
 	display: grid;
 	grid-template-columns: 50px 1fr;
 	grid-template-rows: auto;
@@ -129,23 +128,24 @@ body {
 	"dmi-image dmi-btn";
 	grid-column-gap: 1em;
 	grid-row-gap: .5em;
+	width: 100%;
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #23272a;
 }
 #discord_modal_btn_close {
-	margin-top: 2em;
 	width: 100%;
-	white-space: nowrap;
+	margin-top: 2em;
 	padding:6px 12px;
 	border-radius: 2em;
 	border-style: solid;
+	border-width: 1px;
+	font-size: 1rem;
+	font-weight: 700;
+	white-space: nowrap;
 	background-color: rgb(22,24,28);
 	border-color: rgb(214,217,219);
-	border-width: 1px;
 	color: rgb(214,217,219);
-	font-weight: 700;
-	font-size: 1rem;
 }
 #discord_modal_btn_close:hover, #discord_modal_btn_close:focus {
 	cursor: pointer;
@@ -153,6 +153,7 @@ body {
 	background-color:rgb(214,217,219);
 	color: rgb(22,24,28);
 }
+
 /*	============================================
 	Header
 	============================================*/
@@ -178,11 +179,11 @@ body {
 	color: rgb(214,217,219);
 	text-shadow: 2px 2px 5px rgb(236,114,97);
 }
-
 #profile_banner {
 	/*height and width managed in js script*/
 	opacity: 0.4;
 }
+
 /*	============================================
 	Profile Bio
 
@@ -205,10 +206,8 @@ body {
 	grid-area: bio_socials;
 	justify-self: end;
 }
-
 #bio {
 	display: grid;
-	margin-bottom: 1em;
 	grid-template-columns: max-content 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
@@ -216,6 +215,7 @@ body {
 		"name name"
 		"handle handle"
 		"biotext biotext";
+	margin-bottom: 1em;
 }
 #profile_pic {
 	width: 120px;
@@ -235,8 +235,8 @@ body {
 	font-weight: 900;
 }
 #handle /*<h3> heading*/{	
-	padding: 0 10px;	
 	margin-bottom: 1em;
+	padding: 0 10px;	
 	font-size: 1rem;
 	font-weight: 700;
 	color: rgba(136,153,165,0.9);
@@ -269,7 +269,6 @@ body {
 	text-align: center;
 	text-decoration: none;
 }
-
 #bio-social-kitsu > img {
 	width: 1.2rem;
 }
@@ -280,8 +279,8 @@ body {
 	color: rgb(29 161 242);
 }
 #bio-social-twitter:hover, #bio-social-twitter:focus {
-	color: white;
 	background-color: rgb(29 161 242);
+	color: white;
 }
 #social_discord_btn {
 	width: 2rem;
@@ -293,19 +292,19 @@ body {
 	font-size: 1.2rem;
 	text-align: center;
 	text-decoration: none;
-	color: rgb(88 101 242);
 	background-color:rgb(0,0,0);
+	color: rgb(88 101 242);
 }
 #social_discord_btn:hover, #social_discord_btn:focus {
-	color: white;
 	background-color: rgb(88 101 242);
+	color: white;
 }
 #bio_social-github {
 	color: white;
 }
 #bio_social-github:hover, #bio_social-github:focus {
-	color: black;
 	background-color: white;	
+	color: black;
 }
 
 /*	============================================
@@ -318,34 +317,31 @@ body {
 	layout. 
 	============================================*/
 #nav {
-	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;	
 	align-items: center;
+	width: 100%;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
-	/*border-top: 1px;*/
-	/*border-bottom: 1px;*/
 	border-style: solid;
 	border-color: rgba(136,153,165,0.3);
-	/*background-color: blue;*/
 }
 .nav-item {
 	display: inline-block;
 	width: min-content;
-	white-space: nowrap;
 	margin-right: 1em;
 	padding:6px 12px;
 	border-style: solid;
 	border-radius: 2em;
 	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(0,0,0);
-	color: rgb(236,114,97);
 	font-weight: 700;
 	font-size: 1rem;
+	white-space: nowrap;
+	background-color: rgb(0,0,0);
+	border-color: rgb(236,114,97);	
+	color: rgb(236,114,97);
 }
 .nav-item-selected {
 	display: inline-block;
@@ -354,11 +350,11 @@ body {
 	border-style: solid;
 	border-radius: 2em;
 	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(0,0,0);
 	font-weight: 700;
 	font-size: 1rem;
+	background-color: rgb(236,114,97);
+	border-color: rgb(236,114,97);
+	color: rgb(0,0,0);
 }
 .nav-item:hover, .nav-item:focus {
 	cursor: pointer;
@@ -368,11 +364,11 @@ body {
 	border-style: solid;
 	border-radius: 2em;
 	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(0,0,0);
 	font-weight: 700;
 	font-size: 1rem;
+	background-color: rgb(236,114,97);
+	border-color: rgb(236,114,97);
+	color: rgb(0,0,0);
 }
 .first-nav-item {
 	margin-left: 10px;	
@@ -384,16 +380,14 @@ body {
 	Includes demographic fields and tags
 	============================================*/
 #tab_about {
-	margin-bottom: 1em;
 	display: none;
+	margin-bottom: 1em;
 }
 #about_fields {
 	margin-bottom: 1em;
 	padding: 2px;
 }
 .about-field {
-	/*margin-left: 10px;
-	margin-bottom: 10px;*/
 	padding: 8px;
 	font-size: 1rem;
 	color: rgba(136,153,165,0.9);
@@ -404,7 +398,7 @@ body {
 	padding-right: 10px;
 	border-top: 1px;
 	border-style: solid;
-	border-color: rgba(136,153,165,0.3); /*#21202A*/
+	border-color: rgba(136,153,165,0.3);
 }
 .about-tag {
 	display: inline-block;
@@ -417,7 +411,6 @@ body {
 	color: rgba(136,153,165,0.9);
 }
 .field-icon {
-	/*letter-spacing: .2em;*/
 	width: 1.5em;
 	margin-right: 5px;
 	font-size: 1rem;
@@ -446,7 +439,6 @@ body {
 /*#tab_watching {
 
 }*/
-
 .watching-item {
 	margin-bottom: 2em;
 	padding: 0 10px;	
@@ -467,51 +459,49 @@ body {
 	padding: 0 10px;	
 }
 .tiled-list {
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	grid-gap: 10px;
+	width: 100%;
 	font-size: 0px;
 }
-
 .scrolling-tiled-list {
-	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	overflow-x: auto;
 	-ms-overflow-style: -ms-autohiding-scrollbar;	
+	width: 100%;
 }
-
 .btn-pill-full-width {
 	width: 100%;
-	white-space: nowrap;
 	margin-top: 10px;
 	margin-bottom: 0;
 	padding:6px 12px;
 	border-style: solid;
-	border-radius: 2em /*8px*/;
+	border-radius: 2em;
 	border-width: 1px;;
-	border-color: rgb(236,114,97);
-	background-color: rgb(0,0,0);
-	color: rgb(236,114,97);
-	font-weight: 700;
 	font-size: 1rem;
+	font-weight: 700;
+	white-space: nowrap;
+	background-color: rgb(0,0,0);
+	border-color: rgb(236,114,97);	
+	color: rgb(236,114,97);
 }
 .btn-pill-full-width:hover, .btn-pill-full-width:focus {
 	cursor: pointer;
 	width: 100%;
-	padding:6px 12px;
 	margin-top: 10px;
 	margin-bottom: 0;
+	padding:6px 12px;
 	border-style: solid;
 	border-radius: 2em /*8px*/;
 	border-width: 1px;
-	border-color: rgb(236,114,97);
-	background-color: rgb(236,114,97);
-	color: rgb(0,0,0);
-	font-weight: 700;
 	font-size: 1rem;
+	font-weight: 700;	
+	background-color: rgb(236,114,97);
+	border-color: rgb(236,114,97);
+	color: rgb(0,0,0);
 }
 .scrolling-cards {
 	/*display: flex;*/
@@ -549,8 +539,8 @@ body {
 	font-size: 0px;	
 }
 .tile {
-	width: 100%;
 	display: block;
+	width: 100%;
 	text-decoration: none;
 }
 .tile:hover, .tile:focus {
@@ -560,7 +550,6 @@ body {
 	border-color: rgb(236,114,97);
 	background-color: rgb(236,114,97);
 }
-
 .scrolling-tiled-list > .tile {
 	display: inline-block;  
 	width: 36%;
@@ -592,10 +581,10 @@ body {
 .OP_ED-header-link { 
 	display: block;
 	width: 100%;
-	text-decoration: none;
-	color: rgb(214,217,219);
 	font-size: 1rem;
 	line-height: 1.5em;
+	text-decoration: none;
+	color: rgb(214,217,219);
 }
 .OP_ED-anime {
 	display: block;
@@ -616,7 +605,6 @@ body {
 
 	Function as sidebar content on largest screen size 
 	============================================*/
-
 #tab_linksandfollows {
 	/*margin-bottom: 1rem;*/
 	display: none;
@@ -717,7 +705,6 @@ body {
 .more-lf-anipicstwitter {
 	display: none;
 }
-
 .section-heading /*<h2> heading*/{
 	width: 100%;
 	margin-bottom: .5em;
@@ -756,8 +743,7 @@ body {
 	margin: auto;
 	margin-bottom: .5em;
 	font-size: 1.5rem;	
-	color: rgb(214,217,219);
-	
+	color: rgb(214,217,219);	
 }
 .footer-text {
 	width: 300px;
@@ -828,7 +814,6 @@ body {
 	color: black;
 	background-color: white;	
 }
-
 .copyright {
 	width: 300px;
 	margin: auto;
@@ -861,7 +846,6 @@ body {
 #footer {
 	grid-area: footer;
 }
-
 #page_wrapper {
 	display: grid;
 	grid-template-columns:minmax(300px, 539px);
@@ -941,7 +925,6 @@ body {
 	#tab_about {
 		display: block;
 	}
-
 }
 @media (min-width: 1300px) {
 	#page_wrapper {
@@ -959,14 +942,13 @@ body {
 		". . main tab_linksandfollows ."
 		"footer footer footer footer footer";		
 	}	
-		/*	reset grid area back 
-			because for some reason it doesn't change back after 
-			breaking out of the medium column layout exception 
+	/*	reset grid area back 
+		because for some reason it doesn't change back after 
+		breaking out of the medium column layout exception 
 	*/
 	#tab_linksandfollows {
 		grid-area: tab_linksandfollows;
-	}
-	
+	}	
 	/* Navigation and display logic */
 	#nav_about {
 		display: none;
@@ -979,6 +961,5 @@ body {
 	}
 	#tab_linksandfollows {
 		display: block;
-	}
-	
+	}	
 }
