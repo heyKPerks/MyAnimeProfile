@@ -609,6 +609,64 @@ body {
 	/*margin-bottom: 1rem;*/
 	display: none;
 }
+
+.lf-feature {
+	margin-bottom: 1em;
+	
+}
+.lf-feature-title {
+	grid-area: lf-f-title;
+}
+.lf-feature-source {
+	grid-area: lf-f-source;
+}
+
+.lf-feature-image {
+	grid-area: lf-f-image;
+}
+
+.lf-feature-link {	
+	width: 100%;
+	background-color: rgb(22,24,28);
+	border-radius: 10px;
+	margin-bottom: .5em;
+	padding-top: .7em;
+	padding-bottom: .7em;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: grid;
+	grid-template-columns: 3fr, 2fr;
+	grid-template-rows: auto;
+	grid-row-gap: 0;
+	grid-column-gap: .5em;
+	grid-template-areas: 
+		"lf-f-source lf-f-source lf-f-source lf-f-image lf-f-image"
+		"lf-f-title lf-f-title lf-f-title lf-f-image lf-f-image"
+		"lf-f-title lf-f-title lf-f-title lf-f-image lf-f-image"
+		;
+	text-decoration: none;
+}
+.lf-feature-link:hover, .lf-feature-link:focus {
+	background-color: rgb(46,48,51);
+}
+.lf-feature-image {
+	display: block;
+	justify-self: end;
+	width: 70px;	
+	border-radius: 10px;
+}
+.lf-feature-source {
+	display: block;	
+	font-size: 1em;
+	color: rgba(136,153,165,0.9);
+}
+.lf-feature-title {
+	display: block;
+	font-size: 1.2rem;
+	font-weight: 700;		
+	color: rgb(214,217,219);
+}
+
 .lf-list {
 	background-color: rgb(22,24,28);
 	border-radius: 10px;
@@ -655,10 +713,12 @@ body {
 .lf-displayname {
 	display: block;
 	margin-bottom: .3em;
+	font-size: 1em;
 	color: rgb(214,217,219);
 }
 .lf-handle {
 	display: block;
+	font-size: 1em;
 	color: rgba(136,153,165,0.9);
 }
 .lf-handle-icon {
