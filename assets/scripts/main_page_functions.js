@@ -121,26 +121,13 @@ function more_anitube_btn() {
   btn.style.display = "none";
 }
 
-/*Show more anipicsreddit links 
-button on click, display more-lf-anipicsreddit, hide more_anipicsreddit_btn
+/*Show more artistfanart links 
+button on click, display more-lf-artistfanart, hide more_artistfanart_btn
 */
-function more_anipicsreddit_btn() {
+function more_artistfanart_btn() {
   var i;
-  var links = document.getElementsByClassName("more-lf-anipicsreddit");
-  var btn = document.getElementById("more_anipicsreddit_btn");
-  for (i = 0; i < links.length; i++) {
-    links[i].style.display = "block";
-  }
-  btn.style.display = "none";
-}
-
-/*Show more anipicstwitter links 
-button on click, display more-lf-anipicstwitter, hide more_anipictwitter_btn
-*/
-function more_anipicstwitter_btn() {
-  var i;
-  var links = document.getElementsByClassName("more-lf-anipicstwitter");
-  var btn = document.getElementById("more_anipicstwitter_btn");
+  var links = document.getElementsByClassName("more-lf-artistfanart");
+  var btn = document.getElementById("more_artistfanart_btn");
   for (i = 0; i < links.length; i++) {
     links[i].style.display = "block";
   }
