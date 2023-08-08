@@ -108,6 +108,19 @@ function more_OP_ED_item_ed_btn() {
 
 /*Links and Follows Section ===================================*/
 
+/*Show more for collections  links
+button on click, display more-lf-forcollections, hide more_forcollections_btn
+*/
+function more_forcollections_btn() {
+	var i;
+	var links = document.getElementsByClassName("more-lf-forcollections");
+	var btn = document.getElementById("more_forcollections_btn");
+	for (i = 0; i < links.length; i++) {
+	  links[i].style.display = "block";
+	}
+	btn.style.display = "none";
+  }
+
 /*Show more anitube links
 button on click, display more-lf-anitube, hide more_anitube_btn
 */

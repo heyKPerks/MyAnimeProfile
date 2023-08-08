@@ -756,6 +756,10 @@ body {
 	background-color: rgb(255, 255, 255, .1);
 }
 
+.more-lf-forcollections {
+	display: none;
+}
+
 .more-lf-anitube { 
 	display: none;
 }
