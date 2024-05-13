@@ -285,7 +285,7 @@ body {
 #social_discord_btn {
 	width: 2rem;
 	height: 2rem;
-	padding: 6px;
+	padding: 0px;
 	border-radius: 50%;
 	border-style: none;
 	border-width: 0;
@@ -295,6 +295,7 @@ body {
 	background-color:rgb(0,0,0);
 	color: rgb(88 101 242);
 }
+
 #social_discord_btn:hover, #social_discord_btn:focus {
 	background-color: rgb(88 101 242);
 	color: white;
@@ -854,7 +855,7 @@ body {
 #footer_social_discord_btn {
 	width: 2rem;
 	height: 2rem;
-	padding: 6px;
+	padding: 0px;
 	border-radius: 50%;
 	border-style: none;
 	border-width: 0;
