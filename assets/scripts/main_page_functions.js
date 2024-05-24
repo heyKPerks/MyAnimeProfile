@@ -1,5 +1,5 @@
 /*=============================================================
-	Button functions
+	Main Page Functions
 =============================================================*/
 
 /*Discord Modal Functions ====================================*/
@@ -24,6 +24,7 @@ function copy_discord_name () {
 }
 
 /*Main Nav Section ================================================*/
+
 /*	on click, show selected tab, hide all actionable tabs */
 function tab_selct (nav_id, tab_id) {
 	console.log(nav_id);
