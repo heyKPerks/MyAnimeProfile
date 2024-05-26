@@ -27,7 +27,7 @@ body {
 	Profile Bio
 	Navigation
 	Abount Tab
-	Highlights Tab
+	Spotlight Tab
 	Favorites Tab
 	Likes And Follows Tab
 	Media Queries
@@ -425,11 +425,94 @@ body {
 }
 
 /*	============================================
-	Highlights Tab
-
-	TODO 
-	highlight recent series watched 
+	spotlight Tab
 	============================================*/
+
+#tab_spotlight {
+	display: block;
+}
+.spotlight-article-title /*<h2> heading*/{
+	grid-area: spotlight-article-title;
+	display: block;
+	width: 100%;
+	margin-bottom: 0;
+	font-size: 1.5rem;	
+	font-weight: 400;
+}
+	
+.spotlight-article-text {
+	grid-area: spotlight-article-text;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1rem;
+}
+.spotlight-article-media-container {
+	grid-area: spotlight-article-media;
+	display: block;
+	width: 100%;
+	max-height: 320px;
+	overflow: hidden;
+	
+}
+.spotlight-article-media {
+	display: block;
+	width: 100%;
+}
+.spotlight-article-source-container {
+	grid-area: spotlight-article-source;
+	display: block;
+	margin-bottom: 1rem;
+}
+.spotlight-artical {
+	display: grid;
+	grid-template-columns:minmax(1fr);
+	grid-template-rows: auto;
+	grid-row-gap: 1rem;
+	grid-column-gap: 0;
+	grid-template-areas: 
+		"spotlight-article-title"
+		"spotlight-article-text"
+		"spotlight-article-media"
+		"spotlight-article-source";
+	margin-bottom: 2em;
+	padding: 0 10px;
+	border-style: solid;
+	border-bottom-width: 1px;	
+	border-color: rgba(136,153,165,0.3); /*#21202A*/
+}
+
+/* Spotlight Sources ===================*/
+.spotlight-article-source-kitsu {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(22,24,28);
+}
+.spotlight-article-source-kitsu:hover, .spotlight-article-source-kitsu:focus {
+	background-color: rgb(46,48,51);
+}
+
+.source-kitsu-image-container {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .5em;
+	width: 45px;
+	border-radius: 5px;
+}
+.source-kitsu-imageA {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+}
+.source-kitsu-title {
+	display: inline-block;
+	
+	font-size: 1rem;
+	font-weight: 700;
+	color: rgb(236,114,97);
+}
+
 
 /*	============================================
 	watching Tab
@@ -437,12 +520,12 @@ body {
 	Includes items that I'm watching / keeping track of
 	list turn to horizontal scroll on small screen size 
 	============================================*/
-/*#tab_watching {
-
-}*/
+#tab_watching {
+	display: none;
+}
 .watching-item {
 	margin-bottom: 2em;
-	padding: 0 10px;	
+	padding: 0 10px;
 }
 
 /*	============================================
@@ -901,7 +984,6 @@ body {
 #main {
 	grid-area: main;
 }
-
 #tab_linksandfollows {
 	grid-area: tab_linksandfollows;
 }

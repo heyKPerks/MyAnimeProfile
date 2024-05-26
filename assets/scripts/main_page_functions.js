@@ -200,13 +200,13 @@ function two_column () {
 	tab_linksandfollows.classList.add("tab-actionable");
 
 	/*	Case where expanding from small one column layout to medium two column layout
-			if tab about was currently selected, then display and change to selected watching tab
+			if tab about was currently selected, then display and change to selected spotlight tab
 			to prevent no content displayed on screen resize. 
 	*/
 	var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
 	console.log(current_nav_id);
 	if (current_nav_id.includes("about")){
-		tab_selct('nav_watching', 'tab_watching');
+		tab_selct('nav_spotlight', 'tab_spotlight');
 	}
 
 	/*	Hide links and follows tab on screen resize from large to medium 
@@ -244,7 +244,7 @@ function three_column () {
 	var current_nav_id = document.getElementsByClassName('nav-item-selected')[0].id;
 	console.log(current_nav_id);
 	if (current_nav_id.includes("links")){
-		tab_selct('nav_watching', 'tab_watching');
+		tab_selct('nav_spotlight', 'tab_spotlight');
 	}
 }
 
