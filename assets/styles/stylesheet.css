@@ -431,12 +431,36 @@ body {
 #tab_spotlight {
 	display: block;
 }
+.spotlight-artical {
+	display: grid;
+	grid-template-columns:minmax(1fr);
+	grid-template-rows: auto;
+	grid-row-gap: 1rem;
+	grid-column-gap: 0;
+	grid-template-areas: 
+		"spotlight-article-title"
+		"spotlight-article-text"
+		"spotlight-article-media"
+		"spotlight-article-source";
+	margin-bottom: 2em;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1rem;
+	border-style: solid;
+	border-bottom-width: 1px;	
+	border-color: rgba(136,153,165,0.3);
+}
+.spotlight-artical:last-of-type {
+	margin-bottom: 0;
+	border-bottom-width: 0;	
+}
 .spotlight-article-title /*<h2> heading*/{
 	grid-area: spotlight-article-title;
 	display: block;
 	width: 100%;
 	margin-bottom: 0;
-	font-size: 1.5rem;	
+	line-height: 2rem;
+	font-size: 1.5rem;
 	font-weight: 400;
 }
 	
@@ -452,67 +476,55 @@ body {
 	width: 100%;
 	max-height: 320px;
 	overflow: hidden;
+	border-radius: 10px;
 	
 }
 .spotlight-article-media {
 	display: block;
 	width: 100%;
+	border-radius: 10px;
 }
 .spotlight-article-source-container {
 	grid-area: spotlight-article-source;
 	display: block;
 	margin-bottom: 1rem;
 }
-.spotlight-artical {
-	display: grid;
-	grid-template-columns:minmax(1fr);
-	grid-template-rows: auto;
-	grid-row-gap: 1rem;
-	grid-column-gap: 0;
-	grid-template-areas: 
-		"spotlight-article-title"
-		"spotlight-article-text"
-		"spotlight-article-media"
-		"spotlight-article-source";
-	margin-bottom: 2em;
-	padding: 0 10px;
-	border-style: solid;
-	border-bottom-width: 1px;	
-	border-color: rgba(136,153,165,0.3); /*#21202A*/
-}
 
 /* Spotlight Sources ===================*/
 .spotlight-article-source-kitsu {
-	display: block;
+	display: grid;
+	grid-template-columns: 45px 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+	grid-template-areas:
+		'kitsu-image kitsu-title';
+	align-items: center;
 	text-decoration: none;
 	width: 100%;
 	padding: 10px;
+	border-radius: 10px;
 	background-color: rgb(22,24,28);
 }
 .spotlight-article-source-kitsu:hover, .spotlight-article-source-kitsu:focus {
 	background-color: rgb(46,48,51);
 }
-
 .source-kitsu-image-container {
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: .5em;
+	grid-area: kitsu-image;
+	display: block;
 	width: 45px;
 	border-radius: 5px;
 }
-.source-kitsu-imageA {
+.source-kitsu-image {
 	display: block;
 	width: 100%;
 	border-radius: 5px;
 }
 .source-kitsu-title {
-	display: inline-block;
-	
+	display: block;	
 	font-size: 1rem;
 	font-weight: 700;
 	color: rgb(236,114,97);
 }
-
 
 /*	============================================
 	watching Tab
