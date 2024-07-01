@@ -859,6 +859,9 @@ body {
 .more-lf-anitube { 
 	display: none;
 }
+.more-podcast-and-playlists { 
+	display: none;
+}
 .more-lf-artistfanart {
 	display: none;
 }

@@ -135,6 +135,19 @@ function more_anitube_btn() {
   btn.style.display = "none";
 }
 
+/*Show more Podcasts and Playlists links
+button on click, display more-podcast-and-playlists, hide more_podcast_and_playlists_btn
+*/
+function more_podcast_and_playlists_btn() {
+	var i;
+	var links = document.getElementsByClassName("more-podcast-and-playlists");
+	var btn = document.getElementById("more_podcast_and_playlists_btn");
+	for (i = 0; i < links.length; i++) {
+	  links[i].style.display = "block";
+	}
+	btn.style.display = "none";
+  }
+
 /*Show more artistfanart links 
 button on click, display more-lf-artistfanart, hide more_artistfanart_btn
 */
