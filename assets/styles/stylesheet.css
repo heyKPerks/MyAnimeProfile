@@ -470,24 +470,71 @@ body {
 	line-height: 1.5em;
 	font-size: 1rem;
 }
+
 .spotlight-article-media-container {
 	grid-area: spotlight-article-media;
 	display: block;
 	width: 100%;
 	max-height: 320px;
 	overflow: hidden;
-	border-radius: 10px;
-	
+	border-radius: 8px;
 }
 .spotlight-article-media {
 	display: block;
 	width: 100%;
 	border-radius: 10px;
 }
+
 .spotlight-article-source-container {
 	grid-area: spotlight-article-source;
 	display: block;
 	margin-bottom: 1rem;
+}
+
+.spotlight-sub-article {
+	width: 100%;
+	display: grid;	
+	grid-template-columns: 145px 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: .8rem;
+	grid-row-gap: .3rem;
+	grid-template-areas: 
+	"spotlight-sub-article-media spotlight-sub-article-title"
+	"spotlight-sub-article-media spotlight-sub-article-text";
+}
+.spotlight-sub-article-title-link {
+	grid-area: spotlight-sub-article-title;
+	display: block;
+	width: 100%;
+	color: rgba(136,153,165,0.9);
+	text-decoration: none;
+}
+.spotlight-sub-article-title-link:hover, .spotlight-sub-article-title-link:focus {
+	cursor: pointer;
+	color: rgb(236,114,97);
+	text-decoration: underline;
+}
+.spotlight-sub-article-title {
+	display: block;
+	width: 100%;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+.spotlight-sub-article-media-containter{
+	grid-area: spotlight-sub-article-media;
+	width: 100%;
+	overflow: hidden;	
+}
+.spotlight-sub-article-media {
+	width: 100%;
+	border-radius: 8px;
+}
+.spotlight-sub-article-text {
+	grid-area: spotlight-sub-article-text;
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.5em;
 }
 
 /* Spotlight Sources ===================*/
