@@ -282,6 +282,16 @@ body {
 	background-color: rgb(29 161 242);
 	color: white;
 }
+
+#bio-social-bsky {
+	color: rgb(0,133,255);
+}
+#bio-social-bsky:hover, #bio-social-bsky:focus {
+	background-color: rgb(0,133,255);
+	color: white;
+}
+
+
 #social_discord_btn {
 	width: 2rem;
 	height: 2rem;
