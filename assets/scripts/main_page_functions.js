@@ -19,8 +19,8 @@ function close_discord_modal () {
 /*Copy Discord Username to Clipboard
 button on cancelIdleCallback, copy text to clipboard */
 function copy_discord_name () {
-	navigator.clipboard.writeText("heyKPerks#4655");
-	alert("copied to clipboard: " + "heyKPerks#4655");
+	navigator.clipboard.writeText("Mechylex");
+	alert("copied to clipboard: " + "Mechylex");
 }
 
 /*Main Nav Section ================================================*/
